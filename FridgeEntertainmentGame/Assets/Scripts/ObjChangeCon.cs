@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectChangeController : MonoBehaviour
+public class ObjChangeCon : MonoBehaviour
 {
     public GameObject controller;
     public string colTagName;

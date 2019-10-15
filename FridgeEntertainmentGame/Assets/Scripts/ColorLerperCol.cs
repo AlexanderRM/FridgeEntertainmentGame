@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ColorLerper : MonoBehaviour
+public class ColorLerperCol : MonoBehaviour
 {
     public float speed = 1.0f;
     public Color startColor;

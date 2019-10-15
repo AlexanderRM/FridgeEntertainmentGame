@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectChangeTargets : MonoBehaviour
+public class ObjChangeTargets : MonoBehaviour
 {
     public GameObject person;
     Person personScript;
@@ -21,7 +21,7 @@ public class ObjectChangeTargets : MonoBehaviour
             Component[] children = gameObject.GetComponentsInChildren<ObjectChangeController>(true);
             foreach (ObjectChangeController child in children)
             {
-                child.GetComponent<ObjectChangeController>().Change();
+                child.GetComponent<ObjChangeCon>().Change();
             }
         }
     }
