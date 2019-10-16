@@ -1,0 +1,270 @@
+fileFormatVersion: 2
+guid: e8ee227bc7ba80542bdd84bd5c7c4107
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Donut
+    100002: Donut1
+    100004: Donut10
+    100006: Donut11
+    100008: Donut12
+    100010: Donut13
+    100012: Donut2
+    100014: Donut3
+    100016: Donut4
+    100018: Donut5
+    100020: Donut6
+    100022: Donut7
+    100024: Donut8
+    100026: Donut9
+    100028: group10
+    100030: group7
+    100032: group8
+    100034: group9
+    100036: pCube1
+    100038: pCube2
+    100040: pCube3
+    100042: pCube4
+    100044: pCylinder2
+    100046: pCylinder4
+    100048: pCylinder5
+    100050: pCylinder6
+    100052: pCylinder7
+    100054: pTorus1
+    100056: SingleFile_SM2
+    100058: SingleFile_SM3
+    100060: SingleFile_SM4
+    100062: SingleFile_SM4 1
+    100064: SingleFile_SM4 2
+    100066: SingleFile_SM5
+    100068: SingleFile_SM5 1
+    100070: SingleFile_SM5 2
+    100072: //RootNode
+    100074: SM_Donuts
+    100076: SM_Files
+    100078: SM_Glass
+    100080: SM_Jug
+    100082: SM_OfficeChair1
+    100084: SM_OfficeChair2
+    100086: SM_OfficeChair3
+    100088: SM_OfficeChair4
+    100090: SM_OfficeChairs
+    100092: SM_Plate
+    100094: SM_Plate1
+    100096: SM_Table
+    100098: transform1
+    100100: transform10
+    100102: transform11
+    100104: transform12
+    100106: transform13
+    100108: transform14
+    100110: transform15
+    100112: transform16
+    100114: transform17
+    100116: transform18
+    100118: transform19
+    100120: transform2
+    100122: transform20
+    100124: transform21
+    100126: transform22
+    100128: transform23
+    100130: transform24
+    100132: transform25
+    100134: transform26
+    100136: transform27
+    100138: transform28
+    100140: transform29
+    100142: transform3
+    100144: transform30
+    100146: transform31
+    100148: transform32
+    100150: transform33
+    100152: transform34
+    100154: transform35
+    100156: transform36
+    100158: transform37
+    100160: transform4
+    100162: transform5
+    100164: transform6
+    100166: transform7
+    100168: transform8
+    100170: transform9
+    400000: Donut
+    400002: Donut1
+    400004: Donut10
+    400006: Donut11
+    400008: Donut12
+    400010: Donut13
+    400012: Donut2
+    400014: Donut3
+    400016: Donut4
+    400018: Donut5
+    400020: Donut6
+    400022: Donut7
+    400024: Donut8
+    400026: Donut9
+    400028: group10
+    400030: group7
+    400032: group8
+    400034: group9
+    400036: pCube1
+    400038: pCube2
+    400040: pCube3
+    400042: pCube4
+    400044: pCylinder2
+    400046: pCylinder4
+    400048: pCylinder5
+    400050: pCylinder6
+    400052: pCylinder7
+    400054: pTorus1
+    400056: SingleFile_SM2
+    400058: SingleFile_SM3
+    400060: SingleFile_SM4
+    400062: SingleFile_SM4 1
+    400064: SingleFile_SM4 2
+    400066: SingleFile_SM5
+    400068: SingleFile_SM5 1
+    400070: SingleFile_SM5 2
+    400072: //RootNode
+    400074: SM_Donuts
+    400076: SM_Files
+    400078: SM_Glass
+    400080: SM_Jug
+    400082: SM_OfficeChair1
+    400084: SM_OfficeChair2
+    400086: SM_OfficeChair3
+    400088: SM_OfficeChair4
+    400090: SM_OfficeChairs
+    400092: SM_Plate
+    400094: SM_Plate1
+    400096: SM_Table
+    400098: transform1
+    400100: transform10
+    400102: transform11
+    400104: transform12
+    400106: transform13
+    400108: transform14
+    400110: transform15
+    400112: transform16
+    400114: transform17
+    400116: transform18
+    400118: transform19
+    400120: transform2
+    400122: transform20
+    400124: transform21
+    400126: transform22
+    400128: transform23
+    400130: transform24
+    400132: transform25
+    400134: transform26
+    400136: transform27
+    400138: transform28
+    400140: transform29
+    400142: transform3
+    400144: transform30
+    400146: transform31
+    400148: transform32
+    400150: transform33
+    400152: transform34
+    400154: transform35
+    400156: transform36
+    400158: transform37
+    400160: transform4
+    400162: transform5
+    400164: transform6
+    400166: transform7
+    400168: transform8
+    400170: transform9
+    2100000: lambert1
+    2100002: lambert3
+    2100004: lambert2
+    2100006: characterLowPoly_blinn1
+    2300000: SM_Plate1
+    3300000: SM_Plate1
+    4300000: SM_Plate1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
