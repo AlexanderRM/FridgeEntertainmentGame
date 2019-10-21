@@ -1,18 +1,14 @@
 fileFormatVersion: 2
-guid: 68b82789fd118e84ba5bf9af68ca2f23
+guid: d3b4e122d14486642a9d8666b22a6363
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: SM_FernGarden
     400000: //RootNode
-    400002: SM_FernGarden
     2100000: lambert1
     2300000: //RootNode
-    2300002: SM_FernGarden
     3300000: //RootNode
-    3300002: SM_FernGarden
-    4300000: SM_FernGarden
+    4300000: SM_WillowTree
   externalObjects: {}
   materials:
     importMaterials: 1

@@ -4,10 +4,15 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: SM_FlowerFernGarden_Lrg
     400000: //RootNode
+    400002: SM_FlowerFernGarden_Lrg
     2100000: flower_Fern_Mtl
+    2100002: lambert1
     2300000: //RootNode
+    2300002: SM_FlowerFernGarden_Lrg
     3300000: //RootNode
+    3300002: SM_FlowerFernGarden_Lrg
     4300000: SM_FlowerFernGarden_Lrg
   externalObjects: {}
   materials:
