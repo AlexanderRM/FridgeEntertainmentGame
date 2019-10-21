@@ -1,16 +1,36 @@
 fileFormatVersion: 2
-guid: 68b82789fd118e84ba5bf9af68ca2f23
+guid: 8a939c72534f04a42b302c05e92ee7f6
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: SM_FernGarden
-    100002: //RootNode
-    400000: SM_FernGarden
-    400002: //RootNode
-    2100000: lambert2
-    2300000: SM_FernGarden
-    3300000: SM_FernGarden
-    4300000: SM_FernGarden
+    100000: pCube3
+    100002: pCube4
+    100004: pCube5
+    100006: pCube6
+    100008: pCube7
+    100010: //RootNode
+    400000: pCube3
+    400002: pCube4
+    400004: pCube5
+    400006: pCube6
+    400008: pCube7
+    400010: //RootNode
+    2100000: lambert1
+    2300000: pCube3
+    2300002: pCube4
+    2300004: pCube5
+    2300006: pCube6
+    2300008: pCube7
+    3300000: pCube3
+    3300002: pCube4
+    3300004: pCube5
+    3300006: pCube6
+    3300008: pCube7
+    4300000: pCube3
+    4300002: pCube4
+    4300004: pCube5
+    4300006: pCube6
+    4300008: pCube7
   externalObjects: {}
   materials:
     importMaterials: 1
