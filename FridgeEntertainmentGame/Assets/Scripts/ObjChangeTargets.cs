@@ -18,8 +18,8 @@ public class ObjChangeTargets : MonoBehaviour
     {
         if (personScript.coffee == true)
         {
-            Component[] children = gameObject.GetComponentsInChildren<ObjectChangeController>(true);
-            foreach (ObjectChangeController child in children)
+            Component[] children = gameObject.GetComponentsInChildren<ObjChangeCon>(true);
+            foreach (ObjChangeCon child in children)
             {
                 child.GetComponent<ObjChangeCon>().Change();
             }
