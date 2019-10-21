@@ -10,11 +10,12 @@ public class ColorLerperCol : MonoBehaviour
     public string colObjName;
     private bool coffee = false;
     float startTime;
+    private Renderer renderer;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        renderer = GetComponent<Renderer>();
     }
 
     // Update is called once per frame
@@ -23,7 +24,7 @@ public class ColorLerperCol : MonoBehaviour
         if(coffee == true)
         {
             float t = (Time.time - startTime) * speed;
-            GetComponent<Renderer>().material.color = Color.Lerp(startColor, endColor, t);
+            renderer.material.color = Color.Lerp(startColor, endColor, t);
         }
     }
 

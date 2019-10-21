@@ -13,7 +13,6 @@ public class TankController : MonoBehaviour
 
     private void Start()
     {
-        nose = player.transform.GetChild(0).gameObject;
     }
 
     private void Update()
@@ -24,14 +23,5 @@ public class TankController : MonoBehaviour
         GetComponent<Rigidbody>().velocity = transform.forward * speed * moveTank;
 
         transform.Rotate(Vector3.up * rotationSpeed * rotateTank * Time.deltaTime);
-
-        if(coffee == true)
-        {
-            nose.GetComponent<Renderer>().material.color = Color.green;
-        }
-        else
-        {
-            nose.GetComponent<Renderer>().material.color = Color.red;
-        }
     }
 }
