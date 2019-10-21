@@ -4,10 +4,14 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: SM_FlowerPot
     400000: //RootNode
+    400002: SM_FlowerPot
     2100000: lambert1
     2300000: //RootNode
+    2300002: SM_FlowerPot
     3300000: //RootNode
+    3300002: SM_FlowerPot
     4300000: SM_FlowerPot
   externalObjects: {}
   materials:
