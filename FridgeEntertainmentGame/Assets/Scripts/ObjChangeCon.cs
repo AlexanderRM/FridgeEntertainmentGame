@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjChangeCon : MonoBehaviour
 {
+    // Declare values
     public GameObject controller;
     public string colTagName;
     GameObject prev;
