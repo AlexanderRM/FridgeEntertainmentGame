@@ -29,13 +29,24 @@ public class Person : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if(collision.gameObject.name == colTargetName)
+    //    {
+    //        if(playerScript.coffee == true && coffee == false)
+    //        {
+    //            playerScript.coffee = false;
+    //            coffee = true;
+    //        }
+    //    }
+    //}
+
+    void OnTriggerStay(Collider collider)
     {
-        if(collision.gameObject.name == colTargetName)
+        if(collider.gameObject.name == colTargetName)
         {
-            if(playerScript.coffee == true && coffee == false)
+            if(playerScript.coffee == true && Input.GetKeyDown(KeyCode.Return) == true)
             {
-                playerScript.coffee = false;
                 coffee = true;
             }
         }

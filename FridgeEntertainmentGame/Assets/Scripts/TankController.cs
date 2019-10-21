@@ -9,8 +9,6 @@ public class TankController : MonoBehaviour
     public bool coffee = false;
     public GameObject player;
 
-    private GameObject nose;
-
     private void Start()
     {
     }
