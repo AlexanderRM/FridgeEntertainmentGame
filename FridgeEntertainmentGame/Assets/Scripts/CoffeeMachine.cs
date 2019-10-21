@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class CoffeeMachine : MonoBehaviour
 {
-    public GameObject player;
+    public bool active = false;
     public string colTargetName;
+    public GameObject player;
     private TankController playerScript;
 
     // Start is called before the first frame update
@@ -20,11 +21,11 @@ public class CoffeeMachine : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerStay(Collider collider)
     {
-        if(collision.gameObject.name == colTargetName)
+        if (collider.gameObject.name == colTargetName)
         {
-            if(playerScript.coffee == false)
+            if (active == true && Input.GetKeyDown(KeyCode.Return) == true)
             {
                 playerScript.coffee = true;
             }

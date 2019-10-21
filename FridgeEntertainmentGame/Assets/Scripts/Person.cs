@@ -6,6 +6,9 @@ public class Person : MonoBehaviour
 {
     public GameObject player;
     public string colTargetName;
+    public bool active = false;
+    public bool solved = false;
+    string riddle = "test test";
     private TankController playerScript;
 
     public bool coffee = false;
@@ -29,18 +32,6 @@ public class Person : MonoBehaviour
         }
     }
 
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if(collision.gameObject.name == colTargetName)
-    //    {
-    //        if(playerScript.coffee == true && coffee == false)
-    //        {
-    //            playerScript.coffee = false;
-    //            coffee = true;
-    //        }
-    //    }
-    //}
-
     void OnTriggerStay(Collider collider)
     {
         if(collider.gameObject.name == colTargetName)
@@ -48,6 +39,10 @@ public class Person : MonoBehaviour
             if(playerScript.coffee == true && Input.GetKeyDown(KeyCode.Return) == true)
             {
                 coffee = true;
+            }
+            else if (active == true && Input.GetKeyDown(KeyCode.Return) == true)
+            {
+                // Send Riddle
             }
         }
     }
