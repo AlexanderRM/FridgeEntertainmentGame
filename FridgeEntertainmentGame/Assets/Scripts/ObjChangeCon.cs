@@ -6,7 +6,6 @@ public class ObjChangeCon : MonoBehaviour
 {
     // Declare values
     public GameObject controller;
-    public string colTagName;
     GameObject prev;
     GameObject post;
     
@@ -19,8 +18,8 @@ public class ObjChangeCon : MonoBehaviour
        prev = controller.transform.GetChild(0).gameObject;
        post = controller.transform.GetChild(1).gameObject;
 
-        prev.GetComponent<MeshRenderer>().enabled = true;
-        post.GetComponent<MeshRenderer>().enabled = false;
+        prev.SetActive(true);
+        post.SetActive(false);
         prev.GetComponent<ParticleSystem>().Stop();
     }
 
@@ -38,8 +37,8 @@ public class ObjChangeCon : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         // play effect
-        prev.GetComponent<MeshRenderer>().enabled = false;
-        post.GetComponent<MeshRenderer>().enabled = true;
+        prev.SetActive(false);
+        post.SetActive(true);
     }
 
     public void Change()
