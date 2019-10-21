@@ -10,6 +10,7 @@ public class Person : MonoBehaviour
     public bool solved = false;
     string riddle = "test test";
     private TankController playerScript;
+    private ParticleSystem particle;
 
     public bool coffee = false;
 
@@ -17,18 +18,21 @@ public class Person : MonoBehaviour
     void Start()
     {
         playerScript = player.GetComponent<TankController>();
+        particle = GetComponent<ParticleSystem>();
+
+        particle.Stop();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(coffee == true)
+        if(active == true && particle.isPlaying != true)
         {
-            GetComponent<Renderer>().material.color = Color.green;
+            particle.Play();
         }
-        else
+        else if (solved == true)
         {
-            GetComponent<Renderer>().material.color = Color.red;
+            particle.Stop();
         }
     }
 

@@ -15,8 +15,8 @@ public class RiddleCon : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            people.Add(GameObject.Find("person" + i));
-            items.Add(GameObject.Find("item" + i));
+            people.Add(GameObject.Find("Person" + i));
+            items.Add(GameObject.Find("Item" + i));
         }
 
         machineScript = coffeeMachine.GetComponent<CoffeeMachine>();
@@ -25,19 +25,6 @@ public class RiddleCon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        foreach (GameObject person in people)
-        {
-            if (person.GetComponent<Person>().active == false)
-            {
-                person.GetComponent<Person>().active = true;
-                return;
-            }
-            else if(person.GetComponent<Person>().active == true && person.GetComponent<Person>().solved == false)
-            {
-                return;
-            }
-        }
-
         for(int i = 0; i < people.Capacity; i++)
         {
             if (people[i].GetComponent<Person>().active == false)
