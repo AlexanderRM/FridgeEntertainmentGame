@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class objTransparency : MonoBehaviour
 {
-    public Camera camera;
+    public new Camera camera;
     RaycastHit hit;
     Ray ray;
     List<Transform> hits = new List<Transform>();

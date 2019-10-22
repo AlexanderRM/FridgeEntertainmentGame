@@ -10,7 +10,7 @@ public class ColorLerperCol : MonoBehaviour
     public string colObjName;
     private bool coffee = false;
     float startTime;
-    private Renderer renderer;
+    private new Renderer renderer;
 
     // Start is called before the first frame update
     void Start()
