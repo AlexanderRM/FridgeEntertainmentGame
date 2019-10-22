@@ -26,21 +26,25 @@ public class Person : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(active == true && particle.isPlaying != true)
-        {
-            particle.Play();
-        }
-        else if (solved == true)
+        if (solved == true)
         {
             particle.Stop();
         }
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (active == true)
+        {
+            particle.Play();
+        }
+    }
+
     void OnTriggerStay(Collider collider)
     {
-        if(collider.gameObject.name == colTargetName)
+        if (collider.gameObject.name == colTargetName)
         {
-            if(playerScript.coffee == true && Input.GetKeyDown(KeyCode.Return) == true)
+            if (playerScript.coffee == true && Input.GetKeyDown(KeyCode.Return) == true)
             {
                 coffee = true;
             }
@@ -49,5 +53,10 @@ public class Person : MonoBehaviour
                 // Send Riddle
             }
         }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        particle.Stop();
     }
 }
