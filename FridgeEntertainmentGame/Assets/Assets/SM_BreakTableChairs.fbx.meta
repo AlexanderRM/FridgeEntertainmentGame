@@ -1,57 +1,36 @@
 fileFormatVersion: 2
-guid: 862bb33fcc4e12640afe508c3ac31af6
+guid: 3bdc6a52692bf654f8257e66e81222f2
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: SM_Cubicle
-    100004: SM_DeskFileTray
-    100006: SM_ModernKeyBoard
-    100008: SM_ModernPC
-    100010: SM_Mouse
-    100012: SM_MousePad
-    100014: SM_NewLamp
-    100016: SM_OfficeChair
-    100018: SM_SingleFileYellow
-    400000: //RootNode
-    400002: SM_Cubicle
-    400004: SM_DeskFileTray
-    400006: SM_ModernKeyBoard
-    400008: SM_ModernPC
-    400010: SM_Mouse
-    400012: SM_MousePad
-    400014: SM_NewLamp
-    400016: SM_OfficeChair
-    400018: SM_SingleFileYellow
-    2100000: lambert2
-    2100002: lambert1
-    2300000: SM_Cubicle
-    2300002: SM_DeskFileTray
-    2300004: SM_ModernKeyBoard
-    2300006: SM_ModernPC
-    2300008: SM_Mouse
-    2300010: SM_MousePad
-    2300012: SM_NewLamp
-    2300014: SM_OfficeChair
-    2300016: SM_SingleFileYellow
-    3300000: SM_Cubicle
-    3300002: SM_DeskFileTray
-    3300004: SM_ModernKeyBoard
-    3300006: SM_ModernPC
-    3300008: SM_Mouse
-    3300010: SM_MousePad
-    3300012: SM_NewLamp
-    3300014: SM_OfficeChair
-    3300016: SM_SingleFileYellow
-    4300000: SM_Cubicle
-    4300002: SM_MousePad
-    4300004: SM_Mouse
-    4300006: SM_OfficeChair
-    4300008: SM_DeskFileTray
-    4300010: SM_SingleFileYellow
-    4300012: SM_NewLamp
-    4300014: SM_ModernKeyBoard
-    4300016: SM_ModernPC
+    100000: SM_BreakChair1
+    100002: SM_BreakChair2
+    100004: SM_BreakChair3
+    100006: SM_BreakChair4
+    100008: SM_BreakTable
+    100010: //RootNode
+    400000: SM_BreakChair1
+    400002: SM_BreakChair2
+    400004: SM_BreakChair3
+    400006: SM_BreakChair4
+    400008: SM_BreakTable
+    400010: //RootNode
+    2100000: lambert1
+    2300000: SM_BreakChair1
+    2300002: SM_BreakChair2
+    2300004: SM_BreakChair3
+    2300006: SM_BreakChair4
+    2300008: SM_BreakTable
+    3300000: SM_BreakChair1
+    3300002: SM_BreakChair2
+    3300004: SM_BreakChair3
+    3300006: SM_BreakChair4
+    3300008: SM_BreakTable
+    4300000: SM_BreakChair4
+    4300002: SM_BreakChair3
+    4300004: SM_BreakChair2
+    4300006: SM_BreakChair1
+    4300008: SM_BreakTable
   externalObjects: {}
   materials:
     importMaterials: 1

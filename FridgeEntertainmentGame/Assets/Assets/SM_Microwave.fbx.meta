@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8b23c92eb8da3314c82b6acdea8052bb
+guid: ecedb6ab0c9083048aadaa233bfb461b
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,7 +8,7 @@ ModelImporter:
     2100000: lambert1
     2300000: //RootNode
     3300000: //RootNode
-    4300000: SM_ClosedCabinet
+    4300000: SM_Microwave
   externalObjects: {}
   materials:
     importMaterials: 1
