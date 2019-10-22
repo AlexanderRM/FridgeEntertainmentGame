@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: SeeThrough
-  m_Shader: {fileID: 4800000, guid: a25ad127b2a17c14b8cb6ed0656fb84d, type: 3}
+  m_Shader: {fileID: 4800000, guid: c6f689d8afc285346aadbc7d3dbfaf78, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0

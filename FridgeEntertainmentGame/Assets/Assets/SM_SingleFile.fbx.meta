@@ -1,49 +1,14 @@
 fileFormatVersion: 2
-guid: 8b23c92eb8da3314c82b6acdea8052bb
+guid: 9eec32b297934614091c7f498ff0c922
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: pCube1
-    100002: pCube2
-    100004: pCube3
-    100006: pCube4
-    100008: pTorus1
-    100010: pTorus2
-    100012: pTorus3
-    100014: SM_FileCabinet
-    100016: //RootNode
-    100018: SM_FileCabinet1
-    100020: transform1
-    100022: transform2
-    100024: transform3
-    100026: transform4
-    100028: transform5
-    100030: transform6
-    100032: transform7
-    400000: pCube1
-    400002: pCube2
-    400004: pCube3
-    400006: pCube4
-    400008: pTorus1
-    400010: pTorus2
-    400012: pTorus3
-    400014: //RootNode
-    400016: SM_FileCabinet
-    400018: SM_FileCabinet1
-    400020: transform1
-    400022: transform2
-    400024: transform3
-    400026: transform4
-    400028: transform5
-    400030: transform6
-    400032: transform7
-    2100000: lambert1
-    2300000: SM_FileCabinet1
-    2300002: //RootNode
-    3300000: SM_FileCabinet1
-    3300002: //RootNode
-    4300000: SM_FileCabinet1
-    4300002: SM_ClosedCabinet
+    100000: //RootNode
+    400000: //RootNode
+    2100000: lambert2
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: SM_SingleFile
   externalObjects: {}
   materials:
     importMaterials: 1
