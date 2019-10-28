@@ -32,9 +32,11 @@ public class ColorLerperCol : MonoBehaviour
     {
         if (collision.gameObject.name == colObjName && startTime == 0)
         {
-            coffee = true;
+            if (collision.GetComponent<TankController>().coffee == true) {
+                coffee = true;
 
-            startTime = Time.time;
+                startTime = Time.time;
+            }
         }
     }
 }
