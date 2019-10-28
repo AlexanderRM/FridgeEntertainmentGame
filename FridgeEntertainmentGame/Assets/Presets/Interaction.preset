@@ -2314,7 +2314,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: ShapeModule.m_Rotation.x
-    value: 0
+    value: 90
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: ShapeModule.m_Rotation.y
@@ -2602,7 +2602,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: ShapeModule.radius.value
-    value: 5
+    value: 1
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: ShapeModule.radius.mode
