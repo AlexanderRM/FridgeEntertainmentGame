@@ -17,7 +17,7 @@ public class RiddleCon : MonoBehaviour
         for (int i = 1; i != 5; i++)
         {
             people.Add(GameObject.Find("Person" + i));
-            items.Add(GameObject.Find("Item" + i));
+            items.Add(GameObject.Find("Bean" + i));
         }
 
         machineScript = coffeeMachine.GetComponent<CoffeeMachine>();
