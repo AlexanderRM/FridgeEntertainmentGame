@@ -38,6 +38,7 @@ public class ObjChangeCon : MonoBehaviour
     IEnumerator Wait()
     {
         // wait 2 seconds
+        prev.GetComponentInChildren<ParticleSystem>().Play();
         yield return new WaitForSeconds(waitSeconds);
         prev.SetActive(false);
         post.SetActive(true);
@@ -47,7 +48,6 @@ public class ObjChangeCon : MonoBehaviour
     {
         if (toggled == false)
         {
-            prev.GetComponentInChildren<ParticleSystem>().Play();
             coffee = true;
         }
     }
