@@ -36,10 +36,7 @@ public class Person : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (active == true)
-        {
             particle.Play();
-        }
     }
 
     void OnTriggerStay(Collider collider)
