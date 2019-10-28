@@ -14,7 +14,7 @@ public class RiddleCon : MonoBehaviour
     void Start()
     {
         // Loop through and collect our people and items
-        for (int i = 1; i != 5; i++)
+        for (int i = 1; i != 6; i++)
         {
             people.Add(GameObject.Find("Person" + i));
             items.Add(GameObject.Find("Bean" + i));
