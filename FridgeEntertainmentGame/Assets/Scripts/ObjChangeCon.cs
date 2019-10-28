@@ -15,6 +15,7 @@ public class ObjChangeCon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Set our values
        prev = controller.transform.GetChild(0).gameObject;
        post = controller.transform.GetChild(1).gameObject;
 
