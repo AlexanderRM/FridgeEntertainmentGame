@@ -13,7 +13,7 @@ public class RiddleCon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < 5; i++)
+        for (int i = 1; i != 5; i++)
         {
             people.Add(GameObject.Find("Person" + i));
             items.Add(GameObject.Find("Item" + i));
