@@ -17236,6 +17236,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 07500e8ad49dfad4ab1dee3f2868baa1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
     - target: {fileID: 400012, guid: 07500e8ad49dfad4ab1dee3f2868baa1, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.035056073
@@ -17255,10 +17258,6 @@ PrefabInstance:
     - target: {fileID: 400014, guid: 07500e8ad49dfad4ab1dee3f2868baa1, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.244
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 07500e8ad49dfad4ab1dee3f2868baa1, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07500e8ad49dfad4ab1dee3f2868baa1, type: 3}
@@ -18406,7 +18405,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632099632}
   serializedVersion: 6
-  lengthInSec: 1
+  lengthInSec: 0.07
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -18534,7 +18533,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5.5
+      scalar: 5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -19337,7 +19336,7 @@ ParticleSystem:
     m_BurstCount: 2
     m_Bursts:
     - serializedVersion: 2
-      time: 0.1
+      time: 0.05
       countCurve:
         serializedVersion: 2
         minMaxState: 0
@@ -19395,7 +19394,7 @@ ParticleSystem:
       repeatInterval: 0.01
       probability: 1
     - serializedVersion: 2
-      time: 0.25
+      time: 0.05
       countCurve:
         serializedVersion: 2
         minMaxState: 0
