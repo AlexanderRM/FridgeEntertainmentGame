@@ -34,9 +34,12 @@ public class Person : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider collider)
     {
+        if (collider.gameObject.name == colTargetName)
+        {
             particle.Play();
+        }
     }
 
     void OnTriggerStay(Collider collider)
@@ -57,8 +60,11 @@ public class Person : MonoBehaviour
         }
     }
 
-    void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider collider)
     {
-        particle.Stop();
+        if (collider.gameObject.name == colTargetName)
+        {
+            particle.Stop();
+        }
     }
 }
