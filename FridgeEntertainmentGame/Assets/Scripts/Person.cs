@@ -9,7 +9,7 @@ public class Person : MonoBehaviour
     public string colTargetName;
     public bool active = false;
     public bool solved = false;
-    string riddle = "test test";
+    public Beans bean;
     private TankController playerScript;
     private ParticleSystem particle;
 
@@ -53,6 +53,9 @@ public class Person : MonoBehaviour
             else if (active == true && Input.GetKeyDown(KeyCode.Return) == true)
             {
                 // Send Riddle
+
+                // Set bean active
+                bean.active = true;
             }
         }
     }

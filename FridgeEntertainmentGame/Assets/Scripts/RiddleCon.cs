@@ -33,7 +33,7 @@ public class RiddleCon : MonoBehaviour
             if (people[i].GetComponent<Person>().active == false)
             {
                 people[i].GetComponent<Person>().active = true;
-                items[i].GetComponent<Beans>().active = true;
+                people[i].GetComponent<Person>().bean = items[i].GetComponent<Beans>();
                 return;
             }
             // Check if this object is active and solved

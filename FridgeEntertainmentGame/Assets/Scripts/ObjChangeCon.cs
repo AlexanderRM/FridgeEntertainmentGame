@@ -21,7 +21,7 @@ public class ObjChangeCon : MonoBehaviour
 
         prev.SetActive(true);
         post.SetActive(false);
-        prev.GetComponent<ParticleSystem>().Stop();
+        prev.GetComponentInChildren<ParticleSystem>().Stop();
     }
 
     // Update is called once per frame
@@ -47,7 +47,7 @@ public class ObjChangeCon : MonoBehaviour
     {
         if (toggled == false)
         {
-            prev.GetComponent<ParticleSystem>().Play();
+            prev.GetComponentInChildren<ParticleSystem>().Play();
             coffee = true;
         }
     }
