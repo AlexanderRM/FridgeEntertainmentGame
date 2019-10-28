@@ -36,10 +36,11 @@ public class ObjChangeCon : MonoBehaviour
 
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         // play effect
         prev.SetActive(false);
         post.SetActive(true);
+        yield return new WaitForSeconds(1);
     }
 
     public void Change()

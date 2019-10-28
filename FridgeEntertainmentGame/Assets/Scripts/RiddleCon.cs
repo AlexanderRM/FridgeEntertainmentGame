@@ -27,7 +27,7 @@ public class RiddleCon : MonoBehaviour
     void Update()
     {
         // Loop through and check objects if active and toggle
-        for(int i = 0; i < people.Capacity; i++)
+        for(int i = 0; i < people.Count; i++)
         {
             // Check if current object is active
             if (people[i].GetComponent<Person>().active == false)
@@ -44,7 +44,7 @@ public class RiddleCon : MonoBehaviour
         }
 
         // check if the last item is solved
-        if(items[items.Capacity].GetComponent<Beans>().solved == true)
+        if(items[items.Count - 1].GetComponent<Beans>().solved == true)
         {
             machineScript.active = true;
         }
