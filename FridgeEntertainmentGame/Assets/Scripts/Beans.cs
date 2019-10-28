@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour
+public class Beans : MonoBehaviour
 {
     public bool active = false;
     public bool solved = false;
@@ -13,7 +13,7 @@ public class Item : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        person.GetComponent<Person>();
+        personScript = person.GetComponent<Person>();
     }
 
     // Update is called once per frame
