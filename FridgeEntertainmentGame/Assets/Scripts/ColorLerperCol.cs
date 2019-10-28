@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class ColorLerperCol : MonoBehaviour
 {
+    public GameObject player;
     public float speed = 1.0f;
     public Color startColor;
     public Color endColor;
     public string colObjName;
     private bool coffee = false;
+    private TankController playerScript;
     float startTime;
     private new Renderer renderer;
 
@@ -16,6 +18,7 @@ public class ColorLerperCol : MonoBehaviour
     void Start()
     {
         renderer = GetComponent<Renderer>();
+        playerScript = player.GetComponent<TankController>();
     }
 
     // Update is called once per frame
@@ -32,7 +35,7 @@ public class ColorLerperCol : MonoBehaviour
     {
         if (collision.gameObject.name == colObjName && startTime == 0)
         {
-            if (collision.GetComponent<TankController>().coffee == true) {
+            if (playerScript.coffee == true) {
                 coffee = true;
 
                 startTime = Time.time;
