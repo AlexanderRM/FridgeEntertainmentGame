@@ -23,7 +23,7 @@ public class ObjChangeTargets : MonoBehaviour
             Component[] children = gameObject.GetComponentsInChildren<ObjChangeCon>(true);
             foreach (ObjChangeCon child in children)
             {
-                child.GetComponent<ObjChangeCon>().Change();
+                child.Change();
             }
         }
     }
