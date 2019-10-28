@@ -13,7 +13,7 @@ public class Beans : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        person.GetComponent<Person>();
+        personScript = person.GetComponent<Person>();
     }
 
     // Update is called once per frame

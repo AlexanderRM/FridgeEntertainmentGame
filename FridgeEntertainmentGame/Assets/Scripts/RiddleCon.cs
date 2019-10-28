@@ -33,7 +33,7 @@ public class RiddleCon : MonoBehaviour
             if (people[i].GetComponent<Person>().active == false)
             {
                 people[i].GetComponent<Person>().active = true;
-                items[i].GetComponent<Item>().active = true;
+                items[i].GetComponent<Beans>().active = true;
                 return;
             }
             // Check if this object is active and solved
@@ -44,7 +44,7 @@ public class RiddleCon : MonoBehaviour
         }
 
         // check if the last item is solved
-        if(items[items.Capacity].GetComponent<Item>().solved == true)
+        if(items[items.Capacity].GetComponent<Beans>().solved == true)
         {
             machineScript.active = true;
         }
