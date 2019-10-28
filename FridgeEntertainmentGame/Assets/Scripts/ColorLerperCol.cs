@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ColorLerperCol : MonoBehaviour
 {
+    // Declare our values
     public GameObject player;
     public float speed = 1.0f;
     public Color startColor;
@@ -17,6 +18,7 @@ public class ColorLerperCol : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Set our values
         renderer = GetComponent<Renderer>();
         playerScript = player.GetComponent<TankController>();
     }

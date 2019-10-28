@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Person : MonoBehaviour
 {
+    // Declare values
     public GameObject player;
     public string colTargetName;
     public bool active = false;
@@ -17,6 +18,7 @@ public class Person : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Set values
         playerScript = player.GetComponent<TankController>();
         particle = GetComponent<ParticleSystem>();
 
