@@ -6,6 +6,7 @@ public class ObjChangeCon : MonoBehaviour
 {
     // Declare values
     public GameObject controller;
+    public float waitSeconds = 2f;
     GameObject prev;
     GameObject post;
     
@@ -36,11 +37,10 @@ public class ObjChangeCon : MonoBehaviour
 
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(2);
-        // play effect
+        // wait 2 seconds
+        yield return new WaitForSeconds(waitSeconds);
         prev.SetActive(false);
         post.SetActive(true);
-        yield return new WaitForSeconds(1);
     }
 
     public void Change()
