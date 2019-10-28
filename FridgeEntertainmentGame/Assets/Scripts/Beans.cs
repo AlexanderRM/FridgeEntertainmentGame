@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour
+public class Beans : MonoBehaviour
 {
     public bool active = false;
     public bool solved = false;
