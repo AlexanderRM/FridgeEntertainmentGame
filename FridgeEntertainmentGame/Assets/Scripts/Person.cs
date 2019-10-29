@@ -6,6 +6,7 @@ public class Person : MonoBehaviour
 {
     // Declare values
     public GameObject player;
+    public GameObject particleEffect;
     public string colTargetName;
     public bool active = false;
     public bool solved = false;
@@ -20,7 +21,7 @@ public class Person : MonoBehaviour
     {
         // Set values
         playerScript = player.GetComponent<TankController>();
-        particle = GetComponent<ParticleSystem>();
+        particle = particleEffect.GetComponent<ParticleSystem>();
 
         particle.Stop();
     }
