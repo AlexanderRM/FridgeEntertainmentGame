@@ -13,10 +13,11 @@ public class RiddleCon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < 5; i++)
+        // Loop through and collect our people and items
+        for (int i = 1; i != 6; i++)
         {
             people.Add(GameObject.Find("Person" + i));
-            items.Add(GameObject.Find("Item" + i));
+            items.Add(GameObject.Find("Bean" + i));
         }
 
         machineScript = coffeeMachine.GetComponent<CoffeeMachine>();
@@ -25,21 +26,25 @@ public class RiddleCon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for(int i = 0; i < people.Capacity; i++)
+        // Loop through and check objects if active and toggle
+        for(int i = 0; i < people.Count; i++)
         {
+            // Check if current object is active
             if (people[i].GetComponent<Person>().active == false)
             {
                 people[i].GetComponent<Person>().active = true;
-                items[i].GetComponent<Item>().active = true;
+                people[i].GetComponent<Person>().bean = items[i].GetComponent<Beans>();
                 return;
             }
+            // Check if this object is active and solved
             else if (people[i].GetComponent<Person>().active == true && people[i].GetComponent<Person>().solved == false)
             {
                 return;
             }
         }
 
-        if(items[items.Capacity].GetComponent<Item>().solved == true)
+        // check if the last item is solved
+        if(items[items.Count - 1].GetComponent<Beans>().solved == true)
         {
             machineScript.active = true;
         }

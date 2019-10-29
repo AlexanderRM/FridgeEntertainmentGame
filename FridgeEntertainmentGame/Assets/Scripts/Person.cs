@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Person : MonoBehaviour
 {
+    // Declare values
     public GameObject player;
+    public GameObject particleEffect;
     public string colTargetName;
     public bool active = false;
     public bool solved = false;
-    string riddle = "test test";
+    public Beans bean;
     private TankController playerScript;
     private ParticleSystem particle;
 
@@ -17,8 +19,9 @@ public class Person : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Set values
         playerScript = player.GetComponent<TankController>();
-        particle = GetComponent<ParticleSystem>();
+        particle = particleEffect.GetComponent<ParticleSystem>();
 
         particle.Stop();
     }
@@ -32,9 +35,9 @@ public class Person : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider collider)
     {
-        if (active == true)
+        if (collider.gameObject.name == colTargetName)
         {
             particle.Play();
         }
@@ -51,12 +54,18 @@ public class Person : MonoBehaviour
             else if (active == true && Input.GetKeyDown(KeyCode.Return) == true)
             {
                 // Send Riddle
+
+                // Set bean active
+                bean.active = true;
             }
         }
     }
 
-    void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider collider)
     {
-        particle.Stop();
+        if (collider.gameObject.name == colTargetName)
+        {
+            particle.Stop();
+        }
     }
 }

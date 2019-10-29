@@ -6,8 +6,10 @@ public class ObjChangeCon : MonoBehaviour
 {
     // Declare values
     public GameObject controller;
+    public float waitSeconds = 2f;
     GameObject prev;
     GameObject post;
+    ParticleSystem particles;
     
     bool coffee = false;
     bool toggled = false;
@@ -15,12 +17,14 @@ public class ObjChangeCon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Set our values
        prev = controller.transform.GetChild(0).gameObject;
        post = controller.transform.GetChild(1).gameObject;
 
         prev.SetActive(true);
         post.SetActive(false);
-        prev.GetComponent<ParticleSystem>().Stop();
+        particles = GetComponentInChildren<ParticleSystem>();
+        particles.Stop();
     }
 
     // Update is called once per frame
@@ -35,8 +39,8 @@ public class ObjChangeCon : MonoBehaviour
 
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(1);
-        // play effect
+        // wait 2 seconds
+        yield return new WaitForSecondsRealtime(waitSeconds);
         prev.SetActive(false);
         post.SetActive(true);
     }
@@ -45,7 +49,7 @@ public class ObjChangeCon : MonoBehaviour
     {
         if (toggled == false)
         {
-            prev.GetComponent<ParticleSystem>().Play();
+            particles.Play();
             coffee = true;
         }
     }

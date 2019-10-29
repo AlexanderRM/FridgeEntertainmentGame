@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    public bool active = false;
-    public bool solved = false;
+    public GameObject particleEffect;
     public string colTargetName;
-    public GameObject person;
-    private Person personScript;
+
+    private ParticleSystem particle;
 
     // Start is called before the first frame update
     void Start()
     {
-        person.GetComponent<Person>();
+        particle = particleEffect.GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -22,15 +21,24 @@ public class Item : MonoBehaviour
         
     }
 
-    void OnTriggerStay(Collider collider)
+    void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.name == colTargetName)
         {
-            if (active == true && Input.GetKeyDown(KeyCode.Return) == true)
-            {
-                personScript.solved = true;
-                solved = true;
-            }
+            particle.Play();
+        }
+    }
+
+    void OnTriggerStay(Collider collider)
+    {
+        // Dialogue
+    }
+
+    void OnTriggerExit(Collider collider)
+    {
+        if (collider.gameObject.name == colTargetName)
+        {
+            particle.Stop();
         }
     }
 }

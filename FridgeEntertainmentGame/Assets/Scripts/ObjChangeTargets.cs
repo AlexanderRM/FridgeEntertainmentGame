@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class ObjChangeTargets : MonoBehaviour
 {
+    // Declare values
     public GameObject person;
     Person personScript;
 
     // Start is called before the first frame update
     void Start()
     {
+        // Set values
         personScript = person.GetComponent<Person>();
     }
 
@@ -21,7 +23,7 @@ public class ObjChangeTargets : MonoBehaviour
             Component[] children = gameObject.GetComponentsInChildren<ObjChangeCon>(true);
             foreach (ObjChangeCon child in children)
             {
-                child.GetComponent<ObjChangeCon>().Change();
+                child.Change();
             }
         }
     }
