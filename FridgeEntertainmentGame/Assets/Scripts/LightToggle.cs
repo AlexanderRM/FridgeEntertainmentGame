@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class LightToggle : MonoBehaviour
 {
-    new Light light;
+    public Light oldLight;
+    public Light newLight;
     public Person personScript;
 
     // Start is called before the first frame update
     void Start()
     {
-        light = GetComponent<Light>();
-        light.enabled = false;
+        oldLight.enabled = true;
+        newLight.enabled = false;
     }
 
     // Update is called once per frame
@@ -19,7 +20,8 @@ public class LightToggle : MonoBehaviour
     {
         if(personScript.coffee == true)
         {
-            light.enabled = true;
+            newLight.enabled = true;
+            oldLight.enabled = false;
         }
     }
 }
