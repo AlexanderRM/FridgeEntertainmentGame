@@ -5,8 +5,8 @@ using VIDE_Data;
 
 public class TankController : MonoBehaviour
 {
+    // Set public values
     public string playerName = "VIDE User";
-
     public float speed = 3.0f;
     public float rotationSpeed = 90.0f;
     public bool coffee = false;
@@ -26,9 +26,11 @@ public class TankController : MonoBehaviour
 
     private void Update()
     {
+        // Get our movement
         float rotateTank = Input.GetAxis("Horizontal");
         float moveTank = Input.GetAxis("Vertical");
 
+        // Check if users not in dialogue
         if (!VD.isActive)
         {
             GetComponent<Rigidbody>().velocity = transform.forward * speed * moveTank;
@@ -44,6 +46,7 @@ public class TankController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        // Check if component is there
         if (other.GetComponent<VIDE_Assign>() != null)
             inTrigger = other.GetComponent<VIDE_Assign>();
     }
@@ -65,9 +68,7 @@ public class TankController : MonoBehaviour
 
         /* If we are not in a trigger, try with raycasts */
 
-        RaycastHit rHit;
-
-        if (Physics.Raycast(transform.position, transform.forward, out rHit, 2))
+        if (Physics.Raycast(transform.position, transform.forward, out RaycastHit rHit, 2))
         {
             //Lets grab the NPC's VIDE_Assign script, if there's any
             VIDE_Assign assigned;
