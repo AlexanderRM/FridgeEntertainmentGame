@@ -11,7 +11,6 @@ public class LightToggle : MonoBehaviour
     void Start()
     {
         light = GetComponent<Light>();
-        personScript = GetComponent<Person>();
         light.enabled = false;
     }
 
