@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using VIDE_Data;
 
 public class Walking : MonoBehaviour
 {
@@ -11,16 +12,26 @@ public class Walking : MonoBehaviour
     {
         anim = GetComponent<Animator>(); 
     }
+
+    
     
     void Update()
     {
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        if (VD.isActive == false)
         {
-            anim.SetBool("NotWalking", true);
+            if (anim.GetBool("walking") == false)
+            {
+                anim.Play("Idle");
+            }
+            else if (Input.GetKey(KeyCode.W))
+            {
+                anim.SetBool("walking", true);
+            }
+            else if (Input.GetKeyUp(KeyCode.W) && (anim.GetBool("walking") == true))
+            {
+                anim.SetBool("walkToStop", true);
+            }   
         }
-        else
-        {
-            anim.SetBool("NotWalking", false);
-        }
+        
     }
 }

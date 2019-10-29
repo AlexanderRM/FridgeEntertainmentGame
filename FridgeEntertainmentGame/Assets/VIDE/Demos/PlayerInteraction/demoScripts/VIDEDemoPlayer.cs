@@ -94,7 +94,8 @@ public class VIDEDemoPlayer : MonoBehaviour
             if (assigned.alias == "QuestUI")
             {
                 questUI.Interact(); //Begins interaction with Quest Chart
-            } else
+            }
+            else
             {
                 diagUI.Interact(assigned); //Begins interaction
             }
