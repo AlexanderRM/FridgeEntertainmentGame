@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.45079708, g: 0.50072575, b: 0.57473916, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -175,12 +175,13 @@ MonoBehaviour:
   - Example4_dialogue
   - Item_LookUp
   - Laura
+  - Me
   - MrCube
   - NPCOnly
   - QuestChartDemo
   - TriggeredDude
   - Witch
-  assignedIndex: 11
+  assignedIndex: 12
   assignedID: 82073
   assignedDialogue: QuestChartDemo
   interactionCount: 0
@@ -2788,12 +2789,14 @@ MonoBehaviour:
   - Example4_dialogue
   - Item_LookUp
   - Laura
+  - Me
   - MrCube
+  - MrSinclair
   - NPCOnly
   - QuestChartDemo
   - TriggeredDude
   - Witch
-  assignedIndex: 13
+  assignedIndex: 15
   assignedID: 60771
   assignedDialogue: Witch
   interactionCount: 0
@@ -4683,6 +4686,7 @@ MonoBehaviour:
   - Example4_dialogue
   - Item_LookUp
   - Laura
+  - Me
   - MrCube
   - NPCOnly
   - QuestChartDemo
@@ -4697,7 +4701,7 @@ MonoBehaviour:
   defaultNPCSprite: {fileID: 21300000, guid: c438947a01291e34db8ab2df540dc13a, type: 3}
   defaultPlayerSprite: {fileID: 21300000, guid: 84a9114ab28f94e469a62b9feae04bf0,
     type: 3}
-  targetManager: {fileID: 0}
+  targetManager: {fileID: 1816617950}
   preload: 0
   notuptodate: 0
   startp: 0
