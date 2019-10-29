@@ -9,6 +9,7 @@ public class ObjChangeCon : MonoBehaviour
     public float waitSeconds = 2f;
     GameObject prev;
     GameObject post;
+    ParticleSystem particles;
     
     bool coffee = false;
     bool toggled = false;
@@ -22,7 +23,8 @@ public class ObjChangeCon : MonoBehaviour
 
         prev.SetActive(true);
         post.SetActive(false);
-        GetComponentInChildren<ParticleSystem>().Stop();
+        particles = GetComponentInChildren<ParticleSystem>();
+        particles.Stop();
     }
 
     // Update is called once per frame
@@ -47,7 +49,7 @@ public class ObjChangeCon : MonoBehaviour
     {
         if (toggled == false)
         {
-            GetComponentInChildren<ParticleSystem>().Play();
+            particles.Play();
             coffee = true;
         }
     }
