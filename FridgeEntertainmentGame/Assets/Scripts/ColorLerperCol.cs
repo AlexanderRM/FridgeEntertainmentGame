@@ -21,6 +21,7 @@ public class ColorLerperCol : MonoBehaviour
         // Set our values
         renderer = GetComponent<Renderer>();
         playerScript = player.GetComponent<TankController>();
+        renderer.material.color = startColor;
     }
 
     // Update is called once per frame
