@@ -12,26 +12,24 @@ public class Walking : MonoBehaviour
     {
         anim = GetComponent<Animator>(); 
     }
-
-    
     
     void Update()
     {
         if (VD.isActive == false)
         {
-            if (anim.GetBool("walking") == false)
-            {
-                anim.Play("Idle");
-            }
-            else if (Input.GetKey(KeyCode.W))
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
             {
                 anim.SetBool("walking", true);
             }
-            else if (Input.GetKeyUp(KeyCode.W) && (anim.GetBool("walking") == true))
+            else
             {
-                anim.SetBool("walkToStop", true);
-            }   
+                anim.SetBool("walking", false);
+            }
+
         }
-        
+        else
+        {
+            anim.SetBool("walking", false);
+        }
     }
 }
