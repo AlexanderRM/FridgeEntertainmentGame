@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
+    public GameObject particleEffect;
+    public string colTargetName;
+
     private ParticleSystem particle;
 
     // Start is called before the first frame update
     void Start()
     {
-        particle = GetComponent<ParticleSystem>();
+        particle = particleEffect.GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -18,9 +21,12 @@ public class Item : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider collider)
     {
+        if (collider.gameObject.name == colTargetName)
+        {
             particle.Play();
+        }
     }
 
     void OnTriggerStay(Collider collider)
@@ -28,8 +34,11 @@ public class Item : MonoBehaviour
         // Dialogue
     }
 
-    void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider collider)
     {
-        particle.Stop();
+        if (collider.gameObject.name == colTargetName)
+        {
+            particle.Stop();
+        }
     }
 }
