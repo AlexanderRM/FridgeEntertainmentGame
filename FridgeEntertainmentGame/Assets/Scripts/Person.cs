@@ -20,7 +20,7 @@ public class Person : MonoBehaviour
     {
         // Set values
         playerScript = player.GetComponent<TankController>();
-        particle = GetComponentInChildren<ParticleSystem>();
+        particle = GetComponent<ParticleSystem>();
 
         particle.Stop();
     }
