@@ -738,6 +738,53 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7514665658570422748, guid: c6ea982f2c28c3646bf46357da4972db,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d176dd9174955d4da1f7d2ecb4d757d,
+        type: 3}
+    - target: {fileID: 7514665658570422748, guid: c6ea982f2c28c3646bf46357da4972db,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514665658570422748, guid: c6ea982f2c28c3646bf46357da4972db,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514665658570422748, guid: c6ea982f2c28c3646bf46357da4972db,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514665658622411746, guid: c6ea982f2c28c3646bf46357da4972db,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d176dd9174955d4da1f7d2ecb4d757d,
+        type: 3}
+    - target: {fileID: 7514665658622411746, guid: c6ea982f2c28c3646bf46357da4972db,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.45490196
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514665658622411746, guid: c6ea982f2c28c3646bf46357da4972db,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.03773582
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514665658622411746, guid: c6ea982f2c28c3646bf46357da4972db,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.03773582
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514665658622411746, guid: c6ea982f2c28c3646bf46357da4972db,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.03773582
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6ea982f2c28c3646bf46357da4972db, type: 3}
 --- !u!1 &72043125
@@ -10627,6 +10674,13 @@ MonoBehaviour:
   solved: 0
   bean: {fileID: 1054837862}
   coffee: 0
+  chatStart: 0
+  spokenAgain: 0
+  activeUnsolved: 0
+  notActive: 0
+  riddleSolved: 0
+  coffeeGive: 0
+  coffeeGiven: 0
 --- !u!1 &156529955 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: cd86f1e4bc809d54c946f20ac57f2169,
@@ -11043,6 +11097,13 @@ MonoBehaviour:
   solved: 0
   bean: {fileID: 1302765765}
   coffee: 0
+  chatStart: 0
+  spokenAgain: 0
+  activeUnsolved: 0
+  notActive: 0
+  riddleSolved: 0
+  coffeeGive: 0
+  coffeeGiven: 0
 --- !u!65 &236234002
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11410,6 +11471,13 @@ MonoBehaviour:
   solved: 0
   bean: {fileID: 1302765765}
   coffee: 0
+  chatStart: 0
+  spokenAgain: 0
+  activeUnsolved: 0
+  notActive: 0
+  riddleSolved: 0
+  coffeeGive: 0
+  coffeeGiven: 0
 --- !u!114 &242869745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22678,10 +22746,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.02525861
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 07500e8ad49dfad4ab1dee3f2868baa1, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 07500e8ad49dfad4ab1dee3f2868baa1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.329
@@ -22689,6 +22753,10 @@ PrefabInstance:
     - target: {fileID: 400014, guid: 07500e8ad49dfad4ab1dee3f2868baa1, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.244
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 07500e8ad49dfad4ab1dee3f2868baa1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07500e8ad49dfad4ab1dee3f2868baa1, type: 3}
@@ -39144,6 +39212,13 @@ MonoBehaviour:
   solved: 0
   bean: {fileID: 1436298313}
   coffee: 0
+  chatStart: 0
+  spokenAgain: 0
+  activeUnsolved: 0
+  notActive: 0
+  riddleSolved: 0
+  coffeeGive: 0
+  coffeeGiven: 0
 --- !u!1 &815926704 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 0ea4bbd9356aed64e8b720d381be1817,
@@ -54574,6 +54649,13 @@ MonoBehaviour:
   solved: 0
   bean: {fileID: 1114058538}
   coffee: 0
+  chatStart: 0
+  spokenAgain: 0
+  activeUnsolved: 0
+  notActive: 0
+  riddleSolved: 0
+  coffeeGive: 0
+  coffeeGiven: 0
 --- !u!114 &986047354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80080,6 +80162,13 @@ MonoBehaviour:
   solved: 0
   bean: {fileID: 1117091969}
   coffee: 0
+  chatStart: 0
+  spokenAgain: 0
+  activeUnsolved: 0
+  notActive: 0
+  riddleSolved: 0
+  coffeeGive: 0
+  coffeeGiven: 0
 --- !u!4 &1864811336 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400008, guid: d4e4edbd17bbcd141be2029a303592bb,

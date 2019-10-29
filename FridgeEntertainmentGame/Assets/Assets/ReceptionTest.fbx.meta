@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: f45890ae064aedc47bd255f076c7194e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: SM_Donuts
+    100004: SM_FlowerShelf1
+    100006: SM_ModernKeyBoard
+    100008: SM_ModernPC
+    100010: SM_Mouse
+    100012: SM_MousePad
+    100014: SM_New
+    100016: SM_NewLamp
+    100018: SM_OfficeChair
+    100020: SM_OldCubicle
+    100022: SM_OldPhone
+    100024: SM_Potplant
+    100026: SM_Potplant1
+    100028: SM_RecepetionDesk
+    100030: SM_SingleFileYellow
+    100032: SM_SingleFileYellow1
+    100034: SM_SingleFileYellow2
+    400000: //RootNode
+    400002: SM_Donuts
+    400004: SM_FlowerShelf1
+    400006: SM_ModernKeyBoard
+    400008: SM_ModernPC
+    400010: SM_Mouse
+    400012: SM_MousePad
+    400014: SM_New
+    400016: SM_NewLamp
+    400018: SM_OfficeChair
+    400020: SM_OldCubicle
+    400022: SM_OldPhone
+    400024: SM_Potplant
+    400026: SM_Potplant1
+    400028: SM_RecepetionDesk
+    400030: SM_SingleFileYellow
+    400032: SM_SingleFileYellow1
+    400034: SM_SingleFileYellow2
+    2100000: chair
+    2100002: ChairArm
+    2100004: Desk
+    2100006: OuterDesk
+    2100008: Black
+    2100010: Dial
+    2100012: mouse
+    2100014: pad
+    2100016: Comp
+    2100018: Screen
+    2100020: Keys
+    2100022: Keyboard
+    2100024: lambert25
+    2100026: blue
+    2100028: red
+    2100030: green
+    2100032: Pot
+    2100034: Brown
+    2100036: Pink
+    2100038: lambert7
+    2100040: lambert16
+    2300000: SM_Donuts
+    2300002: SM_FlowerShelf1
+    2300004: SM_ModernKeyBoard
+    2300006: SM_ModernPC
+    2300008: SM_Mouse
+    2300010: SM_MousePad
+    2300012: SM_NewLamp
+    2300014: SM_OfficeChair
+    2300016: SM_OldPhone
+    2300018: SM_Potplant
+    2300020: SM_Potplant1
+    2300022: SM_RecepetionDesk
+    2300024: SM_SingleFileYellow
+    2300026: SM_SingleFileYellow1
+    2300028: SM_SingleFileYellow2
+    3300000: SM_Donuts
+    3300002: SM_FlowerShelf1
+    3300004: SM_ModernKeyBoard
+    3300006: SM_ModernPC
+    3300008: SM_Mouse
+    3300010: SM_MousePad
+    3300012: SM_NewLamp
+    3300014: SM_OfficeChair
+    3300016: SM_OldPhone
+    3300018: SM_Potplant
+    3300020: SM_Potplant1
+    3300022: SM_RecepetionDesk
+    3300024: SM_SingleFileYellow
+    3300026: SM_SingleFileYellow1
+    3300028: SM_SingleFileYellow2
+    4300000: SM_OfficeChair
+    4300002: SM_RecepetionDesk
+    4300004: SM_OldPhone
+    4300006: SM_Mouse
+    4300008: SM_MousePad
+    4300010: SM_ModernPC
+    4300012: SM_ModernKeyBoard
+    4300014: SM_NewLamp
+    4300016: SM_SingleFileYellow
+    4300018: SM_SingleFileYellow1
+    4300020: SM_SingleFileYellow2
+    4300022: SM_FlowerShelf1
+    4300024: SM_Potplant
+    4300026: SM_Potplant1
+    4300028: SM_Donuts
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
