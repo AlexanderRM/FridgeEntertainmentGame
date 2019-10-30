@@ -75,13 +75,13 @@ public class Person : MonoBehaviour
             }
 
             // check if player has coffee
-            if (playerScript.coffee == true && Input.GetKeyDown(KeyCode.Return) == true)
+            if (playerScript.coffee == true && Input.GetKeyDown(KeyCode.E) == true)
             {
                 coffee = true;
                 vide.overrideStartNode = coffeeGive;
             }
             // if active give riddle
-            else if (active == true && Input.GetKeyDown(KeyCode.Return) == true)
+            else if (active == true && Input.GetKeyDown(KeyCode.E) == true)
             {
                 vide.overrideStartNode = chatStart;
 
