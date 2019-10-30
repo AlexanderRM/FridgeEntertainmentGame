@@ -20,7 +20,14 @@ public class Walking : MonoBehaviour
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
             {
                 anim.SetBool("walking", true);
+                anim.SetBool("walkToStop", false);
             }
+
+            else if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow))
+            {
+                anim.SetBool("walkToStop", true);
+            }
+
             else
             {
                 anim.SetBool("walking", false);
@@ -30,6 +37,7 @@ public class Walking : MonoBehaviour
         else
         {
             anim.SetBool("walking", false);
+            anim.SetBool("walkToStop", false);
         }
     }
 }
