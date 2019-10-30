@@ -22,15 +22,15 @@ public class Walking : MonoBehaviour
                 anim.SetBool("walking", true);
                 anim.SetBool("walkToStop", false);
             }
-
             else if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow))
             {
                 anim.SetBool("walkToStop", true);
+                anim.SetBool("walking", false);
             }
-
             else
             {
                 anim.SetBool("walking", false);
+                anim.SetBool("idle", true);
             }
 
         }
@@ -38,6 +38,7 @@ public class Walking : MonoBehaviour
         {
             anim.SetBool("walking", false);
             anim.SetBool("walkToStop", false);
+            anim.SetBool("idle", true);
         }
     }
 }
