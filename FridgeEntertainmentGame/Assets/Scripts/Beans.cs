@@ -26,7 +26,7 @@ public class Beans : MonoBehaviour
     {
         if (collider.gameObject.name == colTargetName)
         {
-            if (active == true && Input.GetKeyDown(KeyCode.Return) == true)
+            if (active == true && Input.GetKeyDown(KeyCode.E) == true)
             {
                 personScript.solved = true;
                 solved = true;
