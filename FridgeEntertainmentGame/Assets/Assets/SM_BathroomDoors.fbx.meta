@@ -1,16 +1,14 @@
 fileFormatVersion: 2
-guid: 74f91df2477f8b04799cb2a84a8972ef
+guid: 8133851e8b9138a4593e76cb18846df5
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
     2100000: lambert1
-    2100002: lambert2
     2300000: //RootNode
     3300000: //RootNode
-    4300000: SM_WaterCooler
-    4300002: SM_WaterCooler2
+    4300000: SM_BathroomDoors
   externalObjects: {}
   materials:
     importMaterials: 1
