@@ -10,8 +10,9 @@ public class UIManager : MonoBehaviour
     public GameObject dialogueContainer;
     public GameObject NPC_Container;
     public GameObject playerContainer;
-    public GameObject itemPopUp;
 
+    public Text Item_text;
+    public Text Beans_text;
     public Text NPC_Text;
     public Text NPC_label;
     public Image NPCSprite;
@@ -42,11 +43,6 @@ public class UIManager : MonoBehaviour
     //This begins the dialogue and progresses through it (Called by VIDEDemoPlayer.cs)
     public void Interact(VIDE_Assign dialogue)
     {
-        //Sometimes, we might want to check the ExtraVariables and VAs before moving forward
-        //We might want to modify the dialogue or perhaps go to another node, or dont start the dialogue at all
-        //In such cases, the function will return true
-        var doNotInteract = PreConditions(dialogue);
-        if (doNotInteract) return;
 
         if (!VD.isActive)
         {
@@ -65,6 +61,8 @@ public class UIManager : MonoBehaviour
         NPC_Text.text = "";
         NPC_label.text = "";
         playerLabel.text = "";
+        Item_text.text = "";
+        Beans_text.text = "";
 
         //First step is to call BeginDialogue, passing the required VIDE_Assign component 
         //This will store the first Node data in VD.nodeData
@@ -89,15 +87,7 @@ public class UIManager : MonoBehaviour
         {
             VD.Next(); //We call the next node and populate nodeData with new data. Will fire OnNodeChange.
         }
-        else
-        {
-            //Disable item popup and disable pause
-            if (itemPopUp.activeSelf)
-            {
-                dialoguePaused = false;
-                itemPopUp.SetActive(false);
-            }
-        }
+
     }
 
 
@@ -242,7 +232,6 @@ public class UIManager : MonoBehaviour
     //Called automatically because we subscribed to the OnEnd event
     void EndDialogue(VD.NodeData data)
     {
-        CheckTasks();
         VD.OnActionNode -= ActionHandler;
         VD.OnNodeChange -= UpdateUI;
         VD.OnEnd -= EndDialogue;
@@ -257,92 +246,12 @@ public class UIManager : MonoBehaviour
     {
         //If the script gets destroyed, let's make sure we force-end the dialogue to prevent errors
         //We do not save changes
-        CheckTasks();
         VD.OnActionNode -= ActionHandler;
         VD.OnNodeChange -= UpdateUI;
         VD.OnEnd -= EndDialogue;
         if (dialogueContainer != null)
             dialogueContainer.SetActive(false);
         VD.EndDialogue();
-    }
-
-
-
-    #region DIALOGUE CONDITIONS 
-
-    //DIALOGUE CONDITIONS --------------------------------------------
-
-    //When this returns true, it means that we did something that alters the progression of the dialogue
-    //And we don't want to call Next() this time
-    bool PreConditions(VIDE_Assign dialogue)
-    {
-        var data = VD.nodeData;
-
-        if (VD.isActive) //Stuff we check while the dialogue is active
-        {
-            //Check for extra variables
-            //This one finds a key named "item" which has the value of the item thats gonna be given
-            //If there's an 'item' key, then we will assume there's also an 'itemLine' key and use it
-            if (!data.isPlayer)
-            {
-                if (data.extraVars.ContainsKey("item") && !data.dirty)
-                {
-                    if (data.commentIndex == (int)data.extraVars["itemLine"])
-                    {
-                        if (data.extraVars.ContainsKey("item++")) //If we have this key, we use it to increment the value of 'item' by 'item++'
-                        {
-                            Dictionary<string, object> newVars = data.extraVars; //Clone the current extraVars content
-                            int newItem = (int)newVars["item"]; //Retrieve the value we want to change
-                            newItem += (int)data.extraVars["item++"]; //Change it as we desire
-                            newVars["item"] = newItem; //Set it back   
-                            VD.SetExtraVariables(25, newVars); //Send newVars through UpdateExtraVariable method
-                        }
-
-                        //If it's CrazyCap, check his stock before continuing
-                        //If out of stock, change override start node
-                        if (VD.assigned.alias == "CrazyCap")
-                            if ((int)data.extraVars["item"] + 1 >= player.demo_Items.Count)
-                                VD.assigned.overrideStartNode = 28;
-
-
-                        if (!player.demo_ItemInventory.Contains(player.demo_Items[(int)data.extraVars["item"]]))
-                        {
-                            GiveItem((int)data.extraVars["item"]);
-                            return true;
-                        }
-                    }
-                }
-            }
-            else
-            {
-                if (data.extraVars.ContainsKey("outCondition"))
-                {
-                    if (data.extraVars.ContainsKey("condInfo"))
-                    {
-                        int[] nodeIDs = VD.ToIntArray((string)data.extraVars["outCondition"]);
-                        if (VD.assigned.interactionCount < nodeIDs.Length)
-                            VD.SetNode(nodeIDs[VD.assigned.interactionCount]);
-                        else
-                            VD.SetNode(nodeIDs[nodeIDs.Length - 1]);
-                        return true;
-                    }
-                }
-
-            }
-        }
-        else //Stuff we do right before the dialogue begins
-        {
-            //Get the item from CrazyCap to trigger this one on Charlie
-            if (dialogue.alias == "Charlie")
-            {
-                if (player.demo_ItemInventory.Count > 0 && dialogue.overrideStartNode == -1)
-                {
-                    dialogue.overrideStartNode = 16;
-                    return false;
-                }
-            }
-        }
-        return false;
     }
 
     //Conditions we check after VD.Next was called but before we update the UI
@@ -380,10 +289,10 @@ public class UIManager : MonoBehaviour
             data.comments[data.commentIndex] = data.comments[data.commentIndex].Replace("[NAME]", VD.assigned.gameObject.name);
 
         if (data.comments[data.commentIndex].Contains("[WEAPON]"))
-            data.comments[data.commentIndex] = data.comments[data.commentIndex].Replace("[WEAPON]", player.demo_ItemInventory[0].ToLower());
-    }
+        {
+        }
 
-    #endregion
+    }
 
     #region EVENTS AND HANDLERS
 
@@ -398,16 +307,6 @@ public class UIManager : MonoBehaviour
     void ActionHandler(int actionNodeID)
     {
         //Debug.Log("ACTION TRIGGERED: " + actionNodeID.ToString());
-    }
-
-    //Adds item to demo inventory, shows item popup, and pauses dialogue
-    void GiveItem(int itemIndex)
-    {
-        player.demo_ItemInventory.Add(player.demo_Items[itemIndex]);
-        itemPopUp.SetActive(true);
-        string text = "You've got a <color=yellow>" + player.demo_Items[itemIndex] + "</color>!";
-        itemPopUp.transform.GetChild(0).GetComponent<Text>().text = text;
-        dialoguePaused = true;
     }
 
     IEnumerator DrawText(string text, float time)
@@ -447,21 +346,8 @@ public class UIManager : MonoBehaviour
         animatingText = false;
     }
 
-    //Check task progression
-    void CheckTasks()
-    {
-        if (player.demo_ItemInventory.Count == 5)
-            QuestChartDemo.SetQuest(2, false);
-
-        QuestChartDemo.CheckTaskCompletion(VD.nodeData);
-    }
-
     #endregion
 
     //Utility note: If you're on MonoDevelop. Go to Tools > Options > General and enable code folding.
-    //That way you can exapnd and collapse the regions and methods
-
-
-
-
+    //That way you can exapnd and collapse the regions and method
 }

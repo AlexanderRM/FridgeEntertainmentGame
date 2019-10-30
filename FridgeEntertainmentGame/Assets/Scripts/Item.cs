@@ -6,8 +6,9 @@ public class Item : MonoBehaviour
 {
     public GameObject particleEffect;
     public string colTargetName;
-
+    private Person personScript;
     private ParticleSystem particle;
+    private UIManager dialogue;
 
     // Start is called before the first frame update
     void Start()
@@ -27,11 +28,6 @@ public class Item : MonoBehaviour
         {
             particle.Play();
         }
-    }
-
-    void OnTriggerStay(Collider collider)
-    {
-        // Dialogue
     }
 
     void OnTriggerExit(Collider collider)
