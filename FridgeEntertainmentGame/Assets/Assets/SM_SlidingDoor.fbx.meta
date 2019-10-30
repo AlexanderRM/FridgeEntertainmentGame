@@ -1,16 +1,21 @@
 fileFormatVersion: 2
-guid: 74f91df2477f8b04799cb2a84a8972ef
+guid: 11bb87d9599574a43a54e55bbe27ff2b
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: SM_DoorTracks
+    100002: SM_SlidingDoor
+    100004: //RootNode
+    400000: SM_DoorTracks
+    400002: SM_SlidingDoor
+    400004: //RootNode
     2100000: lambert1
-    2100002: lambert2
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: SM_WaterCooler
-    4300002: SM_WaterCooler2
+    2300000: SM_DoorTracks
+    2300002: SM_SlidingDoor
+    3300000: SM_DoorTracks
+    3300002: SM_SlidingDoor
+    4300000: SM_SlidingDoor
+    4300002: SM_DoorTracks
   externalObjects: {}
   materials:
     importMaterials: 1

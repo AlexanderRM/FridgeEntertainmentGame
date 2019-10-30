@@ -1,16 +1,21 @@
 fileFormatVersion: 2
-guid: 74f91df2477f8b04799cb2a84a8972ef
+guid: 0e9ebf700aaf0d14991633ff248ab2b3
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: SM_ConferenceDoorFrame
+    100004: SM_GlassDoor
     400000: //RootNode
+    400002: SM_ConferenceDoorFrame
+    400004: SM_GlassDoor
     2100000: lambert1
-    2100002: lambert2
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: SM_WaterCooler
-    4300002: SM_WaterCooler2
+    2300000: SM_ConferenceDoorFrame
+    2300002: SM_GlassDoor
+    3300000: SM_ConferenceDoorFrame
+    3300002: SM_GlassDoor
+    4300000: SM_GlassDoor
+    4300002: SM_ConferenceDoorFrame
   externalObjects: {}
   materials:
     importMaterials: 1
