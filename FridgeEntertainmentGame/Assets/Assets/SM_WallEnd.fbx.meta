@@ -1,41 +1,31 @@
 fileFormatVersion: 2
-guid: f9aa3d1ccc76d4c4d832b1f52c821989
+guid: 98c30d60747340f45923475f759cf9cb
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Coffee_Cup
-    100004: Coffee_Cup1
-    100006: Coffee_Cup2
-    100008: Coffee_Cup3
-    100010: Coffee_Machine
-    100012: transform1
+    100002: Powerpoint
+    100004: Powerpoint1
+    100006: Wall
     400000: //RootNode
-    400002: Coffee_Cup
-    400004: Coffee_Cup1
-    400006: Coffee_Cup2
-    400008: Coffee_Cup3
-    400010: Coffee_Machine
-    400012: transform1
+    400002: Powerpoint
+    400004: Powerpoint1
+    400006: Wall
     2100000: lambert1
+    2100002: lambert2
+    2100004: lambert3
     2300000: //RootNode
-    2300002: Coffee_Cup
-    2300004: Coffee_Cup1
-    2300006: Coffee_Cup2
-    2300008: Coffee_Cup3
-    2300010: Coffee_Machine
+    2300002: Powerpoint
+    2300004: Powerpoint1
+    2300006: Wall
     3300000: //RootNode
-    3300002: Coffee_Cup
-    3300004: Coffee_Cup1
-    3300006: Coffee_Cup2
-    3300008: Coffee_Cup3
-    3300010: Coffee_Machine
-    4300000: SM_CoffeeMachine
-    4300002: Coffee_Cup
-    4300004: Coffee_Cup1
-    4300006: Coffee_Cup2
-    4300008: Coffee_Cup3
-    4300010: Coffee_Machine
+    3300002: Powerpoint
+    3300004: Powerpoint1
+    3300006: Wall
+    4300000: SM_WallEnd
+    4300002: Powerpoint
+    4300004: Wall
+    4300006: Powerpoint1
   externalObjects: {}
   materials:
     importMaterials: 1
