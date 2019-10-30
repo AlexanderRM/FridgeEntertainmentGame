@@ -31,6 +31,7 @@ public class Walking : MonoBehaviour
             {
                 anim.SetBool("walking", false);
                 anim.SetBool("idle", true);
+                //anim.StopPlayback("Walk Cycle");
             }
 
         }
