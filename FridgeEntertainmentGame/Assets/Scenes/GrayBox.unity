@@ -39897,6 +39897,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73829a3aa195ba649a78a646559e51a2, type: 3}
+--- !u!1 &681643619 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100110, guid: 2810ff573f6a16a47b2f2804f5e2a0b6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1797550967}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &681643620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681643619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6730fd612e19654b8c238c9a3e6bd38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  script: {fileID: 815416575}
 --- !u!1 &684287046
 GameObject:
   m_ObjectHideFlags: 0
@@ -56221,11 +56240,8 @@ MonoBehaviour:
   coffee: 0
   player: {fileID: 945225920}
   diagUI: {fileID: 1950257304}
-  questUI: {fileID: 0}
   inTrigger: {fileID: 0}
   walkCycle: {fileID: 945225924}
-  demo_Items: []
-  demo_ItemInventory: []
 --- !u!54 &945225922
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -97007,7 +97023,6 @@ MonoBehaviour:
   dialogueContainer: {fileID: 699280722}
   NPC_Container: {fileID: 538078342}
   playerContainer: {fileID: 1806196043}
-  itemPopUp: {fileID: 0}
   NPC_Text: {fileID: 205580032}
   NPC_label: {fileID: 218223923}
   NPCSprite: {fileID: 2028739159}

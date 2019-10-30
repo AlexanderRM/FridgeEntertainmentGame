@@ -7,7 +7,7 @@ public class Item : MonoBehaviour
 {
     public GameObject particleEffect;
     public string colTargetName;
-
+    private Person personScript;
     private ParticleSystem particle;
     private VIDE_Assign vide;
 
@@ -30,11 +30,6 @@ public class Item : MonoBehaviour
         {
             particle.Play();
         }
-    }
-
-    void OnTriggerStay(Collider collider)
-    {
-        // Dialogue
     }
 
     void OnTriggerExit(Collider collider)
