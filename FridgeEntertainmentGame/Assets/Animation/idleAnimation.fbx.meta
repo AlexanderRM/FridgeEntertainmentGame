@@ -1,0 +1,275 @@
+fileFormatVersion: 2
+guid: bc4ffabaab1e1ee47bfcaa1e9d5597cc
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Ankle_L_IK
+    100002: Ankle_L_Jnt
+    100004: Ankle_R_IK
+    100006: Ankle_R_Jnt
+    100008: Clavicle_L_Ctrl
+    100010: Clavicle_L_Jnt
+    100012: Clavicle_R_Ctrl
+    100014: Clavicle_R_Jnt
+    100016: Cog_Ctrl
+    100018: COG_Jnt
+    100020: Controls_Grp
+    100022: Elbow_L_Ctrl
+    100024: Elbow_L_Jnt
+    100026: Elbow_R_Ctrl
+    100028: Elbow_R_Jnt
+    100030: Foot_L_Ctrl
+    100032: Foot_L_Grp
+    100034: Foot_L_IK
+    100036: Foot_L_Jnt
+    100038: Foot_R_Ctrl
+    100040: Foot_R_Grp
+    100042: Foot_R_IK
+    100044: Foot_R_Jnt
+    100046: Global_Ctrl
+    100048: Head_Ctrl
+    100050: Head_Jnt
+    100052: Heelpeel_L_Ctrl
+    100054: Heelpeel_L_Grp
+    100056: Heelpeel_R_Ctrl
+    100058: Heelpeel_R_Grp
+    100060: Hip_Ctrl
+    100062: Hip_L_Jnt
+    100064: Hip_R_Jnt
+    100066: //RootNode
+    100068: Joint_Grp
+    100070: Knee_L_Jnt
+    100072: Knee_L_PV_Ctrl
+    100074: Knee_R_Jnt
+    100076: Knee_R_PV_Ctrl
+    100078: LOC_L_Hip
+    100080: LOC_R_Hip
+    100082: Lower_Back_Ctrl
+    100084: Lower_Back_Jnt
+    100086: Mid_Back_Ctrl
+    100088: Mid_Back_Jnt
+    100090: Middle_Finger_Ctrl
+    100092: Neck_Ctrl
+    100094: Neck_Jnt
+    100096: Pinkie_Finger_Ctrl
+    100098: Pinkie_Finger_Ctrl 1
+    100100: Pointer_Finger_Ctrl
+    100102: Pointer_Finger_Ctrl 1
+    100104: polySurface1
+    100106: Ring_Finger_Ctrl
+    100108: Ring_Finger_Ctrl 1
+    100110: Root_Jnt
+    100112: Scale_Grp
+    100114: Shoulder_L_Ctrl
+    100116: Shoulder_L_Jnt
+    100118: Shoulder_R_Ctrl
+    100120: Shoulder_R_Jnt
+    100122: Toe_L_Ctrl
+    100124: Toe_L_Grp
+    100126: Toe_L_IK
+    100128: Toe_L_Jnt
+    100130: Toe_R_Ctrl
+    100132: Toe_R_Grp
+    100134: Toe_R_IK
+    100136: Toe_R_Jnt
+    100138: Upper_Back_Ctrl
+    100140: Upper_Back_Jnt
+    100142: Wrist_L_Ctrl
+    100144: Wrist_L_Jnt
+    100146: Wrist_R_Ctrl1
+    100148: Wrist_R_Jnt
+    400000: Ankle_L_IK
+    400002: Ankle_L_Jnt
+    400004: Ankle_R_IK
+    400006: Ankle_R_Jnt
+    400008: Clavicle_L_Ctrl
+    400010: Clavicle_L_Jnt
+    400012: Clavicle_R_Ctrl
+    400014: Clavicle_R_Jnt
+    400016: Cog_Ctrl
+    400018: COG_Jnt
+    400020: Controls_Grp
+    400022: Elbow_L_Ctrl
+    400024: Elbow_L_Jnt
+    400026: Elbow_R_Ctrl
+    400028: Elbow_R_Jnt
+    400030: Foot_L_Ctrl
+    400032: Foot_L_Grp
+    400034: Foot_L_IK
+    400036: Foot_L_Jnt
+    400038: Foot_R_Ctrl
+    400040: Foot_R_Grp
+    400042: Foot_R_IK
+    400044: Foot_R_Jnt
+    400046: Global_Ctrl
+    400048: Head_Ctrl
+    400050: Head_Jnt
+    400052: Heelpeel_L_Ctrl
+    400054: Heelpeel_L_Grp
+    400056: Heelpeel_R_Ctrl
+    400058: Heelpeel_R_Grp
+    400060: Hip_Ctrl
+    400062: Hip_L_Jnt
+    400064: Hip_R_Jnt
+    400066: //RootNode
+    400068: Joint_Grp
+    400070: Knee_L_Jnt
+    400072: Knee_L_PV_Ctrl
+    400074: Knee_R_Jnt
+    400076: Knee_R_PV_Ctrl
+    400078: LOC_L_Hip
+    400080: LOC_R_Hip
+    400082: Lower_Back_Ctrl
+    400084: Lower_Back_Jnt
+    400086: Mid_Back_Ctrl
+    400088: Mid_Back_Jnt
+    400090: Middle_Finger_Ctrl
+    400092: Neck_Ctrl
+    400094: Neck_Jnt
+    400096: Pinkie_Finger_Ctrl
+    400098: Pinkie_Finger_Ctrl 1
+    400100: Pointer_Finger_Ctrl
+    400102: Pointer_Finger_Ctrl 1
+    400104: polySurface1
+    400106: Ring_Finger_Ctrl
+    400108: Ring_Finger_Ctrl 1
+    400110: Root_Jnt
+    400112: Scale_Grp
+    400114: Shoulder_L_Ctrl
+    400116: Shoulder_L_Jnt
+    400118: Shoulder_R_Ctrl
+    400120: Shoulder_R_Jnt
+    400122: Toe_L_Ctrl
+    400124: Toe_L_Grp
+    400126: Toe_L_IK
+    400128: Toe_L_Jnt
+    400130: Toe_R_Ctrl
+    400132: Toe_R_Grp
+    400134: Toe_R_IK
+    400136: Toe_R_Jnt
+    400138: Upper_Back_Ctrl
+    400140: Upper_Back_Jnt
+    400142: Wrist_L_Ctrl
+    400144: Wrist_L_Jnt
+    400146: Wrist_R_Ctrl1
+    400148: Wrist_R_Jnt
+    2100000: blinn1
+    4300000: polySurface1
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: polySurface1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: d4e4edbd17bbcd141be2029a303592bb,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
