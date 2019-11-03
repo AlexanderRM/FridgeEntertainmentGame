@@ -5,6 +5,7 @@ using VIDE_Data;
 
 public class Beans : MonoBehaviour
 {
+    public GameObject particleEffect;
     public bool active = false;
     public bool solved = false;
     public string colTargetName;

@@ -11230,6 +11230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef9e63da05eec584580c6bc5686660ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particleEffect: {fileID: 0}
   active: 0
   solved: 0
   colTargetName: Player
@@ -23120,6 +23121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef9e63da05eec584580c6bc5686660ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particleEffect: {fileID: 0}
   active: 0
   solved: 0
   colTargetName: Player
@@ -71345,6 +71347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef9e63da05eec584580c6bc5686660ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particleEffect: {fileID: 0}
   active: 0
   solved: 0
   colTargetName: Player
@@ -71529,6 +71532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef9e63da05eec584580c6bc5686660ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particleEffect: {fileID: 0}
   active: 0
   solved: 0
   colTargetName: Player
@@ -82776,6 +82780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef9e63da05eec584580c6bc5686660ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particleEffect: {fileID: 0}
   active: 0
   solved: 0
   colTargetName: Player
