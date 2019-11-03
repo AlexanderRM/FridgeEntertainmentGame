@@ -5,6 +5,7 @@ using VIDE_Data;
 
 public class Beans : MonoBehaviour
 {
+    public GameObject particleEffect;
     public bool active = false;
     public bool solved = false;
     public string colTargetName;
@@ -14,10 +15,12 @@ public class Beans : MonoBehaviour
 
     private Person personScript;
     private VIDE_Assign vide;
+    private ParticleSystem particle;
 
     // Start is called before the first frame update
     void Start()
     {
+        particle = particleEffect.GetComponent<ParticleSystem>();
         personScript = person.GetComponent<Person>();
         vide = GetComponent<VIDE_Assign>();
     }
@@ -35,6 +38,14 @@ public class Beans : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.name == colTargetName)
+        {
+            particle.Play();
+        }
+    }
+
     void OnTriggerStay(Collider collider)
     {
         if (collider.gameObject.name == colTargetName)
@@ -45,5 +56,10 @@ public class Beans : MonoBehaviour
                 solved = true;
             }
         }
+    }
+
+    void OnTriggerExit(Collider collider)
+    {
+        particle.Stop();
     }
 }
