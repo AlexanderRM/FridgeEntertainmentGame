@@ -1,14 +1,27 @@
 fileFormatVersion: 2
-guid: 4fd27b641f1c11d4e9269e3ab0e260ba
+guid: 417e919c16305e04f96322e31e97b718
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert3
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: SM_Bin
+    100000: bowtie
+    100002: //RootNode
+    100004: damonCoffeeHair
+    100006: glasses_03
+    400000: bowtie
+    400002: //RootNode
+    400004: damonCoffeeHair
+    400006: glasses_03
+    2100000: lambert4
+    2100002: lambert1
+    2300000: bowtie
+    2300002: damonCoffeeHair
+    2300004: glasses_03
+    3300000: bowtie
+    3300002: damonCoffeeHair
+    3300004: glasses_03
+    4300000: bowtie
+    4300002: glasses_03
+    4300004: damonCoffeeHair
   externalObjects: {}
   materials:
     importMaterials: 1

@@ -1,14 +1,27 @@
 fileFormatVersion: 2
-guid: 4fd27b641f1c11d4e9269e3ab0e260ba
+guid: cbc59db46e045fb478048dcaf850fc2b
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: hair_02
+    100004: hat
+    100006: sunglasses
     400000: //RootNode
-    2100000: lambert3
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: SM_Bin
+    400002: hair_02
+    400004: hat
+    400006: sunglasses
+    2100000: lambert1
+    2100002: lambert3
+    2300000: hair_02
+    2300002: hat
+    2300004: sunglasses
+    3300000: hair_02
+    3300002: hat
+    3300004: sunglasses
+    4300000: hat
+    4300002: hair_02
+    4300004: sunglasses
   externalObjects: {}
   materials:
     importMaterials: 1

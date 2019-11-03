@@ -1,14 +1,22 @@
 fileFormatVersion: 2
-guid: 4fd27b641f1c11d4e9269e3ab0e260ba
+guid: a8174fd47a3936648a6b43a5abf0a5cd
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: glasses
+    100004: hair
     400000: //RootNode
-    2100000: lambert3
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: SM_Bin
+    400002: glasses
+    400004: hair
+    2100000: lambert1
+    2100002: lambert3
+    2300000: glasses
+    2300002: hair
+    3300000: glasses
+    3300002: hair
+    4300000: glasses
+    4300002: hair
   externalObjects: {}
   materials:
     importMaterials: 1
