@@ -13,6 +13,8 @@ public class Person : MonoBehaviour
     public bool solved = false;
     public Beans bean;
     public bool coffee = false;
+    public GameObject accessoryPrev;
+    public GameObject accessoryNew;
 
     // Dialogue
     public int chatStart;
@@ -36,6 +38,8 @@ public class Person : MonoBehaviour
         playerScript = player.GetComponent<TankController>();
         particle = particleEffect.GetComponent<ParticleSystem>();
         vide = GetComponent<VIDE_Assign>();
+        accessoryPrev.SetActive(true);
+        accessoryNew.SetActive(false);
 
         particle.Stop();
     }
@@ -66,6 +70,8 @@ public class Person : MonoBehaviour
             if(coffee == true)
             {
                 vide.overrideStartNode = coffeeGiven;
+                accessoryPrev.SetActive(false);
+                accessoryNew.SetActive(true);
                 return;
             }
 
