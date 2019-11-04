@@ -12549,11 +12549,11 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  chatStart: 1
-  spokenAgain: 2
-  activeUnsolved: 2
+  chatStart: 0
+  spokenAgain: 1
+  activeUnsolved: 1
   notActive: 10
-  riddleSolved: 3
+  riddleSolved: 2
   coffeeGive: 10
   coffeeGiven: 10
 --- !u!65 &242869744
@@ -12596,7 +12596,7 @@ MonoBehaviour:
   - PatriciaSingh
   - SamBrisk
   - Witch
-  assignedIndex: 11
+  assignedIndex: 9
   assignedID: 39326
   assignedDialogue: Me
   interactionCount: 0
@@ -13659,27 +13659,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diags:
-  - Charlie
-  - CommentModifier
-  - CrazyCap
+  - Bean1
+  - Bean2
+  - Bean3
+  - Bean4
+  - Bean5
   - DamonEwel
-  - DEMO_Condition
   - demo_Narration
-  - Example3Dialogue
-  - Example4_dialogue
-  - Item_LookUp
   - JacquelynRomero
   - Kaylie
   - Me
   - MrSinclair
   - PatriciaSingh
-  - QuestChartDemo
   - SamBrisk
-  - TriggeredDude
   - Witch
-  assignedIndex: -1
-  assignedID: 0
-  assignedDialogue: 
+  assignedIndex: 0
+  assignedID: 67876
+  assignedDialogue: Bean1
   interactionCount: 0
   alias: 
   overrideStartNode: -1
@@ -13724,7 +13720,7 @@ MonoBehaviour:
   colTargetName: Player
   person: {fileID: 242869740}
   activeNode: 0
-  inactiveNode: 0
+  inactiveNode: 1
 --- !u!1001 &417281901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83913,7 +83909,7 @@ PrefabInstance:
     - target: {fileID: 5866664610451433500, guid: f0377ebd16145cc4f9861fc02da7afd2,
         type: 3}
       propertyPath: speed
-      value: 0.07
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 5866664610451433499, guid: f0377ebd16145cc4f9861fc02da7afd2,
         type: 3}
@@ -102039,6 +102035,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -2.4689941
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 9efd73a107eb47b46bc6abedf1a3f719, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5102dbf96303a1d4eb7f3a0bdca714e7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9efd73a107eb47b46bc6abedf1a3f719, type: 3}
 --- !u!1 &2008941422 stripped
