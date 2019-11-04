@@ -29,13 +29,19 @@ public class Beans : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (active == false)
+        if (!solved)
+        {
+            if (active == false)
+            {
+                vide.overrideStartNode = inactiveNode;
+            }
+            else
+            {
+                vide.overrideStartNode = activeNode;
+            }
+        }else
         {
             vide.overrideStartNode = inactiveNode;
-        }
-        else
-        {
-            vide.overrideStartNode = activeNode;
         }
     }
 
