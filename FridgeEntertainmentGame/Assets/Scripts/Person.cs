@@ -31,11 +31,6 @@ public class Person : MonoBehaviour
     private bool chat = false;
 
 
-
-    void Awake()
-    {
-
-    }
     void Start()
     {
         // Set values
