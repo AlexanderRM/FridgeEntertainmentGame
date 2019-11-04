@@ -31,7 +31,7 @@ public class Beans : MonoBehaviour
     {
         if (!solved)
         {
-            if (active == false)
+            if (!active)
             {
                 vide.overrideStartNode = inactiveNode;
             }
@@ -39,7 +39,8 @@ public class Beans : MonoBehaviour
             {
                 vide.overrideStartNode = activeNode;
             }
-        }else
+        }
+        else
         {
             vide.overrideStartNode = inactiveNode;
         }
