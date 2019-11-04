@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2810ff573f6a16a47b2f2804f5e2a0b6
+guid: c94f9c29afa5b74488ed922001c9451b
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -7,7 +7,7 @@ ModelImporter:
     100002: Ankle_L_Jnt
     100004: Ankle_R_IK
     100006: Ankle_R_Jnt
-    100008: characterLowPoly:polySurface1
+    100008: characterGEO
     100010: Clavicle_L_Ctrl
     100012: Clavicle_L_Jnt
     100014: Clavicle_R_Ctrl
@@ -15,50 +15,50 @@ ModelImporter:
     100018: Cog_Ctrl
     100020: COG_Jnt
     100022: Controls_Grp
-    100024: Elbow_L_Ctrl
-    100026: Elbow_L_Jnt
-    100028: Elbow_R_Ctrl
-    100030: Elbow_R_Jnt
-    100032: Foot_L_Ctrl
-    100034: Foot_L_Grp
-    100036: Foot_L_IK
-    100038: Foot_L_Jnt
-    100040: Foot_R_Ctrl
-    100042: Foot_R_Grp
-    100044: Foot_R_IK
-    100046: Foot_R_Jnt
-    100048: Global_Ctrl
-    100050: Head_Ctrl
-    100052: Head_Jnt
-    100054: Heelpeel_L_Ctrl
-    100056: Heelpeel_L_Grp
-    100058: Heelpeel_R_Ctrl
-    100060: Heelpeel_R_Grp
-    100062: Hip_Ctrl
-    100064: Hip_L_Jnt
-    100066: Hip_R_Jnt
-    100068: Joint_Grp
-    100070: Knee_L_Jnt
-    100072: Knee_L_PV_Ctrl
-    100074: Knee_R_Jnt
-    100076: Knee_R_PV_Ctrl
-    100078: LOC_L_Hip
-    100080: LOC_R_Hip
-    100082: Lower_Back_Ctrl
-    100084: Lower_Back_Jnt
-    100086: Mid_Back_Ctrl
-    100088: Mid_Back_Jnt
-    100090: Middle_Finger_Ctrl
-    100092: Neck_Ctrl
-    100094: Neck_Jnt
-    100096: Pinkie_Finger_Ctrl
-    100098: Pinkie_Finger_Ctrl 1
-    100100: Pointer_Finger_Ctrl
-    100102: Pointer_Finger_Ctrl 1
-    100104: Ring_Finger_Ctrl
-    100106: Ring_Finger_Ctrl 1
-    100108: Root_Jnt
-    100110: //RootNode
+    100024: //RootNode
+    100026: Elbow_L_Ctrl
+    100028: Elbow_L_Jnt
+    100030: Elbow_R_Ctrl
+    100032: Elbow_R_Jnt
+    100034: Foot_L_Ctrl
+    100036: Foot_L_Grp
+    100038: Foot_L_IK
+    100040: Foot_L_Jnt
+    100042: Foot_R_Ctrl
+    100044: Foot_R_Grp
+    100046: Foot_R_IK
+    100048: Foot_R_Jnt
+    100050: Global_Ctrl
+    100052: Head_Ctrl
+    100054: Head_Jnt
+    100056: Heelpeel_L_Ctrl
+    100058: Heelpeel_L_Grp
+    100060: Heelpeel_R_Ctrl
+    100062: Heelpeel_R_Grp
+    100064: Hip_Ctrl
+    100066: Hip_L_Jnt
+    100068: Hip_R_Jnt
+    100070: Joint_Grp
+    100072: Knee_L_Jnt
+    100074: Knee_L_PV_Ctrl
+    100076: Knee_R_Jnt
+    100078: Knee_R_PV_Ctrl
+    100080: LOC_L_Hip
+    100082: LOC_R_Hip
+    100084: Lower_Back_Ctrl
+    100086: Lower_Back_Jnt
+    100088: Mid_Back_Ctrl
+    100090: Mid_Back_Jnt
+    100092: Middle_Finger_Ctrl
+    100094: Neck_Ctrl
+    100096: Neck_Jnt
+    100098: Pinkie_Finger_Ctrl
+    100100: Pinkie_Finger_Ctrl 1
+    100102: Pointer_Finger_Ctrl
+    100104: Pointer_Finger_Ctrl 1
+    100106: Ring_Finger_Ctrl
+    100108: Ring_Finger_Ctrl 1
+    100110: Root_Jnt
     100112: Scale_Grp
     100114: Shoulder_L_Ctrl
     100116: Shoulder_L_Jnt
@@ -82,7 +82,7 @@ ModelImporter:
     400002: Ankle_L_Jnt
     400004: Ankle_R_IK
     400006: Ankle_R_Jnt
-    400008: characterLowPoly:polySurface1
+    400008: characterGEO
     400010: Clavicle_L_Ctrl
     400012: Clavicle_L_Jnt
     400014: Clavicle_R_Ctrl
@@ -90,50 +90,50 @@ ModelImporter:
     400018: Cog_Ctrl
     400020: COG_Jnt
     400022: Controls_Grp
-    400024: Elbow_L_Ctrl
-    400026: Elbow_L_Jnt
-    400028: Elbow_R_Ctrl
-    400030: Elbow_R_Jnt
-    400032: Foot_L_Ctrl
-    400034: Foot_L_Grp
-    400036: Foot_L_IK
-    400038: Foot_L_Jnt
-    400040: Foot_R_Ctrl
-    400042: Foot_R_Grp
-    400044: Foot_R_IK
-    400046: Foot_R_Jnt
-    400048: Global_Ctrl
-    400050: Head_Ctrl
-    400052: Head_Jnt
-    400054: Heelpeel_L_Ctrl
-    400056: Heelpeel_L_Grp
-    400058: Heelpeel_R_Ctrl
-    400060: Heelpeel_R_Grp
-    400062: Hip_Ctrl
-    400064: Hip_L_Jnt
-    400066: Hip_R_Jnt
-    400068: Joint_Grp
-    400070: Knee_L_Jnt
-    400072: Knee_L_PV_Ctrl
-    400074: Knee_R_Jnt
-    400076: Knee_R_PV_Ctrl
-    400078: LOC_L_Hip
-    400080: LOC_R_Hip
-    400082: Lower_Back_Ctrl
-    400084: Lower_Back_Jnt
-    400086: Mid_Back_Ctrl
-    400088: Mid_Back_Jnt
-    400090: Middle_Finger_Ctrl
-    400092: Neck_Ctrl
-    400094: Neck_Jnt
-    400096: Pinkie_Finger_Ctrl
-    400098: Pinkie_Finger_Ctrl 1
-    400100: Pointer_Finger_Ctrl
-    400102: Pointer_Finger_Ctrl 1
-    400104: Ring_Finger_Ctrl
-    400106: Ring_Finger_Ctrl 1
-    400108: Root_Jnt
-    400110: //RootNode
+    400024: //RootNode
+    400026: Elbow_L_Ctrl
+    400028: Elbow_L_Jnt
+    400030: Elbow_R_Ctrl
+    400032: Elbow_R_Jnt
+    400034: Foot_L_Ctrl
+    400036: Foot_L_Grp
+    400038: Foot_L_IK
+    400040: Foot_L_Jnt
+    400042: Foot_R_Ctrl
+    400044: Foot_R_Grp
+    400046: Foot_R_IK
+    400048: Foot_R_Jnt
+    400050: Global_Ctrl
+    400052: Head_Ctrl
+    400054: Head_Jnt
+    400056: Heelpeel_L_Ctrl
+    400058: Heelpeel_L_Grp
+    400060: Heelpeel_R_Ctrl
+    400062: Heelpeel_R_Grp
+    400064: Hip_Ctrl
+    400066: Hip_L_Jnt
+    400068: Hip_R_Jnt
+    400070: Joint_Grp
+    400072: Knee_L_Jnt
+    400074: Knee_L_PV_Ctrl
+    400076: Knee_R_Jnt
+    400078: Knee_R_PV_Ctrl
+    400080: LOC_L_Hip
+    400082: LOC_R_Hip
+    400084: Lower_Back_Ctrl
+    400086: Lower_Back_Jnt
+    400088: Mid_Back_Ctrl
+    400090: Mid_Back_Jnt
+    400092: Middle_Finger_Ctrl
+    400094: Neck_Ctrl
+    400096: Neck_Jnt
+    400098: Pinkie_Finger_Ctrl
+    400100: Pinkie_Finger_Ctrl 1
+    400102: Pointer_Finger_Ctrl
+    400104: Pointer_Finger_Ctrl 1
+    400106: Ring_Finger_Ctrl
+    400108: Ring_Finger_Ctrl 1
+    400110: Root_Jnt
     400112: Scale_Grp
     400114: Shoulder_L_Ctrl
     400116: Shoulder_L_Jnt
@@ -154,10 +154,10 @@ ModelImporter:
     400146: Wrist_R_Ctrl1
     400148: Wrist_R_Jnt
     2100000: characterLowPoly_blinn1
-    4300000: characterLowPoly:polySurface1
+    4300000: characterGEO
     7400000: Take 001
     9500000: //RootNode
-    13700000: characterLowPoly:polySurface1
+    13700000: characterGEO
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -189,8 +189,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Take 001
       takeName: Take 001
-      firstFrame: 0
-      lastFrame: 245
+      firstFrame: 1
+      lastFrame: 200
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
