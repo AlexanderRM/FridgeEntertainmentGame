@@ -12,7 +12,7 @@ public class Beans : MonoBehaviour
     public GameObject person;
     public int activeNode = 0;
     public int inactiveNode = 0;
-    public string dialogueAssign;
+    //public string dialogueAssign;
 
     private Person personScript;
     private VIDE_Assign vide;
@@ -26,7 +26,7 @@ public class Beans : MonoBehaviour
         personScript = person.GetComponent<Person>();
         vide = GetComponent<VIDE_Assign>();
         vide.overrideStartNode = inactiveNode;
-        vide.AssignNew(dialogueAssign);
+        //vide.AssignNew(dialogueAssign);
     }
 
     // Update is called once per frame
