@@ -24,6 +24,7 @@ public class Beans : MonoBehaviour
         particle.Stop();
         personScript = person.GetComponent<Person>();
         vide = GetComponent<VIDE_Assign>();
+        vide.overrideStartNode = inactiveNode;
     }
 
     // Update is called once per frame

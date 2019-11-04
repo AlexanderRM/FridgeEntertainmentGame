@@ -39,6 +39,7 @@ public class Person : MonoBehaviour
         particle.Stop();
 
         vide = GetComponent<VIDE_Assign>();
+        vide.overrideStartNode = chatStart;
         accessoryPrev.SetActive(true);
         accessoryNew.SetActive(false);
     }
