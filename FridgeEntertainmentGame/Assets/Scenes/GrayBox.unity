@@ -16341,14 +16341,26 @@ MonoBehaviour:
   - Bean3
   - Bean4
   - Bean5
+  - Charlie
+  - CommentModifier
+  - CrazyCap
   - DamonEwel
+  - DEMO_Condition
   - demo_Narration
+  - Example3Dialogue
+  - Example4_dialogue
+  - Item_LookUp
   - JacquelynRomero
   - Kaylie
+  - Laura
   - Me
+  - MrCube
   - MrSinclair
+  - NPCOnly
   - PatriciaSingh
+  - QuestChartDemo
   - SamBrisk
+  - TriggeredDude
   - Witch
   assignedIndex: 2
   assignedID: 40765
@@ -16391,6 +16403,19 @@ MonoBehaviour:
   person: {fileID: 149609643}
   activeNode: 0
   inactiveNode: 1
+--- !u!65 &156529962
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156529955}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6873843, y: 1.3937045, z: 2.393221}
+  m_Center: {x: 0, y: 0, z: 0.61769325}
 --- !u!1001 &162148938
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18781,14 +18806,26 @@ MonoBehaviour:
   - Bean3
   - Bean4
   - Bean5
+  - Charlie
+  - CommentModifier
+  - CrazyCap
   - DamonEwel
+  - DEMO_Condition
   - demo_Narration
+  - Example3Dialogue
+  - Example4_dialogue
+  - Item_LookUp
   - JacquelynRomero
   - Kaylie
+  - Laura
   - Me
+  - MrCube
   - MrSinclair
+  - NPCOnly
   - PatriciaSingh
+  - QuestChartDemo
   - SamBrisk
+  - TriggeredDude
   - Witch
   assignedIndex: 0
   assignedID: 67876
@@ -40338,9 +40375,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 681643619}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6730fd612e19654b8c238c9a3e6bd38, type: 3}
+  m_Script: {fileID: 11500000, guid: 33c6e49e25a1aca4b87565aa63ac7f1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  particleEffect: {fileID: 0}
+  colTargetName: 
+  active: 0
+  solved: 0
+  bean: {fileID: 0}
+  coffee: 0
+  accessoryPrev: {fileID: 0}
+  accessoryNew: {fileID: 0}
+  chatStart: 0
+  activeUnsolved: 0
+  notActive: 0
+  riddleSolved: 0
+  coffeeGive: 0
+  coffeeGiven: 0
 --- !u!1 &684287046
 GameObject:
   m_ObjectHideFlags: 0
@@ -82574,8 +82626,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.06477812, y: 0.060451627, z: 0.073795415}
-  m_Center: {x: 0.013971913, y: -0.0009300595, z: 0.027437761}
+  m_Size: {x: 0.05974977, y: 0.060451627, z: 0.05563389}
+  m_Center: {x: -0.012063377, y: -0.0009300595, z: 0.018357001}
 --- !u!114 &1232175582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82594,16 +82646,28 @@ MonoBehaviour:
   - Bean3
   - Bean4
   - Bean5
+  - Charlie
+  - CommentModifier
+  - CrazyCap
   - DamonEwel
+  - DEMO_Condition
   - demo_Narration
+  - Example3Dialogue
+  - Example4_dialogue
+  - Item_LookUp
   - JacquelynRomero
   - Kaylie
+  - Laura
   - Me
+  - MrCube
   - MrSinclair
+  - NPCOnly
   - PatriciaSingh
+  - QuestChartDemo
   - SamBrisk
+  - TriggeredDude
   - Witch
-  assignedIndex: 5
+  assignedIndex: 8
   assignedID: 12537
   assignedDialogue: DamonEwel
   interactionCount: 0
@@ -93194,7 +93258,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1430692523}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.031285565
   m_Height: 0.07837481
   m_Direction: 1
@@ -112624,7 +112688,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1993702390}
   m_LocalRotation: {x: -0, y: -0.042859674, z: -0, w: 0.99908113}
-  m_LocalPosition: {x: 0, y: -0.0174, z: -0.0184}
+  m_LocalPosition: {x: -0.0002, y: -0.0174, z: -0.0186}
   m_LocalScale: {x: 0.43826854, y: 0.43916872, z: 0.4404181}
   m_Children: []
   m_Father: {fileID: 1232175580}
