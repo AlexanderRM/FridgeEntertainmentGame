@@ -60,7 +60,7 @@ public class VIDE_Editor : EditorWindow
     string searchWord;
     Vector2 searchScrollView;
 
-    private WWW news;
+    WWW news;
     List<string> saveNames = new List<string>() { };
     List<string> saveNamesFull = new List<string>() { };
 
