@@ -33,6 +33,11 @@ public class Item : MonoBehaviour
         }
     }
 
+    void OnTriggerStay(Collider collider)
+    {
+        // Dialogue
+    }
+
     void OnTriggerExit(Collider collider)
     {
             particle.Stop();

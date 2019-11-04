@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"locCur":"English","Me_node0_com0_vis":true,"Me_node0_com1_vis":true,"Me_node0_com2_vis":true,"Me_node0_com3_vis":true,"Me_node1_com0_vis":true,"Me_node1_com1_vis":true,"Me_node2_com0_vis":true,"Me_node2_com1_vis":true,"Me_node3_com0_vis":true,"Me_node4_com0_vis":true,"Me_node5_com0_vis":true}
+=======
+{"Me_node0_com0_vis":true,"Me_node0_com1_vis":true,"Me_node0_com2_vis":true,"Me_node0_com3_vis":true,"Me_node0_com4_vis":true,"Me_node1_com0_vis":true,"Me_node1_com1_vis":true,"Me_node1_com2_vis":true,"Me_node2_com0_vis":true,"Me_node2_com1_vis":true,"Me_node2_com2_vis":true,"Me_node2_com3_vis":true,"Me_node3_com0_vis":true,"Me_node3_com1_vis":true}
+>>>>>>> parent of 4d21ec5... Merge branch 'Develop' of https://github.com/AlexanderRM/FridgeEntertainmentGame into Develop
