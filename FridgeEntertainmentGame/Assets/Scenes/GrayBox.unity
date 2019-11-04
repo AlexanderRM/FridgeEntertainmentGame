@@ -12174,6 +12174,7 @@ MonoBehaviour:
   - Example4_dialogue
   - Item_LookUp
   - JacquelynRomero
+  - Kaylie
   - Me
   - MrSinclair
   - PatriciaSingh
@@ -12181,7 +12182,7 @@ MonoBehaviour:
   - SamBrisk
   - TriggeredDude
   - Witch
-  assignedIndex: 11
+  assignedIndex: 12
   assignedID: 2066
   assignedDialogue: MrSinclair
   interactionCount: 0
@@ -12591,6 +12592,7 @@ MonoBehaviour:
   - Example4_dialogue
   - Item_LookUp
   - JacquelynRomero
+  - Kaylie
   - Me
   - MrSinclair
   - PatriciaSingh
@@ -12598,7 +12600,7 @@ MonoBehaviour:
   - SamBrisk
   - TriggeredDude
   - Witch
-  assignedIndex: 10
+  assignedIndex: 11
   assignedID: 39326
   assignedDialogue: Me
   interactionCount: 0
@@ -102032,7 +102034,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.5027549, y: 1.6736307, z: 0.5380152}
-  m_Center: {x: -0.00009250641, y: 0.55348265, z: 0.016439438}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &2008941424 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 74f91df2477f8b04799cb2a84a8972ef,
