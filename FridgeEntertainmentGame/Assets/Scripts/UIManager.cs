@@ -32,7 +32,7 @@ public class UIManager : MonoBehaviour
 
     void Awake()
     {
-        // VD.LoadDialogues(); //Load all dialogues to memory so that we dont spend time doing so later
+        VD.LoadDialogues(); //Load all dialogues to memory so that we dont spend time doing so later
         //An alternative to this can be preloading dialogues from the VIDE_Assign component!
 
         //Loads the saved state of VIDE_Assigns and dialogues.

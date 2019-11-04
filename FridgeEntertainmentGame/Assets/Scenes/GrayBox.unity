@@ -16252,16 +16252,28 @@ MonoBehaviour:
   - Bean3
   - Bean4
   - Bean5
+  - Charlie
+  - CommentModifier
+  - CrazyCap
   - DamonEwel
+  - DEMO_Condition
   - demo_Narration
+  - Example3Dialogue
+  - Example4_dialogue
+  - Item_LookUp
   - JacquelynRomero
   - Kaylie
+  - Laura
   - Me
+  - MrCube
   - MrSinclair
+  - NPCOnly
   - PatriciaSingh
+  - QuestChartDemo
   - SamBrisk
+  - TriggeredDude
   - Witch
-  assignedIndex: 7
+  assignedIndex: 14
   assignedID: 15576
   assignedDialogue: JacquelynRomero
   interactionCount: 0
@@ -18725,14 +18737,26 @@ MonoBehaviour:
   - Bean3
   - Bean4
   - Bean5
+  - Charlie
+  - CommentModifier
+  - CrazyCap
   - DamonEwel
+  - DEMO_Condition
   - demo_Narration
+  - Example3Dialogue
+  - Example4_dialogue
+  - Item_LookUp
   - JacquelynRomero
   - Kaylie
+  - Laura
   - Me
+  - MrCube
   - MrSinclair
+  - NPCOnly
   - PatriciaSingh
+  - QuestChartDemo
   - SamBrisk
+  - TriggeredDude
   - Witch
   assignedIndex: 1
   assignedID: 24831
@@ -40378,12 +40402,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c6e49e25a1aca4b87565aa63ac7f1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  particleEffect: {fileID: 0}
-  colTargetName: 
+  player: {fileID: 945225920}
+  particleEffect: {fileID: 743885575}
+  colTargetName: Player
   active: 0
   solved: 0
-  bean: {fileID: 0}
+  bean: {fileID: 1420582195}
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
@@ -56826,18 +56850,30 @@ MonoBehaviour:
   - Bean3
   - Bean4
   - Bean5
+  - Charlie
+  - CommentModifier
+  - CrazyCap
   - DamonEwel
+  - DEMO_Condition
   - demo_Narration
+  - Example3Dialogue
+  - Example4_dialogue
+  - Item_LookUp
   - JacquelynRomero
   - Kaylie
+  - Laura
   - Me
+  - MrCube
   - MrSinclair
+  - NPCOnly
   - PatriciaSingh
+  - QuestChartDemo
   - SamBrisk
+  - TriggeredDude
   - Witch
-  assignedIndex: -1
-  assignedID: 0
-  assignedDialogue: 
+  assignedIndex: 3
+  assignedID: 3679
+  assignedDialogue: Bean4
   interactionCount: 0
   alias: 
   overrideStartNode: -1
@@ -56863,7 +56899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef9e63da05eec584580c6bc5686660ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleEffect: {fileID: 0}
+  particleEffect: {fileID: 432080691}
   active: 0
   solved: 0
   colTargetName: Player
@@ -93146,6 +93182,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diags:
+  - Bean1
+  - Bean2
+  - Bean3
+  - Bean4
+  - Bean5
   - Charlie
   - CommentModifier
   - CrazyCap
@@ -93156,16 +93197,20 @@ MonoBehaviour:
   - Example4_dialogue
   - Item_LookUp
   - JacquelynRomero
+  - Kaylie
+  - Laura
   - Me
+  - MrCube
   - MrSinclair
+  - NPCOnly
   - PatriciaSingh
   - QuestChartDemo
   - SamBrisk
   - TriggeredDude
   - Witch
-  assignedIndex: -1
-  assignedID: 0
-  assignedDialogue: 
+  assignedIndex: 4
+  assignedID: 64383
+  assignedDialogue: Bean5
   interactionCount: 0
   alias: 
   overrideStartNode: -1
