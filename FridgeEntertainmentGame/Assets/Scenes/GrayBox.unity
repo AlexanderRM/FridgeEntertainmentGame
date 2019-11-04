@@ -16316,6 +16316,25 @@ MonoBehaviour:
   riddleSolved: 3
   coffeeGive: 4
   coffeeGiven: 5
+--- !u!1 &149609648 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100010, guid: d4e4edbd17bbcd141be2029a303592bb,
+    type: 3}
+  m_PrefabInstance: {fileID: 149609642}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &149609649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149609648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1857792cf988be847a8de6dbf2758dc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coffeed: {fileID: 149609647}
 --- !u!1 &156529955 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: cd86f1e4bc809d54c946f20ac57f2169,
@@ -39804,10 +39823,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2300002, guid: 0e9ebf700aaf0d14991633ff248ab2b3, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 80ed4baafe580734882b86441c5008f3, type: 2}
     - target: {fileID: 400004, guid: 0e9ebf700aaf0d14991633ff248ab2b3, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
@@ -39832,6 +39847,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.706
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 0e9ebf700aaf0d14991633ff248ab2b3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 80ed4baafe580734882b86441c5008f3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e9ebf700aaf0d14991633ff248ab2b3, type: 3}
 --- !u!4 &662716046 stripped
@@ -40407,24 +40426,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 681643619}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33c6e49e25a1aca4b87565aa63ac7f1c, type: 3}
+  m_Script: {fileID: 11500000, guid: 1857792cf988be847a8de6dbf2758dc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 945225920}
-  particleEffect: {fileID: 743885575}
-  colTargetName: Player
-  active: 0
-  solved: 0
-  bean: {fileID: 1420582195}
-  coffee: 0
-  accessoryPrev: {fileID: 0}
-  accessoryNew: {fileID: 0}
-  chatStart: 0
-  activeUnsolved: 0
-  notActive: 0
-  riddleSolved: 0
-  coffeeGive: 0
-  coffeeGiven: 0
+  coffeed: {fileID: 815416575}
 --- !u!1 &684287046
 GameObject:
   m_ObjectHideFlags: 0
@@ -93587,10 +93592,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.035056062
       objectReference: {fileID: 0}
-    - target: {fileID: 400020, guid: 064b8e635f2672c469214fd66bdb6ba7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.153
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 064b8e635f2672c469214fd66bdb6ba7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.311
@@ -93598,6 +93599,10 @@ PrefabInstance:
     - target: {fileID: 400004, guid: 064b8e635f2672c469214fd66bdb6ba7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.052
+      objectReference: {fileID: 0}
+    - target: {fileID: 400020, guid: 064b8e635f2672c469214fd66bdb6ba7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.153
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 064b8e635f2672c469214fd66bdb6ba7, type: 3}
@@ -105593,6 +105598,25 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 98147365b3a4b7d47a3f6aa13c672e6c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5c18d7531c6bee4d91c0c754b1f421e, type: 3}
+--- !u!1 &1721568833 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100024, guid: b5c18d7531c6bee4d91c0c754b1f421e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1721568832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1721568834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721568833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1857792cf988be847a8de6dbf2758dc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coffeed: {fileID: 1232175583}
 --- !u!1001 &1732627366
 PrefabInstance:
   m_ObjectHideFlags: 0
