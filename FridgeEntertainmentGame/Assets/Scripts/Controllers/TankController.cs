@@ -12,8 +12,13 @@ public class TankController : MonoBehaviour
     public bool coffee = false;
     public GameObject player;
     public UIManager diagUI;
+    public QuestChartDemo questUI;
     public VIDE_Assign inTrigger;
     public Animator walkCycle;
+    public List<string> demo_Items = new List<string>();
+    public List<string> demo_ItemInventory = new List<string>();
+
+
 
     private void Start()
     {
@@ -72,6 +77,10 @@ public class TankController : MonoBehaviour
             else return;
 
             if (assigned.alias == "QuestUI")
+            {
+                questUI.Interact(); //Begins interaction with Quest Chart
+            }
+            else
             {
                 diagUI.Interact(assigned); //Begins interaction
             }

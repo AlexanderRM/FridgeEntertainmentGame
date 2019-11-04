@@ -39,6 +39,7 @@ public class Person : MonoBehaviour
         particle.Stop();
 
         vide = GetComponent<VIDE_Assign>();
+        vide.overrideStartNode = chatStart;
         accessoryPrev.SetActive(true);
         accessoryNew.SetActive(false);
     }
@@ -111,9 +112,20 @@ public class Person : MonoBehaviour
                 bean.active = true;
             }
             // active is false
-            else if (active == false)
+            else if (active == false && chat == true)
             {
                 vide.overrideStartNode = notActive;
+
+                if (VD.nodeData != null)
+                {
+                    string[] comments = VD.nodeData.comments;
+                    // set bool for first chat
+                    if (VD.nodeData.isEnd || VD.nodeData.commentIndex == comments.Length - 1)
+                    {
+                        chat = true;
+                    }
+                }
+                return;
             }
         }
     }

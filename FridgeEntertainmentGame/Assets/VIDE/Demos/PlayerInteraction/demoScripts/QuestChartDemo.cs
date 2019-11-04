@@ -160,8 +160,10 @@ public class QuestChartDemo : MonoBehaviour
     {
         var player = GameObject.Find("Player").GetComponent<VIDEDemoPlayer>();
 
+        List<string> items = player.demo_ItemInventory;
         PlayerPrefs.SetInt("interactedWith", interactedWith.Count);
         PlayerPrefs.SetInt("cylinderGuyInteractions", cylinderGuyInteractions.Count);
+        PlayerPrefs.SetInt("example_ItemInventory", items.Count);
 
         for (int i = 0; i < interactedWith.Count; i++)
         {
@@ -171,6 +173,11 @@ public class QuestChartDemo : MonoBehaviour
         for (int i = 0; i < cylinderGuyInteractions.Count; i++)
         {
             PlayerPrefs.SetInt("cylGuyInt" + i.ToString(), cylinderGuyInteractions[i]);
+        }
+
+        for (int i = 0; i < items.Count; i++)
+        {
+            PlayerPrefs.SetString("item" + i.ToString(), items[i]);
         }
     }
 
