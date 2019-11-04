@@ -1,14 +1,26 @@
 fileFormatVersion: 2
-guid: 4fd27b641f1c11d4e9269e3ab0e260ba
+guid: 5b1651f93f4592540afe84a879bcb28e
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert3
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: SM_Bin
+    100000: hat_03
+    100002: //RootNode
+    100004: ponytail_02
+    100006: umbrella
+    400000: hat_03
+    400002: //RootNode
+    400004: ponytail_02
+    400006: umbrella
+    2100000: lambert1
+    2300000: hat_03
+    2300002: ponytail_02
+    2300004: umbrella
+    3300000: hat_03
+    3300002: ponytail_02
+    3300004: umbrella
+    4300000: umbrella
+    4300002: ponytail_02
+    4300004: hat_03
   externalObjects: {}
   materials:
     importMaterials: 1

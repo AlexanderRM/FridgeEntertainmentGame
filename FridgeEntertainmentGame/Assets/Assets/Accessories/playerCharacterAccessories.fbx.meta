@@ -1,14 +1,16 @@
 fileFormatVersion: 2
-guid: 8da325ab37f37cd4da097377623c4e5d
+guid: 9efd73a107eb47b46bc6abedf1a3f719
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: hat
+    100002: //RootNode
+    400000: hat
+    400002: //RootNode
     2100000: lambert1
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: samCoffeeHair
+    2300000: hat
+    3300000: hat
+    4300000: hat
   externalObjects: {}
   materials:
     importMaterials: 1

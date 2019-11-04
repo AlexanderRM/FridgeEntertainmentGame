@@ -1,14 +1,78 @@
 fileFormatVersion: 2
-guid: 4fd27b641f1c11d4e9269e3ab0e260ba
+guid: 064b8e635f2672c469214fd66bdb6ba7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert3
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: SM_Bin
+    100000: pCube1
+    100002: SM_BreakChair1
+    100004: SM_BreakChair2
+    100006: SM_BreakChair3
+    100008: SM_BreakChair4
+    100010: SM_BreakTable
+    100012: SM_Can1
+    100014: SM_Can2
+    100016: SM_DiceTray1
+    100018: SM_DiceTray2
+    100020: SM_DiceTray3
+    100022: SM_DiceTray4
+    100024: SM_DiceTrays
+    100026: SM_DmScreen
+    100028: //RootNode
+    100030: SM_DnDTableChairs
+    400000: pCube1
+    400002: SM_BreakChair1
+    400004: SM_BreakChair2
+    400006: SM_BreakChair3
+    400008: SM_BreakChair4
+    400010: SM_BreakTable
+    400012: SM_Can1
+    400014: SM_Can2
+    400016: SM_DiceTray1
+    400018: SM_DiceTray2
+    400020: SM_DiceTray3
+    400022: SM_DiceTray4
+    400024: SM_DiceTrays
+    400026: SM_DmScreen
+    400028: //RootNode
+    400030: SM_DnDTableChairs
+    2100000: lambert1
+    2100002: lambert2
+    2300000: pCube1
+    2300002: SM_BreakChair1
+    2300004: SM_BreakChair2
+    2300006: SM_BreakChair3
+    2300008: SM_BreakChair4
+    2300010: SM_BreakTable
+    2300012: SM_Can1
+    2300014: SM_Can2
+    2300016: SM_DiceTray1
+    2300018: SM_DiceTray2
+    2300020: SM_DiceTray3
+    2300022: SM_DiceTray4
+    3300000: pCube1
+    3300002: SM_BreakChair1
+    3300004: SM_BreakChair2
+    3300006: SM_BreakChair3
+    3300008: SM_BreakChair4
+    3300010: SM_BreakTable
+    3300012: SM_Can1
+    3300014: SM_Can2
+    3300016: SM_DiceTray1
+    3300018: SM_DiceTray2
+    3300020: SM_DiceTray3
+    3300022: SM_DiceTray4
+    4300000: SM_BreakChair4
+    4300002: SM_BreakChair3
+    4300004: SM_BreakChair2
+    4300006: SM_BreakChair1
+    4300008: SM_BreakTable
+    4300010: pCube1
+    4300012: SM_DiceTray4
+    4300014: SM_DiceTray3
+    4300016: SM_DiceTray2
+    4300018: SM_DiceTray1
+    4300020: SM_Can1
+    4300022: SM_Can2
   externalObjects: {}
   materials:
     importMaterials: 1
