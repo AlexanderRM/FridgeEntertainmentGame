@@ -29,7 +29,15 @@ public class Person : MonoBehaviour
     private bool chat = false;
 
 
-    // Start is called before the first frame update
+
+    void Awake()
+    {
+         VD.LoadDialogues(); //Load all dialogues to memory so that we dont spend time doing so later
+        //An alternative to this can be preloading dialogues from the VIDE_Assign component!
+
+        //Loads the saved state of VIDE_Assigns and dialogues.
+        //VD.LoadState("VIDEDEMOScene1", true);
+    }
     void Start()
     {
         // Set values
@@ -40,7 +48,7 @@ public class Person : MonoBehaviour
         particle.Stop();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         if (solved == true)
@@ -85,8 +93,9 @@ public class Person : MonoBehaviour
             {
                 vide.overrideStartNode = chatStart;
 
+
                 // If talked to before give other dialogue
-                if(chat == true)
+                if (chat == true)
                 {
                     vide.overrideStartNode = spokenAgain;
                 }
