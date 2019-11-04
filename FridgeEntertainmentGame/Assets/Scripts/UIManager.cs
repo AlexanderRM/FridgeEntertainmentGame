@@ -61,8 +61,6 @@ public class UIManager : MonoBehaviour
         NPC_Text.text = "";
         NPC_label.text = "";
         playerLabel.text = "";
-        Item_text.text = "";
-        Beans_text.text = "";
 
         //First step is to call BeginDialogue, passing the required VIDE_Assign component 
         //This will store the first Node data in VD.nodeData
