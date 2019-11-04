@@ -9,15 +9,11 @@ public class TankController : MonoBehaviour
     public string playerName = "VIDE User";
     public float speed = 3.0f;
     public float rotationSpeed = 90.0f;
-    public float buttonTimeout = 1.5f;
     public bool coffee = false;
     public GameObject player;
     public UIManager diagUI;
     public VIDE_Assign inTrigger;
     public Animator walkCycle;
-
-    private float timeStamp;
-    private bool pressed = false;
 
     private void Start()
     {
@@ -32,24 +28,9 @@ public class TankController : MonoBehaviour
         // Check if users not in dialogue
         if (!VD.isActive)
         {
-            // Check for inputs
-            if (Input.GetAxis("Horizontal") == 1 || Input.GetAxis("Horizontal") == -1 || Input.GetAxis("Vertical") == 1)
-            {
-                pressed = true;
-                timeStamp = Time.time + buttonTimeout;
-            }
+            GetComponent<Rigidbody>().velocity = transform.forward * speed * moveTank;
 
-            if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
-            {
-                pressed = false;
-            }
-
-            if (pressed == true && Time.time <= timeStamp)
-            {
-                GetComponent<Rigidbody>().velocity = transform.forward * speed * moveTank;
-
-                transform.Rotate(Vector3.up * rotationSpeed * rotateTank * Time.deltaTime);
-            }
+            transform.Rotate(Vector3.up * rotationSpeed * rotateTank * Time.deltaTime);
         }
 
         if (Input.GetKeyDown(KeyCode.E))
