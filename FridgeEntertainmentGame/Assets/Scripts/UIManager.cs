@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
     public GameObject NPC_Container;
     public GameObject playerContainer;
     public GameObject itemPopUp;
+    public GameObject riddle_Container;
 
     public Text NPC_Text;
     public Text NPC_label;
@@ -18,8 +19,10 @@ public class UIManager : MonoBehaviour
     public GameObject playerChoicePrefab;
     public Image playerSprite;
     public Text playerLabel;
+    public Text riddle_Text;
 
     public TankController player;
+    public Person riddle;
 
     bool dialoguePaused = false; //Custom variable to prevent the manager from calling VD.Next
     bool animatingText = false;  //Will help us know when text is currently being animated
@@ -100,11 +103,6 @@ public class UIManager : MonoBehaviour
         }
     }
 
-
-    void Start()
-    {
-        
-    }
 
     //Input related stuff (scroll through player choices and update highlight)
     void Update()
@@ -242,7 +240,6 @@ public class UIManager : MonoBehaviour
     //Called automatically because we subscribed to the OnEnd event
     void EndDialogue(VD.NodeData data)
     {
-        CheckTasks();
         VD.OnActionNode -= ActionHandler;
         VD.OnNodeChange -= UpdateUI;
         VD.OnEnd -= EndDialogue;
@@ -250,14 +247,12 @@ public class UIManager : MonoBehaviour
         VD.EndDialogue();
 
         VD.SaveState("VIDEDEMOScene1", true); //Saves VIDE stuff related to EVs and override start nodes
-        QuestChartDemo.SaveProgress(); //saves OUR custom game data
     }
 
     void OnDisable()
     {
         //If the script gets destroyed, let's make sure we force-end the dialogue to prevent errors
         //We do not save changes
-        CheckTasks();
         VD.OnActionNode -= ActionHandler;
         VD.OnNodeChange -= UpdateUI;
         VD.OnEnd -= EndDialogue;
@@ -265,8 +260,6 @@ public class UIManager : MonoBehaviour
             dialogueContainer.SetActive(false);
         VD.EndDialogue();
     }
-
-
 
     #region DIALOGUE CONDITIONS 
 
@@ -448,19 +441,21 @@ public class UIManager : MonoBehaviour
     }
 
     //Check task progression
-    void CheckTasks()
-    {
-        if (player.demo_ItemInventory.Count == 5)
-            QuestChartDemo.SetQuest(2, false);
-
-        QuestChartDemo.CheckTaskCompletion(VD.nodeData);
-    }
 
     #endregion
 
     //Utility note: If you're on MonoDevelop. Go to Tools > Options > General and enable code folding.
     //That way you can exapnd and collapse the regions and methods
 
+    public void riddleBegin ()
+    {
+        riddle_Text.text = "";
+
+        if (riddle.active == true)
+        {
+
+        }
+    }
 
 
 
