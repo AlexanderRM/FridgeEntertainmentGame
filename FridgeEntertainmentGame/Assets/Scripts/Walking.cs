@@ -5,8 +5,7 @@ using VIDE_Data;
 
 public class Walking : MonoBehaviour
 {
-    public float buttonTimeout;
-
+    private float buttonTimeout;
     private Animator anim;
     private float timeStamp;
     private bool pressed = false;
