@@ -21,6 +21,7 @@ public class Beans : MonoBehaviour
     void Start()
     {
         particle = particleEffect.GetComponent<ParticleSystem>();
+        particle.Stop();
         personScript = person.GetComponent<Person>();
         vide = GetComponent<VIDE_Assign>();
     }
