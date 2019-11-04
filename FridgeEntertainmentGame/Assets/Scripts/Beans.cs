@@ -21,6 +21,7 @@ public class Beans : MonoBehaviour
     void Start()
     {
         particle = particleEffect.GetComponent<ParticleSystem>();
+        particle.Stop();
         personScript = person.GetComponent<Person>();
         vide = GetComponent<VIDE_Assign>();
     }
@@ -28,13 +29,19 @@ public class Beans : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (active == false)
+        if (!solved)
+        {
+            if (active == false)
+            {
+                vide.overrideStartNode = inactiveNode;
+            }
+            else
+            {
+                vide.overrideStartNode = activeNode;
+            }
+        }else
         {
             vide.overrideStartNode = inactiveNode;
-        }
-        else
-        {
-            vide.overrideStartNode = activeNode;
         }
     }
 

@@ -15,6 +15,7 @@ public class Item : MonoBehaviour
     void Start()
     {
         particle = particleEffect.GetComponent<ParticleSystem>();
+        particle.Stop();
         vide = GetComponent<VIDE_Assign>();
     }
 

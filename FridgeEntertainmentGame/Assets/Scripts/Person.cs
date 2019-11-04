@@ -18,7 +18,6 @@ public class Person : MonoBehaviour
 
     // Dialogue
     public int chatStart;
-    public int spokenAgain;
     public int activeUnsolved;
     public int notActive;
     public int riddleSolved;
@@ -95,7 +94,7 @@ public class Person : MonoBehaviour
                 // If talked to before give other dialogue
                 if (chat == true)
                 {
-                    vide.overrideStartNode = spokenAgain;
+                    vide.overrideStartNode = activeUnsolved;
                 }
 
                 if (VD.nodeData != null)
