@@ -35,12 +35,13 @@ public class Person : MonoBehaviour
     {
         // Set values
         playerScript = player.GetComponent<TankController>();
+
         particle = particleEffect.GetComponentInChildren<ParticleSystem>();
+        particle.Stop();
+
         vide = GetComponent<VIDE_Assign>();
         accessoryPrev.SetActive(true);
         accessoryNew.SetActive(false);
-
-        particle.Stop();
     }
 
 
