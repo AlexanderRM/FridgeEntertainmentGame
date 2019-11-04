@@ -1,14 +1,16 @@
 fileFormatVersion: 2
-guid: 4fd27b641f1c11d4e9269e3ab0e260ba
+guid: dcb003741d5c3ef45873f1b2d9c505c5
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert3
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: SM_Bin
+    100000: samCoffee 1
+    100002: //RootNode
+    400000: samCoffee 1
+    400002: //RootNode
+    2100000: lambert1
+    2300000: samCoffee 1
+    3300000: samCoffee 1
+    4300000: samCoffee
   externalObjects: {}
   materials:
     importMaterials: 1
