@@ -31,21 +31,17 @@ public class Person : MonoBehaviour
     private bool chat = false;
 
 
-
-    void Awake()
-    {
-
-    }
     void Start()
     {
         // Set values
         playerScript = player.GetComponent<TankController>();
-        particle = particleEffect.GetComponent<ParticleSystem>();
+
+        particle = particleEffect.GetComponentInChildren<ParticleSystem>();
+        particle.Stop();
+
         vide = GetComponent<VIDE_Assign>();
         accessoryPrev.SetActive(true);
         accessoryNew.SetActive(false);
-
-        particle.Stop();
     }
 
 
@@ -71,7 +67,7 @@ public class Person : MonoBehaviour
         if (collider.gameObject.name == colTargetName)
         {
             // if coffee has been given
-            if(coffee == true)
+            if (coffee == true)
             {
                 vide.overrideStartNode = coffeeGiven;
                 accessoryPrev.SetActive(false);
@@ -79,7 +75,7 @@ public class Person : MonoBehaviour
                 return;
             }
 
-            if(bean.solved == true)
+            if (bean.solved == true)
             {
                 vide.overrideStartNode = riddleSolved;
             }
@@ -102,8 +98,16 @@ public class Person : MonoBehaviour
                     vide.overrideStartNode = spokenAgain;
                 }
 
-                // set bool for first chat
-                chat = true;
+                if (VD.nodeData != null)
+                {
+                    string[] comments = VD.nodeData.comments;
+                    // set bool for first chat
+                    if (VD.nodeData.isEnd || VD.nodeData.commentIndex == comments.Length - 1)
+                    {
+                        chat = true;
+                    }
+                }
+
                 // Set bean active
                 bean.active = true;
             }
