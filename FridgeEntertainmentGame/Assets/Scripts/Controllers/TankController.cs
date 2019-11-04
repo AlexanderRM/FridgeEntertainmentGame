@@ -32,6 +32,7 @@ public class TankController : MonoBehaviour
         // Check if users not in dialogue
         if (!VD.isActive)
         {
+            // Check for inputs
             if (Input.GetAxis("Horizontal") == 1 || Input.GetAxis("Horizontal") == -1 || Input.GetAxis("Vertical") == 1)
             {
                 pressed = true;
