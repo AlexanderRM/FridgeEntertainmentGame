@@ -61,7 +61,16 @@ public class Beans : MonoBehaviour
             if (active == true && Input.GetKeyDown(KeyCode.E) == true)
             {
                 personScript.solved = true;
-                solved = true;
+
+                if (VD.nodeData != null)
+                {
+                    string[] comments = VD.nodeData.comments;
+                    // set bool for first chat
+                    if (VD.nodeData.isEnd || VD.nodeData.commentIndex == comments.Length - 1)
+                    {
+                        solved = true;
+                    }
+                }
             }
         }
     }
