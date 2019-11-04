@@ -66,13 +66,6 @@ public class Person : MonoBehaviour
         // check if object collision matches
         if (collider.gameObject.name == colTargetName)
         {
-            // active is false
-            if (active == false)
-            {
-                vide.overrideStartNode = notActive;
-                return;
-            }
-
             // if coffee has been given
             if (coffee == true)
             {
@@ -117,6 +110,12 @@ public class Person : MonoBehaviour
 
                 // Set bean active
                 bean.active = true;
+            }
+            // active is false
+            else if (active == false)
+            {
+                vide.overrideStartNode = notActive;
+                return;
             }
         }
     }
