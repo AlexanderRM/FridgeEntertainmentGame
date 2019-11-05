@@ -67,19 +67,19 @@ public class TankController : MonoBehaviour
 
         /* If we are not in a trigger, try with raycasts */
 
-        if (Physics.Raycast(transform.position, transform.forward, out RaycastHit rHit, 2))
-        {
-            //Lets grab the NPC's VIDE_Assign script, if there's any
-            VIDE_Assign assigned;
-            if (rHit.collider.GetComponent<VIDE_Assign>() != null)
-                assigned = rHit.collider.GetComponent<VIDE_Assign>();
-            else return;
+        //if (Physics.Raycast(transform.position, transform.forward, out RaycastHit rHit, 2))
+        //{
+        //    //Lets grab the NPC's VIDE_Assign script, if there's any
+        //    VIDE_Assign assigned;
+        //    if (rHit.collider.GetComponent<VIDE_Assign>() != null)
+        //        assigned = rHit.collider.GetComponent<VIDE_Assign>();
+        //    else return;
 
-            if (assigned.alias == "diagUI")
-            {
-                diagUI.Interact(assigned); //Begins interaction
-            }
+        //    if (assigned.alias == "diagUI")
+        //    {
+        //        diagUI.Interact(assigned); //Begins interaction
+        //    }
 
-        }
+        //}
     }
 }
