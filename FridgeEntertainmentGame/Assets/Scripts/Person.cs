@@ -27,6 +27,7 @@ public class Person : MonoBehaviour
     private TankController playerScript;
     private ParticleSystem particle;
     private VIDE_Assign vide;
+    private UIManager uiRiddle;
     private bool chat = false;
 
 
@@ -127,6 +128,14 @@ public class Person : MonoBehaviour
                 }
                 return;
             }
+
+            //if (active == true)
+            //{
+            //    if (!VD.isActive)
+            //    {
+            //        uiRiddle.riddleBegin(VD nodeData);
+            //    }
+            //}
         }
     }
 

@@ -23,6 +23,8 @@ public class UIManager : MonoBehaviour
 
     public TankController player;
     public Person riddle;
+    private VIDE_Assign vide;
+
 
     bool dialoguePaused = false; //Custom variable to prevent the manager from calling VD.Next
     bool animatingText = false;  //Will help us know when text is currently being animated
@@ -447,15 +449,15 @@ public class UIManager : MonoBehaviour
     //Utility note: If you're on MonoDevelop. Go to Tools > Options > General and enable code folding.
     //That way you can exapnd and collapse the regions and methods
 
-    public void riddleBegin ()
-    {
-        riddle_Text.text = "";
+    //public void riddleBegin(VD nodeData)
+    //{
+    //    riddle_Text.text = "";
 
-        if (riddle.active == true)
-        {
-
-        }
-    }
+    //    if (riddle.active == true)
+    //    {
+    //        riddle_Text.text = VD.SetNode(riddle.activeUnsolved);        
+    //    }
+    //}
 
 
 
