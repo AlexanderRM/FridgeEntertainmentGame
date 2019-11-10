@@ -42,7 +42,8 @@ public class Beans : MonoBehaviour
             {
                 vide.overrideStartNode = activeNode;
             }
-        }else
+        }
+        else
         {
             vide.overrideStartNode = inactiveNode;
         }

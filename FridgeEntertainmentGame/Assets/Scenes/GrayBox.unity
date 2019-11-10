@@ -16453,12 +16453,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 37234303}
   accessoryNew: {fileID: 37234297}
-  chatStart: 0
   activeUnsolved: 1
   notActive: 2
-  riddleSolved: 3
   coffeeGive: 4
-  coffeeGiven: 5
 --- !u!1 &149609648 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100010, guid: d4e4edbd17bbcd141be2029a303592bb,
@@ -17451,12 +17448,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  chatStart: 0
   activeUnsolved: 1
   notActive: 2
-  riddleSolved: 3
   coffeeGive: 4
-  coffeeGiven: 5
 --- !u!65 &236234002
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17876,12 +17870,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  chatStart: 0
   activeUnsolved: 1
   notActive: 2
-  riddleSolved: 3
   coffeeGive: 4
-  coffeeGiven: 5
 --- !u!65 &242869744
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34821,7 +34812,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 583557181}
   m_LocalRotation: {x: 0.70710576, y: -0, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: -9.749687, y: 3.849677, z: -11.577991}
+  m_LocalPosition: {x: -6.68, y: 3.849677, z: -11.577991}
   m_LocalScale: {x: 2.5181, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1659475277}
@@ -46618,12 +46609,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  chatStart: 0
   activeUnsolved: 1
   notActive: 2
-  riddleSolved: 3
   coffeeGive: 4
-  coffeeGiven: 5
 --- !u!1 &815926704 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 0ea4bbd9356aed64e8b720d381be1817,
@@ -57268,6 +57256,7 @@ MonoBehaviour:
   - Bean4
   - Bean5
   - Charlie
+  - CoffeeMachine
   - CommentModifier
   - CrazyCap
   - DamonEwel
@@ -67237,12 +67226,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  chatStart: 0
   activeUnsolved: 1
   notActive: 2
-  riddleSolved: 3
   coffeeGive: 4
-  coffeeGiven: 5
 --- !u!114 &986047354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87985,12 +87971,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 1446766562}
   accessoryNew: {fileID: 838008634}
-  chatStart: 0
   activeUnsolved: 1
   notActive: 2
-  riddleSolved: 3
   coffeeGive: 4
-  coffeeGiven: 5
 --- !u!114 &1232175585
 MonoBehaviour:
   m_ObjectHideFlags: 0
