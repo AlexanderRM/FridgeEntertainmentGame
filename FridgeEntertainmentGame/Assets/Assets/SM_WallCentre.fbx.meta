@@ -16,6 +16,7 @@ ModelImporter:
     2100000: lambert1
     2100002: lambert2
     2100004: lambert3
+    2100006: wall_centre_mtl
     2300000: //RootNode
     2300002: Powerpoint
     2300004: Powerpoint2
