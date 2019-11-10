@@ -17,18 +17,14 @@ public class Person : MonoBehaviour
     public GameObject accessoryNew;
 
     // Dialogue
-    public int chatStart;
     public int activeUnsolved;
     public int notActive;
-    public int riddleSolved;
     public int coffeeGive;
-    public int coffeeGiven;
 
     private TankController playerScript;
     private ParticleSystem particle;
     private VIDE_Assign vide;
     private UIManager uiRiddle;
-    private bool chat = false;
 
 
     void Start()
@@ -40,7 +36,6 @@ public class Person : MonoBehaviour
         particle.Stop();
 
         vide = GetComponent<VIDE_Assign>();
-        vide.overrideStartNode = chatStart;
         accessoryPrev.SetActive(true);
         accessoryNew.SetActive(false);
     }
@@ -70,72 +65,30 @@ public class Person : MonoBehaviour
             // if coffee has been given
             if (coffee == true)
             {
-                vide.overrideStartNode = coffeeGiven;
                 accessoryPrev.SetActive(false);
                 accessoryNew.SetActive(true);
                 return;
             }
-
-            if (bean.solved == true)
-            {
-                vide.overrideStartNode = riddleSolved;
-            }
-
             // check if player has coffee
             if (playerScript.coffee == true && Input.GetKeyDown(KeyCode.E) == true)
             {
                 coffee = true;
                 vide.overrideStartNode = coffeeGive;
             }
+
             // if active give riddle
             else if (active == true && Input.GetKeyDown(KeyCode.E) == true)
             {
-                vide.overrideStartNode = chatStart;
-
-
-                // If talked to before give other dialogue
-                if (chat == true)
-                {
-                    vide.overrideStartNode = activeUnsolved;
-                }
-
-                if (VD.nodeData != null)
-                {
-                    string[] comments = VD.nodeData.comments;
-                    // set bool for first chat
-                    if (VD.nodeData.isEnd || VD.nodeData.commentIndex == comments.Length - 1)
-                    {
-                        chat = true;
-                    }
-                }
-
+                vide.overrideStartNode = activeUnsolved;
                 // Set bean active
                 bean.active = true;
             }
             // active is false
-            else if (active == false && chat == true)
+            else if (active == false)
             {
                 vide.overrideStartNode = notActive;
-
-                if (VD.nodeData != null)
-                {
-                    string[] comments = VD.nodeData.comments;
-                    // set bool for first chat
-                    if (VD.nodeData.isEnd || VD.nodeData.commentIndex == comments.Length - 1)
-                    {
-                        chat = true;
-                    }
-                }
-                return;
             }
 
-            //if (active == true)
-            //{
-            //    if (!VD.isActive)
-            //    {
-            //        uiRiddle.riddleBegin(VD nodeData);
-            //    }
-            //}
         }
     }
 
