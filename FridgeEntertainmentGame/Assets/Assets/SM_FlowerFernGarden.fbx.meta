@@ -5,8 +5,10 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: SM_FlowerFernGarden_Lrg
+    100004: group15
     400000: //RootNode
     400002: SM_FlowerFernGarden_Lrg
+    400004: group15
     2100000: flower_Fern_Mtl
     2100002: lambert1
     2300000: //RootNode

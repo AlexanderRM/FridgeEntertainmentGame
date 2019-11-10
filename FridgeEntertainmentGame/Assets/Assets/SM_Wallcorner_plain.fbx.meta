@@ -8,6 +8,7 @@ ModelImporter:
     2100000: lambert2
     2100002: lambert3
     2100004: lambert4
+    2100006: wall_mtl
     2300000: //RootNode
     3300000: //RootNode
     4300000: SM_WallCorner_Plain
