@@ -11,6 +11,7 @@ public class Person : MonoBehaviour
     public string colTargetName;
     public bool active = false;
     public bool solved = false;
+    public bool clicked = false;
     public Beans bean;
     public bool coffee = false;
     public GameObject accessoryPrev;
@@ -21,7 +22,7 @@ public class Person : MonoBehaviour
     public int notActive;
     public int coffeeGive;
 
-    private TankController playerScript;
+    private PointWalk playerScript;
     private ParticleSystem particle;
     private VIDE_Assign vide;
     private UIManager uiRiddle;
@@ -30,7 +31,7 @@ public class Person : MonoBehaviour
     void Start()
     {
         // Set values
-        playerScript = player.GetComponent<TankController>();
+        playerScript = player.GetComponent<PointWalk>();
 
         particle = particleEffect.GetComponentInChildren<ParticleSystem>();
         particle.Stop();
@@ -47,6 +48,11 @@ public class Person : MonoBehaviour
         {
             particle.Stop();
         }
+    }
+
+    void LateUpdate()
+    {
+        clicked = false;
     }
 
     void OnTriggerEnter(Collider collider)
@@ -70,14 +76,14 @@ public class Person : MonoBehaviour
                 return;
             }
             // check if player has coffee
-            if (playerScript.coffee == true && Input.GetKeyDown(KeyCode.E) == true)
+            if (playerScript.coffee == true && Input.GetMouseButtonDown(0) == true && clicked == true)
             {
                 coffee = true;
                 vide.overrideStartNode = coffeeGive;
             }
 
             // if active give riddle
-            else if (active == true && Input.GetKeyDown(KeyCode.E) == true)
+            else if (active == true && Input.GetMouseButtonDown(0) == true && clicked == true)
             {
                 vide.overrideStartNode = activeUnsolved;
                 // Set bean active
