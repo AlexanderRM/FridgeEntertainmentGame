@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2703981636179025087}
   - component: {fileID: 2703981636179025086}
   - component: {fileID: 2703981636179025057}
-  - component: {fileID: 2703981636179025056}
+  - component: {fileID: 6570552102553870449}
   m_Layer: 0
   m_Name: proximitySensorRight
   m_TagString: Untagged
@@ -92,7 +92,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 1, z: 2}
   m_Center: {x: 4.5, y: 0, z: 0}
---- !u!114 &2703981636179025056
+--- !u!114 &6570552102553870449
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,6 +101,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2703981636179025058}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d362ef638916f4d18bce8556d67a0da1, type: 3}
+  m_Script: {fileID: 11500000, guid: be24e0130a5c96b40b2dc3b5526ccbe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

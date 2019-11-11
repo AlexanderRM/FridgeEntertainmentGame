@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5866664610451433496}
   - component: {fileID: 5866664610451433498}
   - component: {fileID: 5866664610451433503}
-  - component: {fileID: 5866664610451433500}
   - component: {fileID: 5866664610451433499}
+  - component: {fileID: 3809677318403804393}
   m_Layer: 0
   m_Name: Robot
   m_TagString: Untagged
@@ -99,25 +99,8 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 32
   m_CollisionDetection: 3
---- !u!114 &5866664610451433500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5866664610451433493}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ac9dfb878e444695a92c16fab97fe13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.1
-  proximitySensors: 0
-  contactSensors: 0
-  rightSensorTriggered: 0
-  leftSensorTriggered: 0
 --- !u!65 &5866664610451433499
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -131,6 +114,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &3809677318403804393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5866664610451433493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25d7796b6b88a564393460afa95e1e81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.01
+  proximitySensors: 0
+  contactSensors: 0
+  rightSensorTriggered: 0
+  leftSensorTriggered: 0
 --- !u!1001 &2278897708099339080
 PrefabInstance:
   m_ObjectHideFlags: 0
