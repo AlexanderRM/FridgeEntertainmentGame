@@ -6,6 +6,7 @@ using VIDE_Data;
 public class Walking : MonoBehaviour
 {
     private Animator anim;
+    private PointWalk walking;
 
     void Start()
     {
@@ -17,18 +18,19 @@ public class Walking : MonoBehaviour
         // Check if user is not min conversation
         if (!VD.isActive)
         {
-            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+            if (walking)
             {
                 anim.SetBool("walking", true);
                 anim.SetBool("walkToStop", false);
             }
-            else if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow))
-            {
-                anim.SetBool("walkToStop", true);
-                anim.SetBool("walking", false);
-            }
+            //else if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow))
+            //{
+            //    anim.SetBool("walkToStop", true);
+            //    anim.SetBool("walking", false);
+            //}
             else
             {
+                anim.SetBool("walkToStop", true);
                 anim.SetBool("walking", false);
                 anim.SetBool("idle", true);
                 //anim.StopPlayback("Walk Cycle");
