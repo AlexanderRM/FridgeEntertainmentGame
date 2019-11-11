@@ -26,6 +26,7 @@ public class PointWalk : MonoBehaviour
     {
         myNavAgent = GetComponent<NavMeshAgent>();
         objClicked = false;
+        targetPos = transform.position;
     }
 
     // Update is called once per frame
@@ -43,6 +44,10 @@ public class PointWalk : MonoBehaviour
                     myNavAgent.destination = hitInfo.point;
                 }
             }
+        }
+        if (myNavAgent.velocity.Equals(new Vector3(0, 0, 0)))
+        {
+            targetPos = transform.position;
         }
     }
 
