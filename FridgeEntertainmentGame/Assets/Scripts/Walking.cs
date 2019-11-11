@@ -7,9 +7,9 @@ public class Walking : MonoBehaviour
 {
     public float distanceToObj = 1f;
     public float distanceFromObj = 1f;
+    public PointWalk walking;
 
     private Animator anim;
-    private PointWalk walking;
 
     void Start()
     {
