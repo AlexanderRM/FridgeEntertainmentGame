@@ -1,15 +1,21 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using VIDE_Data;
 
-public class PointWalk : MonoBehaviour
+public class PointMove : MonoBehaviour
 {
+    public string playerName = "VIDE User";
+    public float rotSpeed = 5;
+    public float speed = 10;
+    public GameObject player;
     public LayerMask floorLayer;
-    public LayerMask itemLayer;
+    public LayerMask Interactable;
     public VIDE_Assign inTrigger;
     public UIManager diagUI;
+    public Animator walkCycle;
 
     private NavMeshAgent myNavAgent;
     private bool objClicked;
@@ -26,11 +32,14 @@ public class PointWalk : MonoBehaviour
     {
         Ray myRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (Input.GetMouseButtonDown(0) && objClicked == false)
+        if (!VD.isActive)
         {
-            if (Physics.Raycast(myRay, out RaycastHit hitInfo, 100, floorLayer))
+            if (Input.GetMouseButtonDown(0) && objClicked == false)
             {
-                myNavAgent.destination = hitInfo.point;
+                if (Physics.Raycast(myRay, out RaycastHit hitInfo, 100, floorLayer))
+                {
+                    myNavAgent.destination = hitInfo.point;
+                }
             }
         }
     }
@@ -41,12 +50,12 @@ public class PointWalk : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (Physics.Raycast(myRay, out RaycastHit hitInfo, 100, itemLayer))
+            if (Physics.Raycast(myRay, out RaycastHit hitInfo, 100, Interactable))
             {
                 // Item has been clocked on
                 objClicked = true;
-                if (hitInfo.collider.GetComponent<Beans>()) hitInfo.collider.GetComponent<Beans>().clicked = true;
-                if (hitInfo.collider.GetComponent<Person>()) hitInfo.collider.GetComponent<Person>().clicked = true;
+                if (hitInfo.collider.GetComponent<Beans>()) { hitInfo.collider.GetComponent<Beans>().clicked = true; TryInteract(); }
+                if (hitInfo.collider.GetComponent<Person>()) { hitInfo.collider.GetComponent<Person>().clicked = true; TryInteract(); }
                 return;
             }
         }

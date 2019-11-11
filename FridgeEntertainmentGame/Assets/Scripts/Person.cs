@@ -22,7 +22,7 @@ public class Person : MonoBehaviour
     public int notActive;
     public int coffeeGive;
 
-    private TankController playerScript;
+    private PointWalk playerScript;
     private ParticleSystem particle;
     private VIDE_Assign vide;
     private UIManager uiRiddle;
@@ -31,7 +31,7 @@ public class Person : MonoBehaviour
     void Start()
     {
         // Set values
-        playerScript = player.GetComponent<TankController>();
+        playerScript = player.GetComponent<PointWalk>();
 
         particle = particleEffect.GetComponentInChildren<ParticleSystem>();
         particle.Stop();
