@@ -15,10 +15,11 @@ public class PointWalk : MonoBehaviour
     public VIDE_Assign inTrigger;
     public UIManager diagUI;
     public Animator walkCycle;
+    [HideInInspector]
+    public Vector3 targetPos;
 
     private NavMeshAgent myNavAgent;
     private bool objClicked;
-    private Vector3 targetPos;
 
     // Start is called before the first frame update
     void Start()
