@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using VIDE_Data;
 
-public class PointMove : MonoBehaviour
+public class PointWalk : MonoBehaviour
 {
     public string playerName = "VIDE User";
     public float rotSpeed = 5;
