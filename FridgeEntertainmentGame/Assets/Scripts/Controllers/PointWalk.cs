@@ -18,6 +18,7 @@ public class PointWalk : MonoBehaviour
 
     private NavMeshAgent myNavAgent;
     private bool objClicked;
+    private Vector3 targetPos;
 
     // Start is called before the first frame update
     void Start()
@@ -51,8 +52,10 @@ public class PointWalk : MonoBehaviour
         {
             if (Physics.Raycast(myRay, out RaycastHit hitInfo, 100, Interactable))
             {
-                // Item has been clocked on
+                // Item has been clicked on
                 objClicked = true;
+                targetPos = hitInfo.point;
+
                 if (hitInfo.collider.GetComponent<Beans>()) { hitInfo.collider.GetComponent<Beans>().clicked = true; TryInteract(); }
                 if (hitInfo.collider.GetComponent<Person>()) { hitInfo.collider.GetComponent<Person>().clicked = true; TryInteract(); }
                 return;
@@ -78,7 +81,7 @@ public class PointWalk : MonoBehaviour
     {
         /* Prioritize triggers */
 
-        if (inTrigger)
+        if (inTrigger && transform.position == targetPos)
         {
             diagUI.Interact(inTrigger);
             return;
