@@ -46,6 +46,7 @@ public class PointWalk : MonoBehaviour
                 // Item has been clocked on
                 objClicked = true;
                 if (hitInfo.collider.GetComponent<Beans>()) hitInfo.collider.GetComponent<Beans>().clicked = true;
+                if (hitInfo.collider.GetComponent<Person>()) hitInfo.collider.GetComponent<Person>().clicked = true;
                 return;
             }
         }
