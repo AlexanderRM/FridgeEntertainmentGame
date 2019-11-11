@@ -112,32 +112,13 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 201ade090c0d31047af2b876fcbcd126, type: 2}
 --- !u!4 &17216137 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400054, guid: d4e4edbd17bbcd141be2029a303592bb,
     type: 3}
   m_PrefabInstance: {fileID: 149609642}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &18602046 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 68b82789fd118e84ba5bf9af68ca2f23,
-    type: 3}
-  m_PrefabInstance: {fileID: 417281901}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &18602050
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18602046}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.9307196, y: 0.9265376, z: 2.845992}
-  m_Center: {x: 0.009198114, y: -0.000000059604645, z: 0.35526502}
 --- !u!1 &22177884
 GameObject:
   m_ObjectHideFlags: 0
@@ -16328,12 +16309,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  chatStart: 0
   activeUnsolved: 0
   notActive: 0
-  riddleSolved: 0
   coffeeGive: 0
-  coffeeGiven: 0
 --- !u!1 &156529955 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: cd86f1e4bc809d54c946f20ac57f2169,
@@ -17287,12 +17265,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  chatStart: 0
   activeUnsolved: 0
   notActive: 0
-  riddleSolved: 0
   coffeeGive: 0
-  coffeeGiven: 0
 --- !u!65 &236234002
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17704,12 +17679,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  chatStart: 0
   activeUnsolved: 1
   notActive: 10
-  riddleSolved: 2
   coffeeGive: 10
-  coffeeGiven: 10
 --- !u!65 &242869744
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30153,6 +30125,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_BeanBag (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7d390abb355965e438ddeee579e12cbe, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7d390abb355965e438ddeee579e12cbe, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1
@@ -35780,7 +35756,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6730fd612e19654b8c238c9a3e6bd38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 815416575}
 --- !u!1 &684287046
 GameObject:
   m_ObjectHideFlags: 0
@@ -41588,12 +41563,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  chatStart: 0
   activeUnsolved: 1
   notActive: 2
-  riddleSolved: 3
   coffeeGive: 4
-  coffeeGiven: 5
 --- !u!1 &815926704 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 0ea4bbd9356aed64e8b720d381be1817,
@@ -51971,38 +51943,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 909914885}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &909914887 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 68b82789fd118e84ba5bf9af68ca2f23,
-    type: 3}
-  m_PrefabInstance: {fileID: 1227894742}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &909914888
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 909914887}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.8028119, y: 3, z: 0.5528228}
-  m_Center: {x: -1.5731697, y: 1.4299719, z: 0.12833911}
---- !u!65 &909914889
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 909914887}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.61176425, y: 3, z: 3.9382572}
-  m_Center: {x: 0.022353679, y: 1.4299719, z: -1.5643778}
 --- !u!1001 &911041033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56996,7 +56936,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 945225920}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 73107dc61793061458dbb2f90390faf1, type: 3}
   m_Name: 
@@ -57004,12 +56944,13 @@ MonoBehaviour:
   playerName: Intern
   speed: 3
   rotationSpeed: 180
-  buttonTimeout: 1
   coffee: 0
   player: {fileID: 945225920}
   diagUI: {fileID: 1950257304}
   inTrigger: {fileID: 0}
   walkCycle: {fileID: 945225924}
+  demo_Items: []
+  demo_ItemInventory: []
 --- !u!54 &945225922
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -57125,6 +57066,48 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &945225928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945225920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a86f7f98297c314192af437d9dc5b3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floorLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  itemLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  inTrigger: {fileID: 0}
+  diagUI: {fileID: 1950257304}
+--- !u!195 &945225929
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945225920}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &960421940
 GameObject:
   m_ObjectHideFlags: 0
@@ -62170,12 +62153,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  chatStart: 0
   activeUnsolved: 0
   notActive: 0
-  riddleSolved: 0
   coffeeGive: 0
-  coffeeGiven: 0
 --- !u!114 &986047354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67166,7 +67146,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0ca219343e693514796bf60ffdb8c940, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0ca219343e693514796bf60ffdb8c940, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0ca219343e693514796bf60ffdb8c940, type: 3}
       propertyPath: m_LocalPosition.x
@@ -77282,25 +77266,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1138505333}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1156406193 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 68b82789fd118e84ba5bf9af68ca2f23,
-    type: 3}
-  m_PrefabInstance: {fileID: 279792244}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1156406197
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156406193}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.9307196, y: 0.9265376, z: 2.845992}
-  m_Center: {x: 0.009197876, y: -0.000000059604645, z: 0.35526454}
 --- !u!1 &1164487502 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 4d49bb7a95231b54cbe424ff41496436,
@@ -77981,12 +77946,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  chatStart: 0
   activeUnsolved: 1
   notActive: 2
-  riddleSolved: 3
   coffeeGive: 4
-  coffeeGiven: 5
 --- !u!114 &1232175585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88353,25 +88315,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1817284518}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1411179951 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 68b82789fd118e84ba5bf9af68ca2f23,
-    type: 3}
-  m_PrefabInstance: {fileID: 1903367816}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1411179955
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1411179951}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.9307196, y: 0.9265376, z: 2.845992}
-  m_Center: {x: 0.009198114, y: -0.000000059604645, z: 0.35526454}
 --- !u!1 &1420582193 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 56d5e89b29a3a7d41a9e3eab415c16e3,
@@ -106988,12 +106931,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  chatStart: 0
   activeUnsolved: 0
   notActive: 0
-  riddleSolved: 0
   coffeeGive: 0
-  coffeeGiven: 0
 --- !u!114 &1864811335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107850,15 +107790,17 @@ MonoBehaviour:
   dialogueContainer: {fileID: 699280722}
   NPC_Container: {fileID: 538078342}
   playerContainer: {fileID: 1806196043}
-  Item_text: {fileID: 0}
-  Beans_text: {fileID: 0}
+  itemPopUp: {fileID: 0}
+  riddle_Container: {fileID: 0}
   NPC_Text: {fileID: 205580032}
   NPC_label: {fileID: 218223923}
   NPCSprite: {fileID: 2028739159}
   playerChoicePrefab: {fileID: 1400082427}
   playerSprite: {fileID: 2084640145}
   playerLabel: {fileID: 566523332}
+  riddle_Text: {fileID: 0}
   player: {fileID: 945225921}
+  riddle: {fileID: 0}
 --- !u!4 &1950257305
 Transform:
   m_ObjectHideFlags: 0

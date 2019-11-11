@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Assigned
   - Environment
+  - Floor
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - 
   - PostProcessing
   - Environment
-  - 
-  - 
+  - Floor
+  - Item
   - 
   - 
   - 

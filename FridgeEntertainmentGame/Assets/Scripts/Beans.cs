@@ -8,6 +8,7 @@ public class Beans : MonoBehaviour
     public GameObject particleEffect;
     public bool active = false;
     public bool solved = false;
+    public bool clicked = false;
     public string colTargetName;
     public GameObject person;
     public int activeNode = 0;
@@ -49,6 +50,11 @@ public class Beans : MonoBehaviour
         }
     }
 
+    void LateUpdate()
+    {
+        clicked = false;
+    }
+
     void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.name == colTargetName)
@@ -61,7 +67,7 @@ public class Beans : MonoBehaviour
     {
         if (collider.gameObject.name == colTargetName)
         {
-            if (active == true && Input.GetKeyDown(KeyCode.E) == true)
+            if (active == true && Input.GetMouseButtonDown(0) == true && clicked == true)
             {
                 personScript.solved = true;
 
