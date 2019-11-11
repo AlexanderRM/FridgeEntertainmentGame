@@ -5,6 +5,9 @@ using VIDE_Data;
 
 public class Walking : MonoBehaviour
 {
+    public float distanceToObj = 1f;
+    public float distanceFromObj = 1f;
+
     private Animator anim;
     private PointWalk walking;
 
@@ -18,12 +21,12 @@ public class Walking : MonoBehaviour
         // Check if user is not min conversation
         if (!VD.isActive)
         {
-            if (Vector3.Distance(walking.transform.position, walking.targetPos) > 1)
+            if (Vector3.Distance(walking.transform.position, walking.targetPos) > distanceToObj)
             {
                 anim.SetBool("walking", true);
                 anim.SetBool("walkToStop", false);
             }
-            else if (Vector3.Distance(walking.transform.position, walking.targetPos) < 1)
+            else if (Vector3.Distance(walking.transform.position, walking.targetPos) < distanceFromObj)
             {
                 anim.SetBool("walkToStop", true);
                 anim.SetBool("walking", false);
