@@ -119,25 +119,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 149609642}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &18602046 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 68b82789fd118e84ba5bf9af68ca2f23,
-    type: 3}
-  m_PrefabInstance: {fileID: 417281901}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &18602050
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18602046}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.9307196, y: 0.9265376, z: 2.845992}
-  m_Center: {x: 0.009198114, y: -0.000000059604645, z: 0.35526502}
 --- !u!1 &22177884
 GameObject:
   m_ObjectHideFlags: 0
@@ -16333,12 +16314,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 37234303}
   accessoryNew: {fileID: 0}
-  chatStart: 0
   activeUnsolved: 0
   notActive: 0
-  riddleSolved: 0
   coffeeGive: 0
-  coffeeGiven: 0
 --- !u!1 &156529955 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: cd86f1e4bc809d54c946f20ac57f2169,
@@ -16434,6 +16412,7 @@ MonoBehaviour:
   particleEffect: {fileID: 1238513787}
   active: 0
   solved: 0
+  clicked: 0
   colTargetName: Player
   person: {fileID: 149609643}
   activeNode: 0
@@ -16778,6 +16757,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 98c30d60747340f45923475f759cf9cb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.94
+      objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 98c30d60747340f45923475f759cf9cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.5444
@@ -16797,10 +16780,6 @@ PrefabInstance:
     - target: {fileID: 400006, guid: 98c30d60747340f45923475f759cf9cb, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5305214
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 98c30d60747340f45923475f759cf9cb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.94
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98c30d60747340f45923475f759cf9cb, type: 3}
@@ -17304,12 +17283,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  chatStart: 0
   activeUnsolved: 0
   notActive: 0
-  riddleSolved: 0
   coffeeGive: 0
-  coffeeGiven: 0
 --- !u!65 &236234002
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17721,12 +17697,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  chatStart: 0
   activeUnsolved: 1
   notActive: 10
-  riddleSolved: 2
   coffeeGive: 10
-  coffeeGiven: 10
 --- !u!65 &242869744
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18765,6 +18738,7 @@ MonoBehaviour:
   particleEffect: {fileID: 789828506}
   active: 0
   solved: 0
+  clicked: 0
   colTargetName: Player
   person: {fileID: 0}
   activeNode: 0
@@ -18924,6 +18898,7 @@ MonoBehaviour:
   particleEffect: {fileID: 1113702329}
   active: 0
   solved: 0
+  clicked: 0
   colTargetName: Player
   person: {fileID: 242869740}
   activeNode: 0
@@ -41283,26 +41258,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.50000024
       objectReference: {fileID: 0}
-    - target: {fileID: 400008, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.5254
-      objectReference: {fileID: 0}
-    - target: {fileID: 400008, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 400008, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.9649
-      objectReference: {fileID: 0}
-    - target: {fileID: 400008, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.52
-      objectReference: {fileID: 0}
-    - target: {fileID: 400008, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.38283762
-      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.317
@@ -41346,6 +41301,26 @@ PrefabInstance:
     - target: {fileID: 400004, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
       propertyPath: m_LocalRotation.z
       value: 2.696151e-22
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5254
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.9649
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.38283762
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
@@ -41659,12 +41634,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  chatStart: 0
   activeUnsolved: 1
   notActive: 2
-  riddleSolved: 3
   coffeeGive: 4
-  coffeeGiven: 5
 --- !u!1 &815926704 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 0ea4bbd9356aed64e8b720d381be1817,
@@ -52042,25 +52014,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 909914885}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &909914887 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 68b82789fd118e84ba5bf9af68ca2f23,
-    type: 3}
-  m_PrefabInstance: {fileID: 1227894742}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &909914889
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 909914887}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.9307196, y: 0.9265376, z: 2.845992}
-  m_Center: {x: 0.009198472, y: -0.000000059604645, z: 0.35526454}
 --- !u!1001 &911041033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52320,6 +52273,7 @@ MonoBehaviour:
   particleEffect: {fileID: 863969579}
   active: 0
   solved: 0
+  clicked: 0
   colTargetName: Player
   person: {fileID: 986047351}
   activeNode: 0
@@ -57063,7 +57017,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 945225920}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 73107dc61793061458dbb2f90390faf1, type: 3}
   m_Name: 
@@ -57193,6 +57147,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &945225929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945225920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a495fc09eb0d924cb06a890111bf7a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whatCanBeClickedOn:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &960421940
 GameObject:
   m_ObjectHideFlags: 0
@@ -62238,12 +62207,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  chatStart: 0
   activeUnsolved: 0
   notActive: 0
-  riddleSolved: 0
   coffeeGive: 0
-  coffeeGiven: 0
 --- !u!114 &986047354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77350,25 +77316,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1138505333}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1156406193 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 68b82789fd118e84ba5bf9af68ca2f23,
-    type: 3}
-  m_PrefabInstance: {fileID: 279792244}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1156406197
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156406193}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.9307196, y: 0.9265376, z: 2.845992}
-  m_Center: {x: 0.009197876, y: -0.000000059604645, z: 0.35526454}
 --- !u!1 &1164487502 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 4d49bb7a95231b54cbe424ff41496436,
@@ -78049,12 +77996,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  chatStart: 0
   activeUnsolved: 1
   notActive: 2
-  riddleSolved: 3
   coffeeGive: 4
-  coffeeGiven: 5
 --- !u!114 &1232175585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88421,25 +88365,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1817284518}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1411179951 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 68b82789fd118e84ba5bf9af68ca2f23,
-    type: 3}
-  m_PrefabInstance: {fileID: 1903367816}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1411179955
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1411179951}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.9307196, y: 0.9265376, z: 2.845992}
-  m_Center: {x: 0.009198114, y: -0.000000059604645, z: 0.35526454}
 --- !u!1 &1420582193 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 56d5e89b29a3a7d41a9e3eab415c16e3,
@@ -88507,6 +88432,7 @@ MonoBehaviour:
   particleEffect: {fileID: 1553319562}
   active: 0
   solved: 0
+  clicked: 0
   colTargetName: Player
   person: {fileID: 815416570}
   activeNode: 0
@@ -89187,26 +89113,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.50000024
       objectReference: {fileID: 0}
-    - target: {fileID: 400008, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.5415
-      objectReference: {fileID: 0}
-    - target: {fileID: 400008, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 400008, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.9649
-      objectReference: {fileID: 0}
-    - target: {fileID: 400008, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.52
-      objectReference: {fileID: 0}
-    - target: {fileID: 400008, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.13024323
-      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.317
@@ -89250,6 +89156,26 @@ PrefabInstance:
     - target: {fileID: 400004, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
       propertyPath: m_LocalRotation.z
       value: 2.696151e-22
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5415
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.9649
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.13024323
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
@@ -101064,6 +100990,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 98c30d60747340f45923475f759cf9cb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.94
+      objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 98c30d60747340f45923475f759cf9cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.5444
@@ -101083,10 +101013,6 @@ PrefabInstance:
     - target: {fileID: 400006, guid: 98c30d60747340f45923475f759cf9cb, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5305214
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 98c30d60747340f45923475f759cf9cb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.94
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98c30d60747340f45923475f759cf9cb, type: 3}
