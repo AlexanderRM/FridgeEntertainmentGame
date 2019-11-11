@@ -18,16 +18,16 @@ public class Walking : MonoBehaviour
         // Check if user is not min conversation
         if (!VD.isActive)
         {
-            if ()
+            if (Vector3.Distance(walking.transform.position, walking.targetPos) > 1)
             {
                 anim.SetBool("walking", true);
                 anim.SetBool("walkToStop", false);
             }
-            //else if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow))
-            //{
-            //    anim.SetBool("walkToStop", true);
-            //    anim.SetBool("walking", false);
-            //}
+            else if (Vector3.Distance(walking.transform.position, walking.targetPos) < 1)
+            {
+                anim.SetBool("walkToStop", true);
+                anim.SetBool("walking", false);
+            }
             else
             {
                 anim.SetBool("walkToStop", true);
