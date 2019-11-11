@@ -38,6 +38,7 @@ public class PointWalk : MonoBehaviour
             {
                 if (Physics.Raycast(myRay, out RaycastHit hitInfo, 100, floorLayer))
                 {
+                    targetPos = hitInfo.point;
                     myNavAgent.destination = hitInfo.point;
                 }
             }
@@ -54,10 +55,18 @@ public class PointWalk : MonoBehaviour
             {
                 // Item has been clicked on
                 objClicked = true;
-                targetPos = hitInfo.point;
 
-                if (hitInfo.collider.GetComponent<Beans>()) { hitInfo.collider.GetComponent<Beans>().clicked = true; TryInteract(); }
-                if (hitInfo.collider.GetComponent<Person>()) { hitInfo.collider.GetComponent<Person>().clicked = true; TryInteract(); }
+                if (hitInfo.collider.GetComponent<Beans>())
+                {
+                    hitInfo.collider.GetComponent<Beans>().clicked = true;
+                    TryInteract();
+                }
+
+                if (hitInfo.collider.GetComponent<Person>())
+                {
+                    hitInfo.collider.GetComponent<Person>().clicked = true;
+                    TryInteract();
+                }
                 return;
             }
         }
@@ -81,7 +90,7 @@ public class PointWalk : MonoBehaviour
     {
         /* Prioritize triggers */
 
-        if (inTrigger && transform.position == targetPos)
+        if (inTrigger && Vector3.Distance(transform.position, targetPos) < 1)
         {
             diagUI.Interact(inTrigger);
             return;

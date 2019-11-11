@@ -18,7 +18,7 @@ public class Walking : MonoBehaviour
         // Check if user is not min conversation
         if (!VD.isActive)
         {
-            if (walking)
+            if ()
             {
                 anim.SetBool("walking", true);
                 anim.SetBool("walkToStop", false);
