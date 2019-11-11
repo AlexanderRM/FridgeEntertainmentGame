@@ -8,8 +8,7 @@ using VIDE_Data;
 public class PointWalk : MonoBehaviour
 {
     public string playerName = "VIDE User";
-    public float rotSpeed = 5;
-    public float speed = 10;
+    public bool coffee = false;
     public GameObject player;
     public LayerMask floorLayer;
     public LayerMask Interactable;
