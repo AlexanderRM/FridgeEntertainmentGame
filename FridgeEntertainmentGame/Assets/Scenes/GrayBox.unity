@@ -41194,7 +41194,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 241452013}
-  - {fileID: 2003311139}
+  - {fileID: 1694649834}
   m_Father: {fileID: 1232175580}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -42616,6 +42616,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 33645d552f49c0247afeb16f666dfbc0, type: 2}
+    - target: {fileID: 2300004, guid: d1db05a6ec9a116408ee091f5af7ccc6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 33645d552f49c0247afeb16f666dfbc0, type: 2}
+    - target: {fileID: 2300012, guid: d1db05a6ec9a116408ee091f5af7ccc6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 33645d552f49c0247afeb16f666dfbc0, type: 2}
     - target: {fileID: 100000, guid: d1db05a6ec9a116408ee091f5af7ccc6, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
@@ -42676,14 +42684,6 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2300004, guid: d1db05a6ec9a116408ee091f5af7ccc6, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 33645d552f49c0247afeb16f666dfbc0, type: 2}
-    - target: {fileID: 2300012, guid: d1db05a6ec9a116408ee091f5af7ccc6, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 33645d552f49c0247afeb16f666dfbc0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1db05a6ec9a116408ee091f5af7ccc6, type: 3}
 --- !u!4 &770429940 stripped
@@ -63667,10 +63667,10 @@ MonoBehaviour:
   player: {fileID: 945225920}
   floorLayer:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 2048
   Interactable:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 1024
   inTrigger: {fileID: 0}
   diagUI: {fileID: 1950257304}
   walkCycle: {fileID: 0}
@@ -117799,6 +117799,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.0252586
       objectReference: {fileID: 0}
+    - target: {fileID: 2300024, guid: 29a0419c7563eaa4aa2683b39c9910b1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 33645d552f49c0247afeb16f666dfbc0, type: 2}
     - target: {fileID: 100004, guid: 29a0419c7563eaa4aa2683b39c9910b1, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
@@ -117871,10 +117875,6 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2300024, guid: 29a0419c7563eaa4aa2683b39c9910b1, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 33645d552f49c0247afeb16f666dfbc0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29a0419c7563eaa4aa2683b39c9910b1, type: 3}
 --- !u!4 &1672301646 stripped
@@ -117927,6 +117927,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0117172105, y: 0.010439556, z: 0.011717213}
   m_Center: {x: -1.3877788e-17, y: 0.00021977792, z: 4.656613e-10}
+--- !u!4 &1694649834 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400010, guid: 4fa079f2a94c6ca409dd0fad49c8c6d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 2003311138}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1695301142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130583,7 +130589,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76e5dc29a96cbe94bae7203d8e453e6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coffeeMachine: {fileID: 0}
 --- !u!1 &1912147716
 GameObject:
   m_ObjectHideFlags: 0
@@ -136090,11 +136095,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fa079f2a94c6ca409dd0fad49c8c6d1, type: 3}
---- !u!4 &2003311139 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 2003311138}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2006568866
 PrefabInstance:
   m_ObjectHideFlags: 0
