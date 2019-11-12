@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RiddleCon : MonoBehaviour
+public class RiddleMana : MonoBehaviour
 {
     List<GameObject> people = new List<GameObject>();
     List<GameObject> items = new List<GameObject>();
