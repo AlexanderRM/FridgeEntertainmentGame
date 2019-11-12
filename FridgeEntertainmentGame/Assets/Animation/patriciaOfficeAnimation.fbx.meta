@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4a80baa4294736042936a1c1469b2ce8
+guid: 2a39b58e495190e48bded8c8ceb73a18
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -190,7 +190,7 @@ ModelImporter:
       name: patriciaIdle
       takeName: Take 001
       firstFrame: 1
-      lastFrame: 150
+      lastFrame: 170
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
