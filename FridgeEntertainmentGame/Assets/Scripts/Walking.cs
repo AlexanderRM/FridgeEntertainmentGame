@@ -18,7 +18,7 @@ public class Walking : MonoBehaviour
 
     void Update()
     {
-        // Check if user is not min conversation
+        // Check if user is not in conversation
         if (!VD.isActive)
         {
             if (Vector3.Distance(walking.transform.position, walking.targetPos) > distanceToObj)

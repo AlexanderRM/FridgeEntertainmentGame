@@ -23,7 +23,7 @@ public class CameraFollow : MonoBehaviour
         if(target.GetComponent<PointWalk>().coffee == true) skyBox.material = hasCoffee;
     }
 
-    void FixedUpdate()
+    void LateUpdate()
     {
         Vector3 desiredPosition = target.position + offset;
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
