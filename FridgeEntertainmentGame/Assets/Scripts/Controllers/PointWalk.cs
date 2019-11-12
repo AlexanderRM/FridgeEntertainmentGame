@@ -72,6 +72,12 @@ public class PointWalk : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            if (VD.isActive)
+            {
+                TryInteract();
+                return;
+            }
+
             // IF the beans or person was hit, try interaction
             if (Physics.Raycast(myRay, out RaycastHit hitInfo, 100, Interactable))
             {
