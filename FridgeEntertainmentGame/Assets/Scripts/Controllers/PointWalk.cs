@@ -7,6 +7,7 @@ using VIDE_Data;
 
 public class PointWalk : MonoBehaviour
 {
+    // Declare values
     public string playerName = "VIDE User";
     public bool coffee = false;
     public GameObject player;
@@ -24,6 +25,7 @@ public class PointWalk : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+    // Assign values
         myNavAgent = GetComponent<NavMeshAgent>();
         objClicked = false;
         targetPos = transform.position;
@@ -32,10 +34,17 @@ public class PointWalk : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // cast a ray to point
         Ray myRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (VD.isActive) myNavAgent.isStopped = true;
+        // Check if the VD is active and stop the agent if so
+        if (VD.isActive) {
+            myNavAgent.isStopped = true;
+            targetPos = transform.position;
+            myNavAgent.destination = targetPos;
+        }
 
+        // If VD is false allow movement
         if (!VD.isActive)
         {
             myNavAgent.isStopped = false;
@@ -48,6 +57,8 @@ public class PointWalk : MonoBehaviour
                 }
             }
         }
+
+        // If Players not moving set that to our target position
         if (myNavAgent.velocity.Equals(new Vector3(0, 0, 0)))
         {
             targetPos = transform.position;
@@ -56,10 +67,12 @@ public class PointWalk : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        // Cast a ray at mouse position
         Ray myRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         if (Input.GetMouseButtonDown(0))
         {
+            // IF the beans or person was hit, try interaction
             if (Physics.Raycast(myRay, out RaycastHit hitInfo, 100, Interactable))
             {
                 // Item has been clicked on
@@ -79,6 +92,8 @@ public class PointWalk : MonoBehaviour
                 return;
             }
         }
+
+        // Set to false when done
         objClicked = false;
     }
 
