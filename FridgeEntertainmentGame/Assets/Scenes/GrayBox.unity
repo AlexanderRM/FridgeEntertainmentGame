@@ -16813,9 +16813,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 37234303}
   accessoryNew: {fileID: 37234297}
-  activeUnsolved: 1
-  notActive: 2
-  coffeeGive: 4
+  activeUnsolved: 0
+  notActive: 1
+  coffeeGive: 2
 --- !u!1 &149609648 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100010, guid: d4e4edbd17bbcd141be2029a303592bb,
@@ -17882,9 +17882,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  activeUnsolved: 1
-  notActive: 2
-  coffeeGive: 4
+  activeUnsolved: 0
+  notActive: 1
+  coffeeGive: 2
 --- !u!65 &236234002
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20072,7 +20072,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1729510069}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &426980808
 BoxCollider:
@@ -42644,14 +42644,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 33645d552f49c0247afeb16f666dfbc0, type: 2}
-    - target: {fileID: 2300004, guid: d1db05a6ec9a116408ee091f5af7ccc6, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 33645d552f49c0247afeb16f666dfbc0, type: 2}
-    - target: {fileID: 2300012, guid: d1db05a6ec9a116408ee091f5af7ccc6, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 33645d552f49c0247afeb16f666dfbc0, type: 2}
     - target: {fileID: 100000, guid: d1db05a6ec9a116408ee091f5af7ccc6, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
@@ -42712,6 +42704,14 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300004, guid: d1db05a6ec9a116408ee091f5af7ccc6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 33645d552f49c0247afeb16f666dfbc0, type: 2}
+    - target: {fileID: 2300012, guid: d1db05a6ec9a116408ee091f5af7ccc6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 33645d552f49c0247afeb16f666dfbc0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1db05a6ec9a116408ee091f5af7ccc6, type: 3}
 --- !u!4 &770429940 stripped
@@ -48107,9 +48107,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  activeUnsolved: 1
-  notActive: 2
-  coffeeGive: 4
+  activeUnsolved: 0
+  notActive: 1
+  coffeeGive: 2
 --- !u!1 &815926704 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 0ea4bbd9356aed64e8b720d381be1817,
@@ -68903,9 +68903,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  activeUnsolved: 1
-  notActive: 2
-  coffeeGive: 4
+  activeUnsolved: 0
+  notActive: 1
+  coffeeGive: 2
 --- !u!114 &986047354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73925,7 +73925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0ca219343e693514796bf60ffdb8c940, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0ca219343e693514796bf60ffdb8c940, type: 3}
       propertyPath: m_TagString
@@ -79358,7 +79358,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1729510069}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 12.64, z: 0}
 --- !u!65 &1079174853
 BoxCollider:
@@ -90153,9 +90153,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  activeUnsolved: 1
-  notActive: 2
-  coffeeGive: 4
+  activeUnsolved: 0
+  notActive: 1
+  coffeeGive: 2
 --- !u!114 &1232175585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118140,10 +118140,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.0252586
       objectReference: {fileID: 0}
-    - target: {fileID: 2300024, guid: 29a0419c7563eaa4aa2683b39c9910b1, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 33645d552f49c0247afeb16f666dfbc0, type: 2}
     - target: {fileID: 100004, guid: 29a0419c7563eaa4aa2683b39c9910b1, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
@@ -118216,6 +118212,10 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300024, guid: 29a0419c7563eaa4aa2683b39c9910b1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 33645d552f49c0247afeb16f666dfbc0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29a0419c7563eaa4aa2683b39c9910b1, type: 3}
 --- !u!4 &1672301646 stripped
@@ -130765,7 +130765,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1729510069}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 9.463, z: 0}
 --- !u!23 &1881866651
 MeshRenderer:
@@ -130924,6 +130924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76e5dc29a96cbe94bae7203d8e453e6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coffeeMachine: {fileID: 0}
 --- !u!1 &1912147716
 GameObject:
   m_ObjectHideFlags: 0
@@ -136464,8 +136465,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 4fa079f2a94c6ca409dd0fad49c8c6d1, type: 3}
 --- !u!4 &2003311139 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 400010, guid: 4fa079f2a94c6ca409dd0fad49c8c6d1,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 2003311138}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2006568866
