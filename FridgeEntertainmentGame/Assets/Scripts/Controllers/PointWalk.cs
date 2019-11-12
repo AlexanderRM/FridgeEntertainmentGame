@@ -34,8 +34,11 @@ public class PointWalk : MonoBehaviour
     {
         Ray myRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
+        if (VD.isActive) myNavAgent.isStopped = true;
+
         if (!VD.isActive)
         {
+            myNavAgent.isStopped = false;
             if (Input.GetMouseButtonDown(0) && objClicked == false)
             {
                 if (Physics.Raycast(myRay, out RaycastHit hitInfo, 100, floorLayer))
