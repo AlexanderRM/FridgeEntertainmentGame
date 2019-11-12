@@ -155,7 +155,7 @@ ModelImporter:
     400148: Wrist_R_Jnt
     2100000: blinn1
     4300000: polySurface1
-    7400000: Take 001
+    7400000: playerIdle
     9500000: //RootNode
     13700000: polySurface1
   externalObjects: {}
@@ -187,7 +187,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: playerIdle
       takeName: Take 001
       firstFrame: 0
       lastFrame: 60
