@@ -4,11 +4,22 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Tree
+    100004: Tree_Base
     400000: //RootNode
+    400002: Tree
+    400004: Tree_Base
     2100000: lambert1
+    2100002: lambert2
     2300000: //RootNode
+    2300002: Tree
+    2300004: Tree_Base
     3300000: //RootNode
+    3300002: Tree
+    3300004: Tree_Base
     4300000: SM_WillowTree
+    4300002: Tree_Base
+    4300004: Tree
   externalObjects: {}
   materials:
     importMaterials: 1
