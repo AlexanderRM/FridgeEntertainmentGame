@@ -80,13 +80,11 @@ public class PointWalk : MonoBehaviour
 
                 if (hitInfo.collider.GetComponent<Beans>())
                 {
-                    hitInfo.collider.GetComponent<Beans>().clicked = true;
                     TryInteract();
                 }
 
                 if (hitInfo.collider.GetComponent<Person>())
                 {
-                    hitInfo.collider.GetComponent<Person>().clicked = true;
                     TryInteract();
                 }
                 return;
@@ -115,7 +113,7 @@ public class PointWalk : MonoBehaviour
     {
         /* Prioritize triggers */
 
-        if (inTrigger && Vector3.Distance(transform.position, targetPos) < 1)
+        if (inTrigger)
         {
             diagUI.Interact(inTrigger);
             return;
