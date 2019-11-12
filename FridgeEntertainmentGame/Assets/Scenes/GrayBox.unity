@@ -16785,9 +16785,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 37234303}
   accessoryNew: {fileID: 37234297}
-  activeUnsolved: 1
-  notActive: 2
-  coffeeGive: 4
+  activeUnsolved: 0
+  notActive: 1
+  coffeeGive: 2
 --- !u!1 &149609648 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100010, guid: d4e4edbd17bbcd141be2029a303592bb,
@@ -17854,9 +17854,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  activeUnsolved: 1
-  notActive: 2
-  coffeeGive: 4
+  activeUnsolved: 0
+  notActive: 1
+  coffeeGive: 2
 --- !u!65 &236234002
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48079,9 +48079,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  activeUnsolved: 1
-  notActive: 2
-  coffeeGive: 4
+  activeUnsolved: 0
+  notActive: 1
+  coffeeGive: 2
 --- !u!1 &815926704 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 0ea4bbd9356aed64e8b720d381be1817,
@@ -68856,9 +68856,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  activeUnsolved: 1
-  notActive: 2
-  coffeeGive: 4
+  activeUnsolved: 0
+  notActive: 1
+  coffeeGive: 2
 --- !u!114 &986047354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90106,9 +90106,9 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 0}
   accessoryNew: {fileID: 0}
-  activeUnsolved: 1
-  notActive: 2
-  coffeeGive: 4
+  activeUnsolved: 0
+  notActive: 1
+  coffeeGive: 2
 --- !u!114 &1232175585
 MonoBehaviour:
   m_ObjectHideFlags: 0
