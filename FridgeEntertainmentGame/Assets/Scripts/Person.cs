@@ -11,7 +11,6 @@ public class Person : MonoBehaviour
     public string colTargetName;
     public bool active = false;
     public bool solved = false;
-    public bool clicked = false;
     public Beans bean;
     public bool coffee = false;
     public GameObject accessoryPrev;
@@ -52,7 +51,6 @@ public class Person : MonoBehaviour
 
     void LateUpdate()
     {
-        clicked = false;
     }
 
     void OnTriggerEnter(Collider collider)
@@ -76,14 +74,14 @@ public class Person : MonoBehaviour
                 return;
             }
             // check if player has coffee
-            if (playerScript.coffee == true && Input.GetMouseButtonDown(0) == true && clicked == true)
+            if (playerScript.coffee == true && Input.GetMouseButtonDown(0) == true)
             {
                 coffee = true;
                 vide.overrideStartNode = coffeeGive;
             }
 
             // if active give riddle
-            else if (active == true && Input.GetMouseButtonDown(0) == true && clicked == true)
+            else if (active == true && Input.GetMouseButtonDown(0) == true)
             {
                 vide.overrideStartNode = activeUnsolved;
                 // Set bean active
