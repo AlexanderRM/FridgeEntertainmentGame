@@ -108,7 +108,7 @@ public class PointWalk : MonoBehaviour
     {
         inTrigger = null;
         objClicked = false;
-        diagUI.EndDialogue();
+        VD.EndDialogue();
     }
 
     void TryInteract()
