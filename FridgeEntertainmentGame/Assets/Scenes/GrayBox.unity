@@ -176,11 +176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: d4e4edbd17bbcd141be2029a303592bb, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 6
-=======
-      value: 5
->>>>>>> b5017e46c26176a416c0609b3d20ea52c1baff5a
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: d4e4edbd17bbcd141be2029a303592bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1891,7 +1887,6 @@ ParticleSystemRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-<<<<<<< HEAD
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -1917,7 +1912,6 @@ ParticleSystemRenderer:
   m_MaskInteraction: 0
 --- !u!198 &271910971
 ParticleSystem:
-=======
 --- !u!33 &312795237
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1945,7 +1939,6 @@ MonoBehaviour:
   colObjName: Player
 --- !u!1 &315550854
 GameObject:
->>>>>>> b5017e46c26176a416c0609b3d20ea52c1baff5a
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7171,11 +7164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ecedb6ab0c9083048aadaa233bfb461b, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 6
-=======
-      value: 4
->>>>>>> b5017e46c26176a416c0609b3d20ea52c1baff5a
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ecedb6ab0c9083048aadaa233bfb461b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -34876,11 +34865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f838e3d53fa54cd47817de5934e42574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   player: {fileID: 945225920}
-=======
-  player: {fileID: 0}
->>>>>>> b5017e46c26176a416c0609b3d20ea52c1baff5a
   speed: 1
   startColor: {r: 1, g: 1, b: 1, a: 0}
   endColor: {r: 0, g: 0.5810096, b: 1, a: 0}
@@ -35791,11 +35776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400110, guid: 2810ff573f6a16a47b2f2804f5e2a0b6, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
       value: 7
-=======
-      value: 6
->>>>>>> b5017e46c26176a416c0609b3d20ea52c1baff5a
       objectReference: {fileID: 0}
     - target: {fileID: 400110, guid: 2810ff573f6a16a47b2f2804f5e2a0b6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
