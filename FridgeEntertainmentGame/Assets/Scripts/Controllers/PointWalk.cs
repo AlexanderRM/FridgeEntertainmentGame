@@ -18,6 +18,8 @@ public class PointWalk : MonoBehaviour
     public Animator walkCycle;
     [HideInInspector]
     public Vector3 targetPos;
+    [HideInInspector]
+    public bool active = true;
 
     private NavMeshAgent myNavAgent;
     private bool objClicked;
@@ -34,35 +36,38 @@ public class PointWalk : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // cast a ray to point
-        Ray myRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        // Check if the VD is active and stop the agent if so
-        if (VD.isActive)
+        if (active == true)
         {
-            myNavAgent.isStopped = true;
-            targetPos = transform.position;
-            myNavAgent.destination = targetPos;
-        }
+            // cast a ray to point
+            Ray myRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        // If VD is false allow movement
-        if (!VD.isActive)
-        {
-            myNavAgent.isStopped = false;
-            if (Input.GetMouseButtonDown(0) && objClicked == false)
+            // Check if the VD is active and stop the agent if so
+            if (VD.isActive)
             {
-                if (Physics.Raycast(myRay, out RaycastHit hitInfo, 100, floorLayer))
+                myNavAgent.isStopped = true;
+                targetPos = transform.position;
+                myNavAgent.destination = targetPos;
+            }
+
+            // If VD is false allow movement
+            if (!VD.isActive)
+            {
+                myNavAgent.isStopped = false;
+                if (Input.GetMouseButtonDown(0) && objClicked == false)
                 {
-                    targetPos = hitInfo.point;
-                    myNavAgent.destination = hitInfo.point;
+                    if (Physics.Raycast(myRay, out RaycastHit hitInfo, 100, floorLayer))
+                    {
+                        targetPos = hitInfo.point;
+                        myNavAgent.destination = hitInfo.point;
+                    }
                 }
             }
-        }
 
-        // If Players not moving set that to our target position
-        if (myNavAgent.velocity.Equals(new Vector3(0, 0, 0)))
-        {
-            targetPos = transform.position;
+            // If Players not moving set that to our target position
+            if (myNavAgent.velocity.Equals(new Vector3(0, 0, 0)))
+            {
+                targetPos = transform.position;
+            }
         }
     }
 

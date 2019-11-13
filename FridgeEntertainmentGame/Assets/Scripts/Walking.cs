@@ -8,6 +8,7 @@ public class Walking : MonoBehaviour
     public float distanceToObj = 1f;
     public float distanceFromObj = 1f;
     public PointWalk walking;
+    public Menu menu;
 
     private Animator anim;
 
@@ -30,6 +31,12 @@ public class Walking : MonoBehaviour
             {
                 anim.SetBool("walkToStop", true);
                 anim.SetBool("walking", false);
+            }
+            else if (menu.active == true)
+            {
+                anim.SetBool("walking", false);
+                anim.SetBool("walkToStop", true);
+                anim.SetBool("idle", true);
             }
             else
             {

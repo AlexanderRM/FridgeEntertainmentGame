@@ -10,9 +10,11 @@ public class RiddleMana : MonoBehaviour
     List<GameObject> items = new List<GameObject>();
     VD.NodeData node;
     CoffeeMachine machineScript;
+    int peopleCoffeed = 0;
 
     [HideInInspector]
     public int beansObtained = 0;
+    public Menu menu;
     public GameObject coffeeMachine;
     public string beansCollected = "Go make coffee!";
     public string coffeeMade = "Deliver coffee.";
@@ -36,9 +38,16 @@ public class RiddleMana : MonoBehaviour
     {
         // Reset our beans collected
         beansObtained = 0;
+        peopleCoffeed = 0;
+
+        // Check for menu input
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            menu.Toggle();
+        }
 
         // Loop through and check objects if active and toggle
-        for(int i = 0; i < people.Count; i++)
+        for (int i = 0; i < people.Count; i++)
         {
             // Check if current object is active
             if (people[i].GetComponent<Person>().active == false)
@@ -51,7 +60,7 @@ public class RiddleMana : MonoBehaviour
             else if (people[i].GetComponent<Person>().active == true && people[i].GetComponent<Person>().solved == false)
             {
                 // Check if the person has given the riddle
-                if(people[i].GetComponent<Person>().riddleGiven == true)
+                if (people[i].GetComponent<Person>().riddleGiven == true)
                 {
                     // access node
                     node = VD.GetNodeData(people[i].GetComponent<VIDE_Assign>().GetAssigned(), 4, true);
@@ -61,7 +70,7 @@ public class RiddleMana : MonoBehaviour
                 return;
             }
             // Persons solved show next Objective
-            else if(people[i].GetComponent<Person>().active == true && people[i].GetComponent<Person>().solved == true)
+            else if (people[i].GetComponent<Person>().active == true && people[i].GetComponent<Person>().solved == true)
             {
                 // access node
                 node = VD.GetNodeData(people[i].GetComponent<VIDE_Assign>().GetAssigned(), 5, true);
@@ -74,21 +83,36 @@ public class RiddleMana : MonoBehaviour
         foreach (GameObject bean in items)
         {
             // If beans are solved add 1;
-            if(bean.GetComponent<Beans>().solved == true)
+            if (bean.GetComponent<Beans>().solved == true)
             {
                 beansObtained -= -1;
             }
         }
 
         // check if the last item is solved
-        if(items[items.Count - 1].GetComponent<Beans>().solved == true)
+        if (items[items.Count - 1].GetComponent<Beans>().solved == true)
         {
             objectiveText.text = beansCollected;
         }
 
-        if(GameObject.FindWithTag("Player").GetComponent<PointWalk>().coffee == true)
+        if (GameObject.FindWithTag("Player").GetComponent<PointWalk>().coffee == true)
         {
             objectiveText.text = coffeeMade;
+        }
+
+        // Check if everyone has Coffee
+        foreach (GameObject person in people)
+        {
+            // If people are coffeed add 1
+            if (person.GetComponent<Person>().coffee == true)
+            {
+                peopleCoffeed -= -1;
+            }
+        }
+
+        if (peopleCoffeed == 5)
+        {
+            menu.GetComponent<Menu>().active = true;
         }
     }
 }
