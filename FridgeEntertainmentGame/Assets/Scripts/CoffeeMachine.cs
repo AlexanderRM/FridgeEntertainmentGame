@@ -25,7 +25,7 @@ public class CoffeeMachine : MonoBehaviour
     {
         if (collider.gameObject.name == colTargetName)
         {
-            if (active == true && Input.GetKeyDown(KeyCode.E) == true)
+            if (active == true && Input.GetMouseButtonDown(0) == true)
             {
                 playerScript.coffee = true;
             }
