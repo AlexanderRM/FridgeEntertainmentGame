@@ -1,18 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using VIDE_Data;
 
 public class RiddleMana : MonoBehaviour
 {
     List<GameObject> people = new List<GameObject>();
     List<GameObject> items = new List<GameObject>();
+    VD.NodeData node;
+    CoffeeMachine machineScript;
 
     public GameObject coffeeMachine;
-    CoffeeMachine machineScript;
+    public string beansCollected = "Go make coffee!";
+    public string coffeeMade = "Deliver coffee.";
+    public Canvas canvas;
 
     // Start is called before the first frame update
     void Start()
     {
+        // Set our text to toggle off
+        canvas.GetComponentInChildren<Text>().enabled = false;
         // Loop through and collect our people and items
         for (int i = 1; i != 6; i++)
         {
@@ -39,14 +47,39 @@ public class RiddleMana : MonoBehaviour
             // Check if this object is active and solved
             else if (people[i].GetComponent<Person>().active == true && people[i].GetComponent<Person>().solved == false)
             {
+                // Check if the person has given the riddle
+                if(people[i].GetComponent<Person>().riddleGiven == true)
+                {
+                    // access node
+                    node = VD.GetNodeData(people[i].GetComponent<VIDE_Assign>().GetAssigned(), 10, true);
+                    // Set canvas
+                    canvas.GetComponentInChildren<Text>().text = node.comments[0];
+                    canvas.GetComponentInChildren<Text>().enabled = true;
+                }
                 return;
+            }
+            // Persons solved show next Objective
+            else if(people[i].GetComponent<Person>().active == true && people[i].GetComponent<Person>().solved == true)
+            {
+                // access node
+                node = VD.GetNodeData(people[i].GetComponent<VIDE_Assign>().GetAssigned(), 11, true);
+                // Set canvas
+                canvas.GetComponentInChildren<Text>().text = node.comments[0];
+                canvas.GetComponentInChildren<Text>().enabled = true;
             }
         }
 
         // check if the last item is solved
         if(items[items.Count - 1].GetComponent<Beans>().solved == true)
         {
-            machineScript.active = true;
+            canvas.GetComponentInChildren<Text>().text = beansCollected;
+            canvas.GetComponentInChildren<Text>().enabled = true;
+        }
+
+        if(gameObject.GetComponent<PointWalk>().coffee == true)
+        {
+            canvas.GetComponentInChildren<Text>().text = coffeeMade;
+            canvas.GetComponentInChildren<Text>().enabled = true;
         }
     }
 }
