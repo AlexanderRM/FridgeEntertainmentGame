@@ -14,13 +14,13 @@ public class RiddleMana : MonoBehaviour
     public GameObject coffeeMachine;
     public string beansCollected = "Go make coffee!";
     public string coffeeMade = "Deliver coffee.";
-    public Canvas canvas;
+    public Text objectiveText;
 
     // Start is called before the first frame update
     void Start()
     {
         // Set our text to toggle off
-        canvas.GetComponentInChildren<Text>().enabled = false;
+        objectiveText.enabled = false;
         // Loop through and collect our people and items
         for (int i = 1; i != 6; i++)
         {
@@ -53,8 +53,8 @@ public class RiddleMana : MonoBehaviour
                     // access node
                     node = VD.GetNodeData(people[i].GetComponent<VIDE_Assign>().GetAssigned(), 10, true);
                     // Set canvas
-                    canvas.GetComponentInChildren<Text>().text = node.comments[0];
-                    canvas.GetComponentInChildren<Text>().enabled = true;
+                    objectiveText.text = node.comments[0];
+                    objectiveText.enabled = true;
                 }
                 return;
             }
@@ -64,22 +64,22 @@ public class RiddleMana : MonoBehaviour
                 // access node
                 node = VD.GetNodeData(people[i].GetComponent<VIDE_Assign>().GetAssigned(), 11, true);
                 // Set canvas
-                canvas.GetComponentInChildren<Text>().text = node.comments[0];
-                canvas.GetComponentInChildren<Text>().enabled = true;
+                objectiveText.text = node.comments[0];
+                objectiveText.enabled = true;
             }
         }
 
         // check if the last item is solved
         if(items[items.Count - 1].GetComponent<Beans>().solved == true)
         {
-            canvas.GetComponentInChildren<Text>().text = beansCollected;
-            canvas.GetComponentInChildren<Text>().enabled = true;
+            objectiveText.text = beansCollected;
+            objectiveText.enabled = true;
         }
 
         if(gameObject.GetComponent<PointWalk>().coffee == true)
         {
-            canvas.GetComponentInChildren<Text>().text = coffeeMade;
-            canvas.GetComponentInChildren<Text>().enabled = true;
+            objectiveText.text = coffeeMade;
+            objectiveText.enabled = true;
         }
     }
 }
