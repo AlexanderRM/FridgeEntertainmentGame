@@ -42,7 +42,7 @@ public class Walking : MonoBehaviour
         else if (VD.isActive)
         {
             anim.SetBool("walking", false);
-            anim.SetBool("walkToStop", false);
+            anim.SetBool("walkToStop", true);
             anim.SetBool("idle", true);
         }
     }
