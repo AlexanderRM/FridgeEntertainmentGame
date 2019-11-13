@@ -25,7 +25,7 @@ public class PointWalk : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    // Assign values
+        // Assign values
         myNavAgent = GetComponent<NavMeshAgent>();
         objClicked = false;
         targetPos = transform.position;
@@ -38,7 +38,8 @@ public class PointWalk : MonoBehaviour
         Ray myRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         // Check if the VD is active and stop the agent if so
-        if (VD.isActive) {
+        if (VD.isActive)
+        {
             myNavAgent.isStopped = true;
             targetPos = transform.position;
             myNavAgent.destination = targetPos;
@@ -82,11 +83,19 @@ public class PointWalk : MonoBehaviour
                 {
                     TryInteract();
                 }
-
                 if (hitInfo.collider.GetComponent<Person>())
                 {
                     TryInteract();
                 }
+                if (hitInfo.collider.GetComponent<CoffeeMachine>())
+                {
+                    TryInteract();
+                }
+                return;
+            }
+            else if (VD.isActive && myNavAgent.velocity.Equals(new Vector3(0, 0, 0)))
+            {
+                TryInteract();
                 return;
             }
         }

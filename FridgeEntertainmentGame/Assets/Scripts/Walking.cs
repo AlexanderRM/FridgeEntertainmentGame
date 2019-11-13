@@ -39,7 +39,7 @@ public class Walking : MonoBehaviour
                 //anim.StopPlayback("Walk Cycle");
             }
         }
-        else
+        else if (VD.isActive)
         {
             anim.SetBool("walking", false);
             anim.SetBool("walkToStop", false);

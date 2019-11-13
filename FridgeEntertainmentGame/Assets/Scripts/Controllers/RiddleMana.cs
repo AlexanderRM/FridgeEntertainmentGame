@@ -1,14 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using VIDE_Data;
 
 public class RiddleMana : MonoBehaviour
 {
     List<GameObject> people = new List<GameObject>();
     List<GameObject> items = new List<GameObject>();
+    VD.NodeData node;
+    CoffeeMachine machineScript;
 
     public GameObject coffeeMachine;
-    CoffeeMachine machineScript;
+    public string beansCollected = "Go make coffee!";
+    public string coffeeMade = "Deliver coffee.";
+    public Text objectiveText;
 
     // Start is called before the first frame update
     void Start()
@@ -39,14 +45,35 @@ public class RiddleMana : MonoBehaviour
             // Check if this object is active and solved
             else if (people[i].GetComponent<Person>().active == true && people[i].GetComponent<Person>().solved == false)
             {
+                // Check if the person has given the riddle
+                if(people[i].GetComponent<Person>().riddleGiven == true)
+                {
+                    // access node
+                    node = VD.GetNodeData(people[i].GetComponent<VIDE_Assign>().GetAssigned(), 10, true);
+                    // Set canvas
+                    objectiveText.text = node.comments[0];
+                }
                 return;
+            }
+            // Persons solved show next Objective
+            else if(people[i].GetComponent<Person>().active == true && people[i].GetComponent<Person>().solved == true)
+            {
+                // access node
+                node = VD.GetNodeData(people[i].GetComponent<VIDE_Assign>().GetAssigned(), 11, true);
+                // Set canvas
+                objectiveText.text = node.comments[0];
             }
         }
 
         // check if the last item is solved
         if(items[items.Count - 1].GetComponent<Beans>().solved == true)
         {
-            machineScript.active = true;
+            objectiveText.text = beansCollected;
+        }
+
+        if(GameObject.FindWithTag("Player").GetComponent<PointWalk>().coffee == true)
+        {
+            objectiveText.text = coffeeMade;
         }
     }
 }
