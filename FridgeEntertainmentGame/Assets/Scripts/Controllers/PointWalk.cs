@@ -90,7 +90,7 @@ public class PointWalk : MonoBehaviour
                 }
                 return;
             }
-            else if (VD.isActive)
+            else if (VD.isActive && myNavAgent.velocity.Equals(new Vector3(0, 0, 0)))
             {
                 TryInteract();
                 return;
