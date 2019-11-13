@@ -69761,7 +69761,7 @@ MonoBehaviour:
   active: 0
   solved: 0
   riddleGiven: 0
-  bean: {fileID: 925363036}
+  bean: {fileID: 0}
   coffee: 0
   accessoryPrev: {fileID: 1558099926}
   accessoryNew: {fileID: 2811127}
@@ -127478,6 +127478,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coffeeMachine: {fileID: 1866948777}
+  beansCollected: Go make coffee!
+  coffeeMade: Deliver coffee.
+  canvas: {fileID: 680465779}
 --- !u!1 &1912147716
 GameObject:
   m_ObjectHideFlags: 0
