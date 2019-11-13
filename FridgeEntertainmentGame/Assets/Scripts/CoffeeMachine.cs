@@ -23,6 +23,7 @@ public class CoffeeMachine : MonoBehaviour
 
     void OnTriggerStay(Collider collider)
     {
+        // Check whats colliding
         if (collider.gameObject.name == colTargetName)
         {
             if (active == true && Input.GetMouseButtonDown(0) == true)
