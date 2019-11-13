@@ -22,7 +22,13 @@ public class Walking : MonoBehaviour
         // Check if user is not in conversation
         if (!VD.isActive)
         {
-            if (Vector3.Distance(walking.transform.position, walking.targetPos) > distanceToObj)
+            if (menu.active == true)
+            {
+                anim.SetBool("walking", false);
+                anim.SetBool("walkToStop", true);
+                anim.SetBool("idle", true);
+            }
+            else if (Vector3.Distance(walking.transform.position, walking.targetPos) > distanceToObj)
             {
                 anim.SetBool("walking", true);
                 anim.SetBool("walkToStop", false);
@@ -31,12 +37,6 @@ public class Walking : MonoBehaviour
             {
                 anim.SetBool("walkToStop", true);
                 anim.SetBool("walking", false);
-            }
-            else if (menu.active == true)
-            {
-                anim.SetBool("walking", false);
-                anim.SetBool("walkToStop", true);
-                anim.SetBool("idle", true);
             }
             else
             {
