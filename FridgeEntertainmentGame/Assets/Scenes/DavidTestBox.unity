@@ -5813,6 +5813,7 @@ MonoBehaviour:
   colTargetName: Player
   active: 0
   solved: 0
+  riddleGiven: 0
   bean: {fileID: 617806088}
   coffee: 0
   accessoryPrev: {fileID: 532210782}
@@ -16555,6 +16556,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0117172105, y: 0.010439556, z: 0.011717213}
   m_Center: {x: -1.3877788e-17, y: 0.00021977792, z: 4.656613e-10}
+--- !u!1 &207562682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 2057573126}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2057573127}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &209075653
 GameObject:
   m_ObjectHideFlags: 0
@@ -38069,6 +38086,7 @@ MonoBehaviour:
   colTargetName: Player
   active: 0
   solved: 0
+  riddleGiven: 0
   bean: {fileID: 503013388}
   coffee: 0
   accessoryPrev: {fileID: 0}
@@ -41469,7 +41487,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76e5dc29a96cbe94bae7203d8e453e6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coffeeMachine: {fileID: 1889510859}
 --- !u!4 &676754269
 Transform:
   m_ObjectHideFlags: 0
@@ -57365,6 +57382,7 @@ MonoBehaviour:
   colTargetName: Player
   active: 0
   solved: 0
+  riddleGiven: 0
   bean: {fileID: 2095951438}
   coffee: 0
   accessoryPrev: {fileID: 0}
@@ -58066,12 +58084,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 874734700}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a495fc09eb0d924cb06a890111bf7a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a86f7f98297c314192af437d9dc5b3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  whatCanBeClickedOn:
+  playerName: VIDE User
+  coffee: 0
+  player: {fileID: 874734700}
+  floorLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
+  Interactable:
+    serializedVersion: 2
+    m_Bits: 1024
+  inTrigger: {fileID: 0}
+  diagUI: {fileID: 1860183798}
+  walkCycle: {fileID: 874734701}
+  targetPos: {x: 0, y: 0, z: 0}
 --- !u!114 &874734708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58084,9 +58112,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e37a3d3605597bd4db74152311df1580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToObj: 1
-  distanceFromObj: 1
-  walking: {fileID: 0}
+  distanceToObj: 0.2
+  distanceFromObj: 0.1
+  walking: {fileID: 874734706}
 --- !u!114 &874734709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58620,6 +58648,7 @@ MonoBehaviour:
   colTargetName: Player
   active: 0
   solved: 0
+  riddleGiven: 0
   bean: {fileID: 117970302}
   coffee: 0
   accessoryPrev: {fileID: 0}
@@ -113473,6 +113502,7 @@ MonoBehaviour:
   colTargetName: Player
   active: 0
   solved: 0
+  riddleGiven: 0
   bean: {fileID: 1935453864}
   coffee: 0
   accessoryPrev: {fileID: 0}
@@ -124590,7 +124620,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 658752435}
-  - {fileID: 2057573127}
+  - {fileID: 2014501736}
   m_Father: {fileID: 392656036}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -130076,6 +130106,38 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!1 &2014501735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 2057573126}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2014501736}
+  m_Layer: 0
+  m_Name: SM_DnDTable (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2014501736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 2057573126}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014501735}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2057573130}
+  - {fileID: 2057573127}
+  m_Father: {fileID: 1954695561}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2027020171
 GameObject:
   m_ObjectHideFlags: 0
@@ -135661,17 +135723,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 064b8e635f2672c469214fd66bdb6ba7, type: 3}
---- !u!4 &2057573127 stripped
+--- !u!4 &2057573127
 Transform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 2057573126}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2057573128 stripped
+  m_GameObject: {fileID: 207562682}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2014501736}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2057573128
 GameObject:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 100010, guid: 064b8e635f2672c469214fd66bdb6ba7,
     type: 3}
   m_PrefabInstance: {fileID: 2057573126}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2057573130}
+  - component: {fileID: 2057573129}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!65 &2057573129
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -135685,6 +135768,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6345398, y: 0.8606787, z: 1.2631539}
   m_Center: {x: 0.00000008940697, y: 0.000000014901161, z: 0}
+--- !u!4 &2057573130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 2057573126}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057573128}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2014501736}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2095951437
 GameObject:
   m_ObjectHideFlags: 0
@@ -136439,6 +136536,7 @@ MonoBehaviour:
   colTargetName: Player
   active: 0
   solved: 0
+  riddleGiven: 0
   bean: {fileID: 1935453864}
   coffee: 0
   accessoryPrev: {fileID: 0}

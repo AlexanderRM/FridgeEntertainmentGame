@@ -36,13 +36,12 @@ public class Walking : MonoBehaviour
                 anim.SetBool("walkToStop", true);
                 anim.SetBool("walking", false);
                 anim.SetBool("idle", true);
-                //anim.StopPlayback("Walk Cycle");
             }
         }
         else if (VD.isActive)
         {
             anim.SetBool("walking", false);
-            anim.SetBool("walkToStop", false);
+            anim.SetBool("walkToStop", true);
             anim.SetBool("idle", true);
         }
     }
