@@ -83,14 +83,17 @@ public class PointWalk : MonoBehaviour
                 {
                     TryInteract();
                 }
-
                 if (hitInfo.collider.GetComponent<Person>())
+                {
+                    TryInteract();
+                }
+                if (hitInfo.collider.GetComponent<Item>())
                 {
                     TryInteract();
                 }
                 return;
             }
-            else if (VD.isActive)
+            else if (VD.isActive && myNavAgent.velocity.Equals(new Vector3(0, 0, 0)))
             {
                 TryInteract();
                 return;
