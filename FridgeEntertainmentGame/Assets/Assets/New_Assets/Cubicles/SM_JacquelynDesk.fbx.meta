@@ -1,0 +1,183 @@
+fileFormatVersion: 2
+guid: 8d60fb8f77526f2458e10d460f3566ec
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: SM_Cubicle
+    100002: SM_Cubicle 1
+    100004: SM_DeskFileTray
+    100006: SM_Jacquelyn
+    100008: //RootNode
+    100010: SM_JacquelynFileBlue
+    100012: SM_JacquelynFileGreen
+    100014: SM_JacquelynFileRed
+    100016: SM_JacquelynFileWhite
+    100018: SM_LeftRollerSkate
+    100020: SM_ModernKeyBoard
+    100022: SM_ModernPC
+    100024: SM_Mouse
+    100026: SM_MousePad
+    100028: SM_NewLamp
+    100030: SM_OfficeChair
+    100032: SM_PictureFrame
+    100034: SM_RightRollerSkate
+    100036: SM_SingleFileGreen
+    100038: SM_SingleFileYellow
+    400000: SM_Cubicle
+    400002: SM_Cubicle 1
+    400004: SM_DeskFileTray
+    400006: SM_Jacquelyn
+    400008: //RootNode
+    400010: SM_JacquelynFileBlue
+    400012: SM_JacquelynFileGreen
+    400014: SM_JacquelynFileRed
+    400016: SM_JacquelynFileWhite
+    400018: SM_LeftRollerSkate
+    400020: SM_ModernKeyBoard
+    400022: SM_ModernPC
+    400024: SM_Mouse
+    400026: SM_MousePad
+    400028: SM_NewLamp
+    400030: SM_OfficeChair
+    400032: SM_PictureFrame
+    400034: SM_RightRollerSkate
+    400036: SM_SingleFileGreen
+    400038: SM_SingleFileYellow
+    2100000: lambert1
+    2300000: SM_Cubicle 1
+    2300002: SM_DeskFileTray
+    2300004: SM_JacquelynFileBlue
+    2300006: SM_JacquelynFileGreen
+    2300008: SM_JacquelynFileRed
+    2300010: SM_JacquelynFileWhite
+    2300012: SM_LeftRollerSkate
+    2300014: SM_ModernKeyBoard
+    2300016: SM_ModernPC
+    2300018: SM_Mouse
+    2300020: SM_MousePad
+    2300022: SM_NewLamp
+    2300024: SM_OfficeChair
+    2300026: SM_PictureFrame
+    2300028: SM_RightRollerSkate
+    2300030: SM_SingleFileGreen
+    2300032: SM_SingleFileYellow
+    3300000: SM_Cubicle 1
+    3300002: SM_DeskFileTray
+    3300004: SM_JacquelynFileBlue
+    3300006: SM_JacquelynFileGreen
+    3300008: SM_JacquelynFileRed
+    3300010: SM_JacquelynFileWhite
+    3300012: SM_LeftRollerSkate
+    3300014: SM_ModernKeyBoard
+    3300016: SM_ModernPC
+    3300018: SM_Mouse
+    3300020: SM_MousePad
+    3300022: SM_NewLamp
+    3300024: SM_OfficeChair
+    3300026: SM_PictureFrame
+    3300028: SM_RightRollerSkate
+    3300030: SM_SingleFileGreen
+    3300032: SM_SingleFileYellow
+    4300000: SM_JacquelynFileWhite
+    4300002: SM_JacquelynFileRed
+    4300004: SM_JacquelynFileGreen
+    4300006: SM_JacquelynFileBlue
+    4300008: SM_SingleFileGreen
+    4300010: SM_PictureFrame
+    4300012: SM_RightRollerSkate
+    4300014: SM_LeftRollerSkate
+    4300016: SM_Mouse
+    4300018: SM_MousePad
+    4300020: SM_OfficeChair
+    4300022: SM_DeskFileTray
+    4300024: SM_Cubicle
+    4300026: SM_SingleFileYellow
+    4300028: SM_NewLamp
+    4300030: SM_ModernKeyBoard
+    4300032: SM_ModernPC
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
