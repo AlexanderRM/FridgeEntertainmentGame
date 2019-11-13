@@ -87,7 +87,7 @@ public class PointWalk : MonoBehaviour
                 {
                     TryInteract();
                 }
-                if (hitInfo.collider.GetComponent<CoffeeMachine>())
+                if (hitInfo.collider.GetComponent<Item>())
                 {
                     TryInteract();
                 }
