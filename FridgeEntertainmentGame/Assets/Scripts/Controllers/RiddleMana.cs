@@ -11,6 +11,8 @@ public class RiddleMana : MonoBehaviour
     VD.NodeData node;
     CoffeeMachine machineScript;
 
+    [HideInInspector]
+    public int beansObtained = 0;
     public GameObject coffeeMachine;
     public string beansCollected = "Go make coffee!";
     public string coffeeMade = "Deliver coffee.";
@@ -32,6 +34,9 @@ public class RiddleMana : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Reset our beans collected
+        beansObtained = 0;
+
         // Loop through and check objects if active and toggle
         for(int i = 0; i < people.Count; i++)
         {
@@ -62,6 +67,16 @@ public class RiddleMana : MonoBehaviour
                 node = VD.GetNodeData(people[i].GetComponent<VIDE_Assign>().GetAssigned(), 5, true);
                 // Set canvas
                 objectiveText.text = node.comments[0];
+            }
+        }
+
+        // Check how many beans are collected using a for each loop
+        foreach (GameObject bean in items)
+        {
+            // If beans are solved add 1;
+            if(bean.GetComponent<Beans>().solved == true)
+            {
+                beansObtained -= -1;
             }
         }
 
