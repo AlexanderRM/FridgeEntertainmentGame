@@ -11,6 +11,8 @@ public class Person : MonoBehaviour
     public string colTargetName;
     public bool active = false;
     public bool solved = false;
+    [HideInInspector]
+    public bool riddleGiven;
     public Beans bean;
     public bool coffee = false;
     public GameObject accessoryPrev;
@@ -24,8 +26,6 @@ public class Person : MonoBehaviour
     private PointWalk playerScript;
     private ParticleSystem particle;
     private VIDE_Assign vide;
-    private UIManager uiRiddle;
-
 
     void Start()
     {
@@ -83,6 +83,7 @@ public class Person : MonoBehaviour
             // if active give riddle
             else if (active == true && Input.GetMouseButtonDown(0) == true)
             {
+                riddleGiven = true;
                 vide.overrideStartNode = activeUnsolved;
                 // Set bean active
                 bean.active = true;
