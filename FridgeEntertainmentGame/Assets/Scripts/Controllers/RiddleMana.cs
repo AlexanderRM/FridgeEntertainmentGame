@@ -19,8 +19,6 @@ public class RiddleMana : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Set our text to toggle off
-        objectiveText.enabled = false;
         // Loop through and collect our people and items
         for (int i = 1; i != 6; i++)
         {
@@ -54,7 +52,6 @@ public class RiddleMana : MonoBehaviour
                     node = VD.GetNodeData(people[i].GetComponent<VIDE_Assign>().GetAssigned(), 10, true);
                     // Set canvas
                     objectiveText.text = node.comments[0];
-                    objectiveText.enabled = true;
                 }
                 return;
             }
@@ -65,7 +62,6 @@ public class RiddleMana : MonoBehaviour
                 node = VD.GetNodeData(people[i].GetComponent<VIDE_Assign>().GetAssigned(), 11, true);
                 // Set canvas
                 objectiveText.text = node.comments[0];
-                objectiveText.enabled = true;
             }
         }
 
@@ -73,13 +69,11 @@ public class RiddleMana : MonoBehaviour
         if(items[items.Count - 1].GetComponent<Beans>().solved == true)
         {
             objectiveText.text = beansCollected;
-            objectiveText.enabled = true;
         }
 
         if(gameObject.GetComponent<PointWalk>().coffee == true)
         {
             objectiveText.text = coffeeMade;
-            objectiveText.enabled = true;
         }
     }
 }
