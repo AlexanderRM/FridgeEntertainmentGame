@@ -49,7 +49,7 @@ public class RiddleMana : MonoBehaviour
                 if(people[i].GetComponent<Person>().riddleGiven == true)
                 {
                     // access node
-                    node = VD.GetNodeData(people[i].GetComponent<VIDE_Assign>().GetAssigned(), 10, true);
+                    node = VD.GetNodeData(people[i].GetComponent<VIDE_Assign>().GetAssigned(), 4, true);
                     // Set canvas
                     objectiveText.text = node.comments[0];
                 }
@@ -59,7 +59,7 @@ public class RiddleMana : MonoBehaviour
             else if(people[i].GetComponent<Person>().active == true && people[i].GetComponent<Person>().solved == true)
             {
                 // access node
-                node = VD.GetNodeData(people[i].GetComponent<VIDE_Assign>().GetAssigned(), 11, true);
+                node = VD.GetNodeData(people[i].GetComponent<VIDE_Assign>().GetAssigned(), 5, true);
                 // Set canvas
                 objectiveText.text = node.comments[0];
             }
