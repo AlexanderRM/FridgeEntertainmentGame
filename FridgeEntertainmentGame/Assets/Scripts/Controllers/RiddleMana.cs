@@ -71,7 +71,7 @@ public class RiddleMana : MonoBehaviour
             objectiveText.text = beansCollected;
         }
 
-        if(gameObject.GetComponent<PointWalk>().coffee == true)
+        if(GameObject.FindWithTag("Player").GetComponent<PointWalk>().coffee == true)
         {
             objectiveText.text = coffeeMade;
         }
