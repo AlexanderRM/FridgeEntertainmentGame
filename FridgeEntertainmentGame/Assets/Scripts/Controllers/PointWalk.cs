@@ -83,16 +83,8 @@ public class PointWalk : MonoBehaviour
             {
                 // Item has been clicked on
                 objClicked = true;
-
-                if (hitInfo.collider.GetComponent<Beans>())
-                {
-                    TryInteract();
-                }
-                if (hitInfo.collider.GetComponent<Person>())
-                {
-                    TryInteract();
-                }
-                if (hitInfo.collider.GetComponent<Item>())
+                // Check if colliding with any of these objects
+                if (hitInfo.collider.GetComponent<Beans>() || hitInfo.collider.GetComponent<Person>() || hitInfo.collider.GetComponent<Item>())
                 {
                     TryInteract();
                 }
