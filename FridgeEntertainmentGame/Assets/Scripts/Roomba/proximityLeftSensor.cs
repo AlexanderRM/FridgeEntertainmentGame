@@ -8,8 +8,8 @@ public class proximityLeftSensor : MonoBehaviour {
     float originalSpeed;
     void Start()
     {
-        Robot = GetComponentInParent<GameObject>();
-        leftSensor = GetComponent<GameObject>();
+        Robot = transform.parent.gameObject;
+        leftSensor = GetComponent<Transform>().gameObject;
         leftSensor.GetComponent<Renderer>().material.color = Color.red;
 		originalSpeed = Robot.GetComponent<Movement>().speed;
     }

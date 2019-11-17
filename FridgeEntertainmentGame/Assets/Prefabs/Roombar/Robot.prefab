@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25d7796b6b88a564393460afa95e1e81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.01
+  speed: 0.05
   proximitySensors: 0
   contactSensors: 0
   rightSensorTriggered: 0

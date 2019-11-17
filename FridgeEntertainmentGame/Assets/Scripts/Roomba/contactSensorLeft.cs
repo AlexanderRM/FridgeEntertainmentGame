@@ -9,9 +9,9 @@ public class contactSensorLeft : MonoBehaviour {
 
 	void Start ()
     {
-        Robot = GetComponentInParent<GameObject>();
-        leftSensor = GetComponent<GameObject>();
-		leftSensor.GetComponent<Renderer>().material.color = Color.red;
+        Robot = transform.parent.gameObject;
+        leftSensor = GetComponent<Transform>().gameObject;
+        leftSensor.GetComponent<Renderer>().material.color = Color.red;
 		originalSpeed = Robot.GetComponent<Movement>().speed;
 		Robot.GetComponent<Movement>().leftSensorTriggered = false;
 	}
