@@ -22,7 +22,7 @@ public class Walking : MonoBehaviour
         // Check if user is not in conversation
         if (!VD.isActive)
         {
-            if (menu.active == true)
+            if (menu.menuActive == true)
             {
                 anim.SetBool("walking", false);
                 anim.SetBool("walkToStop", true);

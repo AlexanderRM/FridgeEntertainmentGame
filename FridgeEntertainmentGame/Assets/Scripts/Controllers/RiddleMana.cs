@@ -112,7 +112,7 @@ public class RiddleMana : MonoBehaviour
 
         if (peopleCoffeed == 5)
         {
-            menu.GetComponent<Menu>().active = true;
+            menu.GetComponent<Menu>().menuActive = true;
         }
     }
 }

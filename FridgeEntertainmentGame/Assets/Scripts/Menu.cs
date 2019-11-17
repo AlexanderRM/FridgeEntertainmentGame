@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    public bool active;
+    public bool menuActive;
     public PointWalk playerCon;
     public GameObject toggle;
 
@@ -24,15 +24,15 @@ public class Menu : MonoBehaviour
 
     public void Toggle()
     {
-        if (active == true)
+        if (menuActive == true)
         {
-            active = false;
-            playerCon.active = false;
             toggle.SetActive(true);
+            menuActive = false;
+            playerCon.active = false;
         }
         else
         {
-            active = true;
+            menuActive = true;
             playerCon.active = true;
             toggle.SetActive(false);
         }
