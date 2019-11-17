@@ -8,8 +8,8 @@ public class contactSensorRight : MonoBehaviour {
     float originalSpeed;
     void Start()
     {
-        Robot = GetComponentInParent<GameObject>();
-        rightSensor = GetComponent<GameObject>();
+        Robot = transform.parent.gameObject;
+        rightSensor = GetComponent<Transform>().gameObject;
         rightSensor.GetComponent<Renderer>().material.color = Color.red;
         originalSpeed = Robot.GetComponent<Movement>().speed;
 		Robot.GetComponent<Movement>().rightSensorTriggered = false;
