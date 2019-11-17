@@ -69592,6 +69592,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_VendingMachine
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 70e2933b079b09c428c2beea3e558ae6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 70e2933b079b09c428c2beea3e558ae6, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 70e2933b079b09c428c2beea3e558ae6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.359158
@@ -90253,6 +90261,14 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 0ea4bbd9356aed64e8b720d381be1817, type: 3}
       propertyPath: m_Name
       value: SM_LargeLeafyPlant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0ea4bbd9356aed64e8b720d381be1817, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0ea4bbd9356aed64e8b720d381be1817, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0ea4bbd9356aed64e8b720d381be1817, type: 3}
       propertyPath: m_LocalPosition.x

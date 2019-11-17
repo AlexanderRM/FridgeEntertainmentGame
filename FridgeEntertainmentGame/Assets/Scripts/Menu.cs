@@ -24,17 +24,19 @@ public class Menu : MonoBehaviour
 
     public void Toggle()
     {
+        // menu already on
         if (menuActive == true)
         {
-            toggle.SetActive(true);
             menuActive = false;
-            playerCon.active = false;
-        }
-        else
-        {
-            menuActive = true;
             playerCon.active = true;
             toggle.SetActive(false);
+        }
+        // menu already off
+        else if (menuActive == false)
+        {
+            menuActive = true;
+            playerCon.active = false;
+            toggle.SetActive(true);
         }
     }
 
