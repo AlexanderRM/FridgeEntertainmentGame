@@ -31,7 +31,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 663143938414497300}
-  m_Father: {fileID: 2530608600418039176}
+  m_Father: {fileID: 7257951716398424285}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1567880481}
+      - m_Target: {fileID: 1567880481, guid: 73c09ec58b944a841a85329a175aa0c3, type: 3}
         m_MethodName: ContinueBtn
         m_Mode: 1
         m_Arguments:
@@ -129,38 +129,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!1 &2137709569342651878
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2530608600418039176}
-  m_Layer: 0
-  m_Name: Toggle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2530608600418039176
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2137709569342651878}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 6505560352278696216}
-  - {fileID: 2076445179592417561}
-  m_Father: {fileID: 7257951716398424285}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4591871023365692825
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,7 +296,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7257951716398424285}
-  - component: {fileID: 1567880481}
   m_Layer: 0
   m_Name: Menu
   m_TagString: Untagged
@@ -347,25 +314,11 @@ Transform:
   m_LocalPosition: {x: 21.619919, y: 41.249607, z: 296.7441}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2530608600418039176}
+  - {fileID: 6505560352278696216}
+  - {fileID: 2076445179592417561}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1567880481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6260405565233250932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec639f5ba7f55484396c673a3ff73c57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 0
-  playerCon: {fileID: 0}
-  toggle: {fileID: 2137709569342651878}
 --- !u!1 &6353237299036307687
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,7 +350,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6107752798145009859}
-  m_Father: {fileID: 2530608600418039176}
+  m_Father: {fileID: 7257951716398424285}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -482,7 +435,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1567880481}
+      - m_Target: {fileID: 1567880481, guid: 73c09ec58b944a841a85329a175aa0c3, type: 3}
         m_MethodName: MainMenuBtn
         m_Mode: 5
         m_Arguments:
