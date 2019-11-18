@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 9b9fafa3fc765b943835fb4f1a8aeb13, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.16341527, g: 0.20463054, b: 0.28442386, a: 1}
+  m_IndirectSpecularColor: {r: 0.2150598, g: 0.43672857, b: 0.54444474, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -31521,8 +31521,8 @@ MonoBehaviour:
   target: {fileID: 945225925}
   smoothSpeed: 10
   offset: {x: -3, y: 3, z: -3}
-  notCoffee: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
-  hasCoffee: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  notCoffee: {fileID: 2100000, guid: 9b9fafa3fc765b943835fb4f1a8aeb13, type: 2}
+  hasCoffee: {fileID: 2100000, guid: 9b9fafa3fc765b943835fb4f1a8aeb13, type: 2}
 --- !u!45 &534669907
 Skybox:
   m_ObjectHideFlags: 0
@@ -31531,7 +31531,7 @@ Skybox:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_Enabled: 1
-  m_CustomSkybox: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_CustomSkybox: {fileID: 2100000, guid: 9b9fafa3fc765b943835fb4f1a8aeb13, type: 2}
 --- !u!1 &538078342 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7514665658073873515, guid: c6ea982f2c28c3646bf46357da4972db,
