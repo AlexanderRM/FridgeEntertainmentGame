@@ -20763,8 +20763,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.8508401, y: 0.946785, z: 1.2452067}
-  m_Center: {x: 0.0000038146973, y: -0.00000047683716, z: 0.0000009536743}
+  m_Size: {x: 1.8508401, y: 0.946785, z: 1.8668453}
+  m_Center: {x: 0.0000038012354, y: -0.00000048643847, z: 0.31082094}
 --- !u!114 &396047184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59108,7 +59108,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &961502805
 PrefabInstance:
@@ -107471,12 +107471,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1866948775}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1866948777 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: f9aa3d1ccc76d4c4d832b1f52c821989,
-    type: 3}
-  m_PrefabInstance: {fileID: 1866948775}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1872720423
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -112743,7 +112737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beansObtained: 0
   menu: {fileID: 680465781}
-  coffeeMachine: {fileID: 1866948777}
+  coffeeMachine: {fileID: 1316033684}
   beansCollected: Go make coffee!
   coffeeMade: Deliver coffee.
   objectiveText: {fileID: 1139085984}
