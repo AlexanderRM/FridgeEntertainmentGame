@@ -42297,7 +42297,11 @@ PrefabInstance:
     - target: {fileID: 2300002, guid: 0e9ebf700aaf0d14991633ff248ab2b3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 80ed4baafe580734882b86441c5008f3, type: 2}
+      objectReference: {fileID: 2100000, guid: 238a80574d166e54cbaf5a28ca372aef, type: 2}
+    - target: {fileID: 2300000, guid: 0e9ebf700aaf0d14991633ff248ab2b3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 238a80574d166e54cbaf5a28ca372aef, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e9ebf700aaf0d14991633ff248ab2b3, type: 3}
 --- !u!4 &662716046 stripped
@@ -97385,7 +97389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8b23c92eb8da3314c82b6acdea8052bb, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8b23c92eb8da3314c82b6acdea8052bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -103032,7 +103036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7e3112531cc868c44be0e6a8849287fe, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7e3112531cc868c44be0e6a8849287fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -103082,6 +103086,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 2.668
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 7e3112531cc868c44be0e6a8849287fe, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1f0f0493713718943a1b109242750511, type: 2}
+    - target: {fileID: 2300002, guid: 7e3112531cc868c44be0e6a8849287fe, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1f0f0493713718943a1b109242750511, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e3112531cc868c44be0e6a8849287fe, type: 3}
 --- !u!4 &1600113823 stripped
@@ -103451,7 +103463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7e3112531cc868c44be0e6a8849287fe, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7e3112531cc868c44be0e6a8849287fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -103505,6 +103517,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.11
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 7e3112531cc868c44be0e6a8849287fe, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1f0f0493713718943a1b109242750511, type: 2}
+    - target: {fileID: 2300002, guid: 7e3112531cc868c44be0e6a8849287fe, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1f0f0493713718943a1b109242750511, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e3112531cc868c44be0e6a8849287fe, type: 3}
 --- !u!1 &1634986432 stripped
@@ -129247,6 +129267,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.014
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 11bb87d9599574a43a54e55bbe27ff2b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bab546ab3aef8d0479e7e78e842f9ac4, type: 2}
+    - target: {fileID: 2300002, guid: 11bb87d9599574a43a54e55bbe27ff2b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bab546ab3aef8d0479e7e78e842f9ac4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11bb87d9599574a43a54e55bbe27ff2b, type: 3}
 --- !u!1 &2064256136 stripped
