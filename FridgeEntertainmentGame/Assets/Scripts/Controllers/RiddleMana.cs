@@ -93,6 +93,7 @@ public class RiddleMana : MonoBehaviour
         if (items[items.Count - 1].GetComponent<Beans>().solved == true)
         {
             objectiveText.text = beansCollected;
+            machineScript.active = true;
         }
 
         if (GameObject.FindWithTag("Player").GetComponent<PointWalk>().coffee == true)
