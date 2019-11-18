@@ -15,7 +15,7 @@ public class RiddleMana : MonoBehaviour
     [HideInInspector]
     public int beansObtained = 0;
     public Menu menu;
-    public GameObject coffeeMachine;
+    public CoffeeMachine coffeeMachine;
     public string beansCollected = "Go make coffee!";
     public string coffeeMade = "Deliver coffee.";
     public Text objectiveText;
@@ -29,8 +29,6 @@ public class RiddleMana : MonoBehaviour
             people.Add(GameObject.Find("Person" + i));
             items.Add(GameObject.Find("Bean" + i));
         }
-
-        machineScript = coffeeMachine.GetComponent<CoffeeMachine>();
     }
 
     // Update is called once per frame
@@ -93,7 +91,7 @@ public class RiddleMana : MonoBehaviour
         if (items[items.Count - 1].GetComponent<Beans>().solved == true)
         {
             objectiveText.text = beansCollected;
-            machineScript.active = true;
+            coffeeMachine.active = true;
         }
 
         if (GameObject.FindWithTag("Player").GetComponent<PointWalk>().coffee == true)
