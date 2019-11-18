@@ -23,6 +23,8 @@ public class RiddleMana : MonoBehaviour
     public Text objectiveText;
     public Animator anim;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +39,26 @@ public class RiddleMana : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        foreach (GameObject person in people)
+        {
+            // If people are coffeed add 1
+            if (person.GetComponent<Person>().coffee == true)
+            {
+                peopleCoffeed++;
+            }
+            else
+            {
+                Debug.Log("Person <" + person.gameObject.name + "> doesnt have coffee");
+            }
+        }
+
+        if (peopleCoffeed == 5)
+        {
+            anim.SetBool("gameEnd", true);
+            //SceneManager.LoadScene(gameFinishSceneName);
+        }
+
         // Reset our beans collected
         beansObtained = 0;
         peopleCoffeed = 0;
@@ -68,6 +90,7 @@ public class RiddleMana : MonoBehaviour
                     // Set canvas
                     objectiveText.text = node.comments[0];
                 }
+                return;
             }
             // Persons solved show next Objective
             else if (people[i].GetComponent<Person>().active == true && people[i].GetComponent<Person>().solved == true)
@@ -102,22 +125,22 @@ public class RiddleMana : MonoBehaviour
         }
 
         // Check if everyone has Coffee
-        foreach (GameObject person in people)
-        {
-            // If people are coffeed add 1
-            if (person.GetComponent<Person>().coffee == true)
-            {
-                peopleCoffeed++;
-            }else
-            {
-                Debug.Log("Person <" + person.gameObject.name + "> doesnt have coffee");
-            }
-        }
+        //foreach (GameObject person in people)
+        //{
+        //    // If people are coffeed add 1
+        //    if (person.GetComponent<Person>().coffee == true)
+        //    {
+        //        peopleCoffeed++;
+        //    }else
+        //    {
+        //        Debug.Log("Person <" + person.gameObject.name + "> doesnt have coffee");
+        //    }
+        //}
 
-        if (peopleCoffeed == 5)
-        {
-            anim.SetBool("gameEnd", true);
-            //SceneManager.LoadScene(gameFinishSceneName);
-        }
+        //if (peopleCoffeed == 5)
+        //{
+        //    anim.SetBool("gameEnd", true);
+        //    //SceneManager.LoadScene(gameFinishSceneName);
+        //}
     }
 }
