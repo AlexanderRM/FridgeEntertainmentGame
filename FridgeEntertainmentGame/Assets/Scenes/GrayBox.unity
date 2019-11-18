@@ -43026,7 +43026,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5866664610451433499, guid: f0377ebd16145cc4f9861fc02da7afd2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f0377ebd16145cc4f9861fc02da7afd2, type: 3}
 --- !u!1 &684287046
 GameObject:
@@ -96438,7 +96439,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1392878442
 Transform:
   m_ObjectHideFlags: 0
@@ -97157,7 +97158,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.49999994
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5866664610451433499, guid: f0377ebd16145cc4f9861fc02da7afd2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f0377ebd16145cc4f9861fc02da7afd2, type: 3}
 --- !u!4 &1494560173 stripped
 Transform:
@@ -102399,6 +102401,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -327.6
       objectReference: {fileID: 0}
+    - target: {fileID: 6505560352278696216, guid: 73c09ec58b944a841a85329a175aa0c3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -52
+      objectReference: {fileID: 0}
     - target: {fileID: 2076445179592417561, guid: 73c09ec58b944a841a85329a175aa0c3,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -102413,12 +102420,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 11500000, guid: ec639f5ba7f55484396c673a3ff73c57,
-        type: 3}
+      objectReference: {fileID: 680465781}
     - target: {fileID: 405263619313046134, guid: 73c09ec58b944a841a85329a175aa0c3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: ContinueBtn
       objectReference: {fileID: 0}
     - target: {fileID: 653106134674349128, guid: 73c09ec58b944a841a85329a175aa0c3,
         type: 3}
@@ -112919,6 +112925,7 @@ MonoBehaviour:
   coffeeMachine: {fileID: 1316033684}
   beansCollected: Go make coffee!
   coffeeMade: Deliver coffee.
+  gameFinishSceneName: MainMenu
   objectiveText: {fileID: 1139085984}
 --- !u!1 &1904557731
 GameObject:

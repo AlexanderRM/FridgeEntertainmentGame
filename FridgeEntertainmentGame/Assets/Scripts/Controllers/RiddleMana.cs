@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using VIDE_Data;
+using UnityEngine.SceneManagement;
 
 public class RiddleMana : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class RiddleMana : MonoBehaviour
     public CoffeeMachine coffeeMachine;
     public string beansCollected = "Go make coffee!";
     public string coffeeMade = "Deliver coffee.";
+    public string gameFinishSceneName;
     public Text objectiveText;
 
     // Start is called before the first frame update
@@ -65,7 +67,6 @@ public class RiddleMana : MonoBehaviour
                     // Set canvas
                     objectiveText.text = node.comments[0];
                 }
-                return;
             }
             // Persons solved show next Objective
             else if (people[i].GetComponent<Person>().active == true && people[i].GetComponent<Person>().solved == true)
@@ -105,13 +106,13 @@ public class RiddleMana : MonoBehaviour
             // If people are coffeed add 1
             if (person.GetComponent<Person>().coffee == true)
             {
-                peopleCoffeed -= -1;
+                peopleCoffeed ++;
             }
         }
 
         if (peopleCoffeed == 5)
         {
-            menu.GetComponent<Menu>().menuActive = true;
+            SceneManager.LoadScene(gameFinishSceneName);
         }
     }
 }
