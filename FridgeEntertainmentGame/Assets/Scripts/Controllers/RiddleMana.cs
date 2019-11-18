@@ -21,6 +21,7 @@ public class RiddleMana : MonoBehaviour
     public string coffeeMade = "Deliver coffee.";
     public string gameFinishSceneName;
     public Text objectiveText;
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -115,7 +116,8 @@ public class RiddleMana : MonoBehaviour
 
         if (peopleCoffeed == 5)
         {
-            SceneManager.LoadScene(gameFinishSceneName);
+            anim.SetBool("gameEnd", true);
+            //SceneManager.LoadScene(gameFinishSceneName);
         }
     }
 }
