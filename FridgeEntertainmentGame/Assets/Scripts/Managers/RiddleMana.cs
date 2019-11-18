@@ -106,7 +106,10 @@ public class RiddleMana : MonoBehaviour
             // If people are coffeed add 1
             if (person.GetComponent<Person>().coffee == true)
             {
-                peopleCoffeed ++;
+                peopleCoffeed++;
+            }else
+            {
+                Debug.Log("Person <" + person.gameObject.name + "> doesnt have coffee");
             }
         }
 
