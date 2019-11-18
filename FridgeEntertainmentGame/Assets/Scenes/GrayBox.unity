@@ -20241,10 +20241,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 991add7b36fc324429902a5046be2491, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 991add7b36fc324429902a5046be2491, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.2198434
@@ -20301,6 +20297,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6b7734c9dff9bde4c8137f0fbd84f06f, type: 2}
+    - target: {fileID: 400000, guid: 991add7b36fc324429902a5046be2491, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 991add7b36fc324429902a5046be2491, type: 3}
 --- !u!1001 &349260848
@@ -20763,8 +20763,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.8508401, y: 0.946785, z: 1.2452067}
-  m_Center: {x: 0.0000038146973, y: -0.00000047683716, z: 0.0000009536743}
+  m_Size: {x: 1.8508401, y: 0.946785, z: 1.8668453}
+  m_Center: {x: 0.0000038012354, y: -0.00000048643847, z: 0.31082094}
 --- !u!114 &396047184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48354,15 +48354,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 378e9a597b75b0a44b375e7e5a24d4ca, type: 2}
     - target: {fileID: 400002, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.317
+      value: 1.208
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0.473
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: dbdba510f30d4384eaf58f59593330e3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -95916,10 +95916,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6572c3660b8a4ca4ca849a537da0300a, type: 2}
-    - target: {fileID: 2300008, guid: c4e35037e4057d34bbec1e534ed4ae0f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 6572c3660b8a4ca4ca849a537da0300a, type: 2}
     - target: {fileID: 2300012, guid: c4e35037e4057d34bbec1e534ed4ae0f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -95953,6 +95949,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 6572c3660b8a4ca4ca849a537da0300a, type: 2}
     - target: {fileID: 2300036, guid: c4e35037e4057d34bbec1e534ed4ae0f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6572c3660b8a4ca4ca849a537da0300a, type: 2}
+    - target: {fileID: 2300008, guid: c4e35037e4057d34bbec1e534ed4ae0f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6572c3660b8a4ca4ca849a537da0300a, type: 2}
@@ -107543,12 +107543,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1866948775}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1866948777 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: f9aa3d1ccc76d4c4d832b1f52c821989,
-    type: 3}
-  m_PrefabInstance: {fileID: 1866948775}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1872720423
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -112815,7 +112809,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beansObtained: 0
   menu: {fileID: 680465781}
-  coffeeMachine: {fileID: 1866948777}
+  coffeeMachine: {fileID: 1316033684}
   beansCollected: Go make coffee!
   coffeeMade: Deliver coffee.
   objectiveText: {fileID: 1139085984}

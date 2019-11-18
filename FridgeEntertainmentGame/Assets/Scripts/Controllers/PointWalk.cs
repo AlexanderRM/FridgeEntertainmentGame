@@ -16,6 +16,7 @@ public class PointWalk : MonoBehaviour
     public VIDE_Assign inTrigger;
     public UIManager diagUI;
     public Animator walkCycle;
+    public Menu menu;
     [HideInInspector]
     public Vector3 targetPos;
     [HideInInspector]
@@ -42,7 +43,7 @@ public class PointWalk : MonoBehaviour
             Ray myRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
             // Check if the VD is active and stop the agent if so
-            if (VD.isActive)
+            if (VD.isActive || menu.menuActive)
             {
                 myNavAgent.isStopped = true;
                 targetPos = transform.position;

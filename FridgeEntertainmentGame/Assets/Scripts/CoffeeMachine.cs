@@ -7,13 +7,13 @@ public class CoffeeMachine : MonoBehaviour
     public bool active = false;
     public string colTargetName;
     public GameObject player;
-    private TankController playerScript;
+    private PointWalk playerScript;
     private VIDE_Assign vide;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerScript = player.GetComponent<TankController>();
+        playerScript = player.GetComponent<PointWalk>();
         vide = GetComponent<VIDE_Assign>();
     }
 
