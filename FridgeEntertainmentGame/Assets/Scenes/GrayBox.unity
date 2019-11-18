@@ -96391,7 +96391,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1392878442
 Transform:
   m_ObjectHideFlags: 0
@@ -112861,6 +112861,7 @@ MonoBehaviour:
   coffeeMachine: {fileID: 1316033684}
   beansCollected: Go make coffee!
   coffeeMade: Deliver coffee.
+  gameFinishSceneName: MainMenu
   objectiveText: {fileID: 1139085984}
 --- !u!1 &1904557731
 GameObject:

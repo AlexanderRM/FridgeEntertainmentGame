@@ -67,7 +67,6 @@ public class RiddleMana : MonoBehaviour
                     // Set canvas
                     objectiveText.text = node.comments[0];
                 }
-                return;
             }
             // Persons solved show next Objective
             else if (people[i].GetComponent<Person>().active == true && people[i].GetComponent<Person>().solved == true)
@@ -107,7 +106,7 @@ public class RiddleMana : MonoBehaviour
             // If people are coffeed add 1
             if (person.GetComponent<Person>().coffee == true)
             {
-                peopleCoffeed -= -1;
+                peopleCoffeed ++;
             }
         }
 
