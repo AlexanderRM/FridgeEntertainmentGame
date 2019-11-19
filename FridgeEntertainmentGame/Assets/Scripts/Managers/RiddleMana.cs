@@ -28,10 +28,15 @@ public class RiddleMana : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Loop through and collect our people and items
-        for (int i = 1; i != 6; i++)
+        // Loop through and collect our people
+        for (int i = 1; i != 7; i++)
         {
             people.Add(GameObject.Find("Person" + i));
+        }
+		
+		        // Loop through and collect our items
+        for (int i = 1; i != 6; i++)
+        {
             items.Add(GameObject.Find("Bean" + i));
         }
     }
