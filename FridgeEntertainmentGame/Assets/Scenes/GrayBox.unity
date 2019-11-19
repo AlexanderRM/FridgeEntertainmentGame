@@ -43102,26 +43102,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &696564384 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: f9aa3d1ccc76d4c4d832b1f52c821989,
-    type: 3}
-  m_PrefabInstance: {fileID: 1866948775}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &696564385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 696564384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1c2cf2f54851a84e8c59863cefb45cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particleEffect: {fileID: 1023068795}
-  colTargetName: Player
 --- !u!1 &699280722 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7514665658570422722, guid: c6ea982f2c28c3646bf46357da4972db,
@@ -95778,6 +95758,20 @@ MonoBehaviour:
   langs: []
   S_playerDiags: []
   S_actionNodes: []
+--- !u!114 &1316033688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316033680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c2cf2f54851a84e8c59863cefb45cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleEffect: {fileID: 1023068795}
+  colTargetName: Player
 --- !u!1001 &1326268298
 PrefabInstance:
   m_ObjectHideFlags: 0
