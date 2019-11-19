@@ -43,26 +43,6 @@ public class RiddleMana : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        foreach (GameObject person in people)
-        {
-            // If people are coffeed add 1
-            if (person.GetComponent<Person>().coffee == true)
-            {
-                peopleCoffeed++;
-            }
-            else
-            {
-                Debug.Log("Person <" + person.gameObject.name + "> doesnt have coffee");
-            }
-        }
-
-        if (peopleCoffeed == 5)
-        {
-            anim.SetBool("gameEnd", true);
-            //SceneManager.LoadScene(gameFinishSceneName);
-        }
-
         // Reset our beans collected
         beansObtained = 0;
         peopleCoffeed = 0;
@@ -76,6 +56,9 @@ public class RiddleMana : MonoBehaviour
         // Loop through and check objects if active and toggle
         for (int i = 0; i < people.Count; i++)
         {
+            if (i == 5) return;
+
+
             // Check if current object is active
             if (people[i].GetComponent<Person>().active == false)
             {
@@ -105,7 +88,10 @@ public class RiddleMana : MonoBehaviour
                 objectiveText.text = node.comments[0];
             }
         }
+    }
 
+    private void LateUpdate()
+    {
         // Check how many beans are collected using a for each loop
         foreach (GameObject bean in items)
         {
@@ -113,6 +99,10 @@ public class RiddleMana : MonoBehaviour
             if (bean.GetComponent<Beans>().solved == true)
             {
                 beansObtained -= -1;
+            }
+            else
+            {
+                Debug.Log("Bean <" + bean.name + "> is false");
             }
         }
 
@@ -126,6 +116,29 @@ public class RiddleMana : MonoBehaviour
         if (GameObject.FindWithTag("Player").GetComponent<PointWalk>().coffee == true)
         {
             objectiveText.text = coffeeMade;
+        }
+
+        ///////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////
+
+        foreach (GameObject person in people)
+        {
+            // If people are coffeed add 1
+            if (person.GetComponent<Person>().coffee == true)
+            {
+                peopleCoffeed++;
+            }
+            else
+            {
+                Debug.Log("Person <" + person.gameObject.name + "> doesnt have coffee");
+            }
+        }
+
+        if (peopleCoffeed == 5)
+        {
+            anim.SetBool("gameEnd", true);
+            //SceneManager.LoadScene(gameFinishSceneName);
         }
     }
 }
