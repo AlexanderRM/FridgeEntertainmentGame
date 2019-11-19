@@ -10,7 +10,6 @@ public class RiddleMana : MonoBehaviour
     List<GameObject> people = new List<GameObject>();
     List<GameObject> items = new List<GameObject>();
     VD.NodeData node;
-    CoffeeMachine machineScript;
     int peopleCoffeed = 0;
 
     [HideInInspector]
@@ -118,7 +117,7 @@ public class RiddleMana : MonoBehaviour
         }
 
         // check if the last item is solved
-        if (items[items.Count - 1].GetComponent<Beans>().solved == true)
+        if (beansObtained == 5)
         {
             objectiveText.text = beansCollected;
             coffeeMachine.active = true;
@@ -128,24 +127,5 @@ public class RiddleMana : MonoBehaviour
         {
             objectiveText.text = coffeeMade;
         }
-
-        // Check if everyone has Coffee
-        //foreach (GameObject person in people)
-        //{
-        //    // If people are coffeed add 1
-        //    if (person.GetComponent<Person>().coffee == true)
-        //    {
-        //        peopleCoffeed++;
-        //    }else
-        //    {
-        //        Debug.Log("Person <" + person.gameObject.name + "> doesnt have coffee");
-        //    }
-        //}
-
-        //if (peopleCoffeed == 5)
-        //{
-        //    anim.SetBool("gameEnd", true);
-        //    //SceneManager.LoadScene(gameFinishSceneName);
-        //}
     }
 }
