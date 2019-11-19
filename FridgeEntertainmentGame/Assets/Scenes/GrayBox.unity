@@ -12541,7 +12541,7 @@ MonoBehaviour:
   active: 0
   solved: 0
   riddleGiven: 0
-  bean: {fileID: 0}
+  bean: {fileID: 2128772125}
   coffee: 0
   accessoryPrev: {fileID: 37234303}
   accessoryNew: {fileID: 37234297}
@@ -18818,7 +18818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: d4e4edbd17bbcd141be2029a303592bb, type: 3}
       propertyPath: m_Name
-      value: Person6
+      value: Person1
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: d4e4edbd17bbcd141be2029a303592bb, type: 3}
       propertyPath: m_Layer
@@ -95687,7 +95687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c2cf2f54851a84e8c59863cefb45cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleEffect: {fileID: 1023068795}
+  particleEffect: {fileID: 943961376}
   colTargetName: Player
 --- !u!114 &1316033687
 MonoBehaviour:
@@ -113683,7 +113683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: d4e4edbd17bbcd141be2029a303592bb, type: 3}
       propertyPath: m_Name
-      value: Person1
+      value: Person6
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: d4e4edbd17bbcd141be2029a303592bb, type: 3}
       propertyPath: m_Layer
