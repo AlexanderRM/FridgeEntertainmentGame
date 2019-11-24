@@ -77,7 +77,7 @@ public class PointWalk : MonoBehaviour
         // Cast a ray at mouse position
         Ray myRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0))
         {
             // IF the beans or person was hit, try interaction
             if (Physics.Raycast(myRay, out RaycastHit hitInfo, 100, Interactable))
