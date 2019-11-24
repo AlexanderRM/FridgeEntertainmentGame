@@ -17,15 +17,19 @@ public class Person : MonoBehaviour
     public bool coffee = false;
     public GameObject accessoryPrev;
     public GameObject accessoryNew;
+    public Material materialPrev;
+    public Material materialNew;
 
     // Dialogue
     public int activeUnsolved;
+    public int riddleGive;
     public int notActive;
     public int coffeeGive;
 
     private PointWalk playerScript;
     private ParticleSystem particle;
     private VIDE_Assign vide;
+    private bool spokenTo = false;
 
     void Start()
     {
@@ -38,6 +42,7 @@ public class Person : MonoBehaviour
         vide = GetComponent<VIDE_Assign>();
         accessoryPrev.SetActive(true);
         accessoryNew.SetActive(false);
+        GetComponent<Renderer>().material = materialPrev;
     }
 
 
@@ -71,6 +76,7 @@ public class Person : MonoBehaviour
             {
                 accessoryPrev.SetActive(false);
                 accessoryNew.SetActive(true);
+                GetComponent<Renderer>().material = materialNew;
                 return;
             }
             // check if player has coffee
@@ -78,6 +84,12 @@ public class Person : MonoBehaviour
             {
                 coffee = true;
                 vide.overrideStartNode = coffeeGive;
+            }
+
+            if(active == true && spokenTo == false)
+            {
+                vide.overrideStartNode = riddleGive;
+                spokenTo = true;
             }
 
             // if active give riddle
