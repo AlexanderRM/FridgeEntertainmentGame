@@ -20,12 +20,14 @@ public class Person : MonoBehaviour
 
     // Dialogue
     public int activeUnsolved;
+    public int riddleGive;
     public int notActive;
     public int coffeeGive;
 
     private PointWalk playerScript;
     private ParticleSystem particle;
     private VIDE_Assign vide;
+    private bool spokenTo = false;
 
     void Start()
     {
@@ -78,6 +80,12 @@ public class Person : MonoBehaviour
             {
                 coffee = true;
                 vide.overrideStartNode = coffeeGive;
+            }
+
+            if(active == true && spokenTo == false)
+            {
+                vide.overrideStartNode = riddleGive;
+                spokenTo = true;
             }
 
             // if active give riddle
