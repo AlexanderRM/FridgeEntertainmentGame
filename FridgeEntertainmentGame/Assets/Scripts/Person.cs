@@ -17,6 +17,8 @@ public class Person : MonoBehaviour
     public bool coffee = false;
     public GameObject accessoryPrev;
     public GameObject accessoryNew;
+    public Material materialPrev;
+    public Material materialNew;
 
     // Dialogue
     public int activeUnsolved;
@@ -40,6 +42,7 @@ public class Person : MonoBehaviour
         vide = GetComponent<VIDE_Assign>();
         accessoryPrev.SetActive(true);
         accessoryNew.SetActive(false);
+        GetComponent<Renderer>().material = materialPrev;
     }
 
 
@@ -73,6 +76,7 @@ public class Person : MonoBehaviour
             {
                 accessoryPrev.SetActive(false);
                 accessoryNew.SetActive(true);
+                GetComponent<Renderer>().material = materialNew;
                 return;
             }
             // check if player has coffee
