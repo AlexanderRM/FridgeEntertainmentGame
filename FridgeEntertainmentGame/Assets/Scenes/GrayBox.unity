@@ -160,6 +160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 14503367}
   waitSeconds: 1
+  particles: {fileID: 0}
 --- !u!4 &17216137 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400054, guid: d4e4edbd17bbcd141be2029a303592bb,
@@ -304,6 +305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 22177884}
   waitSeconds: 1
+  particles: {fileID: 0}
 --- !u!54 &22177887
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -459,7 +461,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 534669905}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &25230168
 AudioSource:
@@ -31270,7 +31272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: d4e4edbd17bbcd141be2029a303592bb, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: d4e4edbd17bbcd141be2029a303592bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -31431,7 +31433,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c8c11e7eba0699b4288121ab8cf12b93, type: 3}
       propertyPath: m_RootOrder
-      value: 43
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c8c11e7eba0699b4288121ab8cf12b93, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -31545,11 +31547,10 @@ Transform:
   m_LocalPosition: {x: 16.800997, y: 3.350845, z: 5.436051}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 833040190}
   - {fileID: 25230167}
   - {fileID: 1495669761}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &534669906
 MonoBehaviour:
@@ -42485,6 +42486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 660376090}
   waitSeconds: 1
+  particles: {fileID: 0}
 --- !u!1 &662359825 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 70e2933b079b09c428c2beea3e558ae6,
@@ -43038,7 +43040,7 @@ RectTransform:
   - {fileID: 1558579024}
   - {fileID: 197999476}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -43259,6 +43261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 684287046}
   waitSeconds: 1
+  particles: {fileID: 0}
 --- !u!54 &684287049
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -43311,7 +43314,7 @@ Transform:
   m_Children:
   - {fileID: 624232298}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &721519990
 MonoBehaviour:
@@ -48426,6 +48429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 795221000}
   waitSeconds: 1
+  particles: {fileID: 0}
 --- !u!1001 &800498313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -102450,7 +102454,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 534669905}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1495669762
 AudioSource:
@@ -102694,6 +102698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1506079853}
   waitSeconds: 2
+  particles: {fileID: 0}
 --- !u!54 &1506079856
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -103000,6 +103005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1537677949}
   waitSeconds: 1
+  particles: {fileID: 0}
 --- !u!1 &1553319562
 GameObject:
   m_ObjectHideFlags: 0
@@ -108658,6 +108664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1619989107}
   waitSeconds: 1
+  particles: {fileID: 0}
 --- !u!54 &1619989110
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -108715,7 +108722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c8c11e7eba0699b4288121ab8cf12b93, type: 3}
       propertyPath: m_RootOrder
-      value: 42
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c8c11e7eba0699b4288121ab8cf12b93, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -109510,7 +109517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 40357e3968c7baa46b50a73dcdbf6e11, type: 3}
       propertyPath: m_RootOrder
-      value: 41
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 40357e3968c7baa46b50a73dcdbf6e11, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -109850,6 +109857,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 71b03e0692af85445a51b01cca02e38e, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 71b03e0692af85445a51b01cca02e38e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 71b03e0692af85445a51b01cca02e38e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -111552,6 +111563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1744913889}
   waitSeconds: 1
+  particles: {fileID: 0}
 --- !u!54 &1744913892
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -113034,7 +113046,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 4e7780ca11b1866459d840e5a55dfef3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 4e7780ca11b1866459d840e5a55dfef3, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -134981,6 +134993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 2057962745}
   waitSeconds: 1
+  particles: {fileID: 0}
 --- !u!54 &2057962748
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -140296,7 +140309,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c8c11e7eba0699b4288121ab8cf12b93, type: 3}
       propertyPath: m_RootOrder
-      value: 44
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c8c11e7eba0699b4288121ab8cf12b93, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
