@@ -6,7 +6,7 @@ public class LightToggle : MonoBehaviour
 {
     public Light oldLight;
     public Light newLight;
-    public Person personScript;
+    public PointWalk personScript;
 
     // Start is called before the first frame update
     void Start()
