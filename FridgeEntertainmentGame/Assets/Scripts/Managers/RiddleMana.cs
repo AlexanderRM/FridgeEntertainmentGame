@@ -116,6 +116,7 @@ public class RiddleMana : MonoBehaviour
         if (GameObject.FindWithTag("Player").GetComponent<PointWalk>().coffee == true)
         {
             objectiveText.text = coffeeMade;
+            GameObject.FindWithTag("Player").GetComponent<AudioSource>().Play();
         }
 
         ///////////////////////////////////////////////////////////
