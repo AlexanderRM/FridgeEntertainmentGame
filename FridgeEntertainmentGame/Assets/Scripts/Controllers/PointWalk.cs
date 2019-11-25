@@ -89,11 +89,11 @@ public class PointWalk : MonoBehaviour
                 {
                     TryInteract();
 
-                    if (!VD.isActive)
+                    if (VD.isActive)
                     {
-                        if (hitInfo.collider.name.Contains("bean"))
+                        if (hitInfo.collider.name.Contains("Bean"))
                         {
-                            if (hitInfo.collider.GetComponent<Beans>().active) {
+                            if (hitInfo.collider.GetComponent<Beans>().active && !hitInfo.collider.GetComponent<Beans>().solved) {
                                 hitInfo.collider.GetComponent<Beans>().PlayBean();
                             }
                             else
