@@ -9,7 +9,7 @@ public class ObjChangeCon : MonoBehaviour
     public float waitSeconds = 2f;
     GameObject prev;
     GameObject post;
-    ParticleSystem particles;
+    public ParticleSystem particles;
     
     bool coffee = false;
     bool toggled = false;
@@ -23,7 +23,7 @@ public class ObjChangeCon : MonoBehaviour
 
         prev.SetActive(true);
         post.SetActive(false);
-        particles = GetComponentInChildren<ParticleSystem>();
+
         particles.Stop();
     }
 

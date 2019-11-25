@@ -18,6 +18,11 @@ Shader "UnityLibrary/Standard/Effects/SeeThroughWalls"
 			Tags { "RenderType" = "Opaque" }
 			LOD 200
 
+			/*Pass{
+				ZMask On
+				ColorMask 0
+				}*/
+
 			CGPROGRAM
 			// Physically based Standard lighting model, and enable shadows on all light types
 			#pragma surface surf Standard fullforwardshadows
@@ -57,7 +62,7 @@ Shader "UnityLibrary/Standard/Effects/SeeThroughWalls"
 
 				// see through pass
 
-				Tags{ "Queue" = "Transparent" "RenderType" = "Transparent" }
+				Tags{ "Queue" = "Transparent"  "IgnoreProjector" = "True" "RenderType" = "Transparent" }
 				LOD 200
 				//			Blend OneMinusDstColor One // Soft Additive
 							Blend SrcAlpha OneMinusSrcAlpha // Traditional transparency
@@ -68,7 +73,8 @@ Shader "UnityLibrary/Standard/Effects/SeeThroughWalls"
 				//			Blend DstColor SrcColor // 2x Multiplicative
 
 							ZWrite Off
-							ZTest Greater
+							ZTest Always
+
 
 							CGPROGRAM
 				// Physically based Standard lighting model, and enable shadows on all light types
