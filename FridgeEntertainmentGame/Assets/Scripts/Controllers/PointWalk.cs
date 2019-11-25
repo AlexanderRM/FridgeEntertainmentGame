@@ -144,4 +144,9 @@ public class PointWalk : MonoBehaviour
 
         //}
     }
+
+    public Vector3 GetTargetPos()
+    {
+        return myNavAgent.destination;
+    }
 }
