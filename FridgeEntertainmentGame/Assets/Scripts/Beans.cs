@@ -12,6 +12,8 @@ public class Beans : MonoBehaviour
     public GameObject person;
     public int activeNode = 0;
     public int inactiveNode = 0;
+    public AudioSource bean;
+    public AudioSource item;
     //public string dialogueAssign;
 
     private Person personScript;
@@ -81,5 +83,15 @@ public class Beans : MonoBehaviour
     void OnTriggerExit(Collider collider)
     {
         particle.Stop();
+    }
+
+    public void PlayBean()
+    {
+        bean.Play();
+    }
+
+    public void PlayItem()
+    {
+        item.Play();
     }
 }

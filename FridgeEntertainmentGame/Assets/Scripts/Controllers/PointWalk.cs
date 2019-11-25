@@ -88,7 +88,23 @@ public class PointWalk : MonoBehaviour
                 if (hitInfo.collider.GetComponent<Beans>() || hitInfo.collider.GetComponent<Person>() || hitInfo.collider.GetComponent<Item>())
                 {
                     TryInteract();
-                    hitInfo.collider.GetComponent<AudioSource>().Play();
+
+                    if (!VD.isActive)
+                    {
+                        if (hitInfo.collider.name.Contains("bean"))
+                        {
+                            if (hitInfo.collider.GetComponent<Beans>().active) {
+                                hitInfo.collider.GetComponent<Beans>().PlayBean();
+                            }
+                            else
+                            {
+                                hitInfo.collider.GetComponent<Beans>().PlayItem();
+                            }
+                        }else
+                        {
+                            hitInfo.collider.GetComponent<AudioSource>().Play();
+                        }
+                    }
                 }
                 return;
             }
