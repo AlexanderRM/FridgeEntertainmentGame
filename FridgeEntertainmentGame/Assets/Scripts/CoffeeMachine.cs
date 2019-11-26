@@ -7,6 +7,8 @@ public class CoffeeMachine : MonoBehaviour
     public bool active = false;
     public string colTargetName;
     public GameObject player;
+    public AudioSource audio;
+
     private PointWalk playerScript;
     private VIDE_Assign vide;
 
@@ -30,6 +32,7 @@ public class CoffeeMachine : MonoBehaviour
         {
             if (active == true && Input.GetMouseButtonDown(0) == true)
             {
+                if (audio) audio.Play();
                 playerScript.coffee = true;
             }
         }

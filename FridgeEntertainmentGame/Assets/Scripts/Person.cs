@@ -92,19 +92,21 @@ public class Person : MonoBehaviour
                 vide.overrideStartNode = coffeeGive;
             }
 
-            if(active == true && spokenTo == false)
-            {
-                vide.overrideStartNode = riddleGive;
-                spokenTo = true;
-            }
-
             // if active give riddle
             else if (active == true && Input.GetMouseButtonDown(0) == true)
             {
-                riddleGiven = true;
-                vide.overrideStartNode = activeUnsolved;
-                // Set bean active
-                bean.active = true;
+                if (spokenTo == false)
+                {
+                    vide.overrideStartNode = riddleGive;
+                    spokenTo = true;
+                }
+                else
+                {
+                    riddleGiven = true;
+                    vide.overrideStartNode = activeUnsolved;
+                    // Set bean active
+                    bean.active = true;
+                }
             }
             // active is false
             else if (active == false)
