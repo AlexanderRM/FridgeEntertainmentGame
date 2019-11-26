@@ -92758,7 +92758,7 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 8832012229166122659}
   accessoryNew: {fileID: 8832012230888865353}
-  materialPrev: {fileID: 0}
+  materialPrev: {fileID: 2100000, guid: 6b7734c9dff9bde4c8137f0fbd84f06f, type: 2}
   materialNew: {fileID: 2100000, guid: 411e29b609a5169429adc2475f2da1a5, type: 2}
   activeUnsolved: 0
   riddleGive: 0
@@ -147898,6 +147898,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 991bc1b364320a64e8f4293a04d3699d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3e11c317ff6ccbb44bba9bf2b9e0cc3e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 991bc1b364320a64e8f4293a04d3699d, type: 3}
 --- !u!1 &8832012229995662723 stripped

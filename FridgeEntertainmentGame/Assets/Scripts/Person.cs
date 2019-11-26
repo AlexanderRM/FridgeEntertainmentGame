@@ -79,6 +79,7 @@ public class Person : MonoBehaviour
                 GetComponent<Renderer>().material = materialNew;
                 return;
             }
+
             // check if player has coffee
             if (playerScript.coffee == true && Input.GetMouseButtonDown(0) == true)
             {
