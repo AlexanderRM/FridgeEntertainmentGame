@@ -125,7 +125,7 @@ public class RiddleMana : MonoBehaviour
                 beanImages[currentIndex].SetActive(true);
 
                 // Set previous Image to off
-                if (currentIndex != 0) beanImages[currentIndex - 1].SetActive(true);
+                if (currentIndex != 0) beanImages[currentIndex - 1].SetActive(false);
 
             }
             else
