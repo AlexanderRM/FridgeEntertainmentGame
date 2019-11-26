@@ -50101,7 +50101,7 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 8832012230971652194}
   accessoryNew: {fileID: 8832012229598040531}
-  materialPrev: {fileID: 0}
+  materialPrev: {fileID: 2100000, guid: af5ad8d8285659e42aebd97836e8788d, type: 2}
   materialNew: {fileID: 2100000, guid: 6b12c97482fafe44fb7d8b9ee06a2de1, type: 2}
   activeUnsolved: 0
   riddleGive: 0
@@ -128061,7 +128061,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4e7780ca11b1866459d840e5a55dfef3, type: 3}
+  - {fileID: 2100000, guid: 7cb8770bcfbe36349a2f2a72ebeb6598, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
