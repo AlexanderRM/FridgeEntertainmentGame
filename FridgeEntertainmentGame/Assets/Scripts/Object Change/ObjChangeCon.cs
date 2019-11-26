@@ -10,7 +10,8 @@ public class ObjChangeCon : MonoBehaviour
     GameObject prev;
     GameObject post;
     public ParticleSystem particles;
-    
+    public AudioSource audio;
+
     bool coffee = false;
     bool toggled = false;
 
@@ -18,8 +19,8 @@ public class ObjChangeCon : MonoBehaviour
     void Start()
     {
         // Set our values
-       prev = controller.transform.GetChild(0).gameObject;
-       post = controller.transform.GetChild(1).gameObject;
+        prev = controller.transform.GetChild(0).gameObject;
+        post = controller.transform.GetChild(1).gameObject;
 
         prev.SetActive(true);
         post.SetActive(false);
@@ -30,7 +31,7 @@ public class ObjChangeCon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(coffee == true)
+        if (coffee == true)
         {
             toggled = true;
             StartCoroutine(Wait());
@@ -50,6 +51,7 @@ public class ObjChangeCon : MonoBehaviour
         if (toggled == false)
         {
             particles.Play();
+            if (audio) audio.Play();
             coffee = true;
         }
     }
