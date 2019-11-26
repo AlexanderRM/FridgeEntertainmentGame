@@ -33,7 +33,7 @@
         }
     },
     "texturesets": {
-        "WillowTree_mtl": {
+        "Willow_Tree_mtl": {
             "shader": "Main shader"
         }
     }
