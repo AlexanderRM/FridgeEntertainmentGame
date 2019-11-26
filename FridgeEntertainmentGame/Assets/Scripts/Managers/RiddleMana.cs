@@ -59,13 +59,13 @@ public class RiddleMana : MonoBehaviour
             menu.Toggle();
         }
 
-        if(player.coffee == true)
+        if (player.coffee == true)
         {
-            coffee.Play();
+            if (coffee.isPlaying == false) coffee.Play();
         }
         else
         {
-            preCoffee.Play();
+            if (preCoffee.isPlaying == false) preCoffee.Play();
         }
 
         // Loop through and check objects if active and toggle
@@ -120,7 +120,7 @@ public class RiddleMana : MonoBehaviour
                 beanImages[currentIndex].SetActive(true);
 
                 // Set previous Image to off
-                if(currentIndex != 0) beanImages[currentIndex - 1].SetActive(true);
+                if (currentIndex != 0) beanImages[currentIndex - 1].SetActive(true);
 
             }
             else
