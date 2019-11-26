@@ -49891,6 +49891,7 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 8832012230971652194}
   accessoryNew: {fileID: 8832012229598040531}
+  accessoryNew2: {fileID: 0}
   materialPrev: {fileID: 2100000, guid: af5ad8d8285659e42aebd97836e8788d, type: 2}
   materialNew: {fileID: 2100000, guid: 6b12c97482fafe44fb7d8b9ee06a2de1, type: 2}
   activeUnsolved: 0
@@ -65026,6 +65027,7 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 8832012229915518338}
   accessoryNew: {fileID: 8832012229639689544}
+  accessoryNew2: {fileID: 0}
   materialPrev: {fileID: 2100000, guid: 8c9f7de166cd55744951f9bef7bc3701, type: 2}
   materialNew: {fileID: 2100000, guid: a7a2f65e1a7b81f48a60ba8b18d3db61, type: 2}
   activeUnsolved: 0
@@ -65861,6 +65863,7 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 8832012229425222073}
   accessoryNew: {fileID: 8832012229293116201}
+  accessoryNew2: {fileID: 0}
   materialPrev: {fileID: 2100000, guid: c61da4cb3e9c2624cab921a5d2d46f70, type: 2}
   materialNew: {fileID: 2100000, guid: 6820844107d2b0647b63aa750ae5609d, type: 2}
   activeUnsolved: 0
@@ -81655,6 +81658,7 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 8832012230365759537}
   accessoryNew: {fileID: 8832012230365759543}
+  accessoryNew2: {fileID: 0}
   materialPrev: {fileID: 2100000, guid: c77de8f4eee8fd14ca78d7f58686afe0, type: 2}
   materialNew: {fileID: 2100000, guid: 134463186a380e04bafbbdc0d64d26c6, type: 2}
   activeUnsolved: 0
@@ -92047,6 +92051,7 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 8832012229995662723}
   accessoryNew: {fileID: 8832012229684904121}
+  accessoryNew2: {fileID: 0}
   materialPrev: {fileID: 2100000, guid: 24b74fd7bdb3f8149bf6e2c1bc0b5925, type: 2}
   materialNew: {fileID: 2100000, guid: 24b74fd7bdb3f8149bf6e2c1bc0b5925, type: 2}
   activeUnsolved: 0
@@ -92692,6 +92697,7 @@ MonoBehaviour:
   - MrSinclair
   - NPCOnly
   - PatriciaSingh
+  - Printer
   - QuestChartDemo
   - SamBrisk
   - TriggeredDude
@@ -92747,7 +92753,8 @@ MonoBehaviour:
   coffee: 0
   accessoryPrev: {fileID: 8832012229166122659}
   accessoryNew: {fileID: 8832012230888865353}
-  materialPrev: {fileID: 2100000, guid: 83d840f983bebf34491b5f3ef8f66e98, type: 2}
+  accessoryNew2: {fileID: 0}
+  materialPrev: {fileID: 2100000, guid: c4965c8cacceb254c9cc4a40b22cdd8f, type: 2}
   materialNew: {fileID: 2100000, guid: 411e29b609a5169429adc2475f2da1a5, type: 2}
   activeUnsolved: 0
   riddleGive: 0
@@ -93878,7 +93885,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.7
+      value: 0.1
       mode: 0
       spread: 0
       speed:
@@ -93997,7 +94004,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 800
+      scalar: 100
       minScalar: 10
       maxCurve:
         serializedVersion: 2
