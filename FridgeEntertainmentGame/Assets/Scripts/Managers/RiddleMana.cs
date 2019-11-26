@@ -66,11 +66,17 @@ public class RiddleMana : MonoBehaviour
 
         if (player.coffee == true)
         {
-            if (coffee.isPlaying == false) coffee.Play();
+            if (coffee.isPlaying == false) {
+                coffee.Play();
+                preCoffee.Pause();
+            }
         }
         else
         {
-            if (preCoffee.isPlaying == false) preCoffee.Play();
+            if (preCoffee.isPlaying == false) {
+                preCoffee.Play();
+                coffee.Pause();
+            }
         }
 
         // Loop through and check objects if active and toggle
@@ -144,7 +150,6 @@ public class RiddleMana : MonoBehaviour
         if (GameObject.FindWithTag("Player").GetComponent<PointWalk>().coffee == true)
         {
             objectiveText.text = coffeeMade;
-            GameObject.FindWithTag("Player").GetComponent<AudioSource>().Play();
         }
 
         ///////////////////////////////////////////////////////////
