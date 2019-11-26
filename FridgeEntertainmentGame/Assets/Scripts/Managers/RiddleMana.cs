@@ -9,6 +9,8 @@ public class RiddleMana : MonoBehaviour
 {
     List<GameObject> people = new List<GameObject>();
     List<GameObject> items = new List<GameObject>();
+    List<GameObject> beanImages = new List<GameObject>();
+
     VD.NodeData node;
     int peopleCoffeed = 0;
 
@@ -21,6 +23,9 @@ public class RiddleMana : MonoBehaviour
     public string gameFinishSceneName;
     public Text objectiveText;
     public Animator anim;
+    public PointWalk player;
+    public AudioSource preCoffee;
+    public AudioSource coffee;
 
 
 
@@ -32,11 +37,12 @@ public class RiddleMana : MonoBehaviour
         {
             people.Add(GameObject.Find("Person" + i));
         }
-		
-		        // Loop through and collect our items
+
+        // Loop through and collect our beans and images
         for (int i = 1; i != 6; i++)
         {
             items.Add(GameObject.Find("Bean" + i));
+            beanImages.Add(GameObject.Find("beanImage" + i));
         }
     }
 
@@ -51,6 +57,15 @@ public class RiddleMana : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             menu.Toggle();
+        }
+
+        if(player.coffee == true)
+        {
+            coffee.Play();
+        }
+        else
+        {
+            preCoffee.Play();
         }
 
         // Loop through and check objects if active and toggle
@@ -98,7 +113,15 @@ public class RiddleMana : MonoBehaviour
             // If beans are solved add 1;
             if (bean.GetComponent<Beans>().solved == true)
             {
+                int currentIndex = items.IndexOf(bean);
                 beansObtained -= -1;
+
+                // Set current bean to active
+                beanImages[currentIndex].SetActive(true);
+
+                // Set previous Image to off
+                if(currentIndex != 0) beanImages[currentIndex - 1].SetActive(true);
+
             }
             else
             {
