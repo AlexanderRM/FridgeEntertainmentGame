@@ -23,6 +23,9 @@ public class RiddleMana : MonoBehaviour
     public string gameFinishSceneName;
     public Text objectiveText;
     public Animator anim;
+    public PointWalk player;
+    public AudioSource preCoffee;
+    public AudioSource coffee;
 
 
 
@@ -54,6 +57,15 @@ public class RiddleMana : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             menu.Toggle();
+        }
+
+        if(player.coffee == true)
+        {
+            coffee.Play();
+        }
+        else
+        {
+            preCoffee.Play();
         }
 
         // Loop through and check objects if active and toggle
