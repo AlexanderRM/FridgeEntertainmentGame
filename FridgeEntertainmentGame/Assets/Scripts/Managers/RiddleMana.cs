@@ -44,6 +44,11 @@ public class RiddleMana : MonoBehaviour
             items.Add(GameObject.Find("Bean" + i));
             beanImages.Add(GameObject.Find("beanImage" + i));
         }
+
+        foreach(GameObject image in beanImages)
+        {
+            image.SetActive(false);
+        }
     }
 
     // Update is called once per frame
