@@ -169,10 +169,20 @@ public class RiddleMana : MonoBehaviour
             }
         }
 
+        if (peopleCoffeed != 5)
+        {
+            anim.enabled = false;
+        }
+
         if (peopleCoffeed == 5)
         {
-            anim.SetBool("gameEnd", true);
+            if (VD.isActive == false)
+            {
+                anim.enabled = true;
+            }
+            //anim.SetBool("gameEnd", false);
             //SceneManager.LoadScene(gameFinishSceneName);
         }
+
     }
 }
