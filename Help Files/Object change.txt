@@ -1,0 +1,18 @@
+In order to make two objects change you will need to do a few steps for the scene.
+
+you will need to create an empty object which will need to contain a rigibody and the ObjectCHangeConroller.
+
+Next step is to add the two objects you want to change as children to the empty object with the controller.
+
+The first object must contain the particle system found inside the assets/presets folder.
+
+The first object in the list is the original, the second object is the one to change too.
+
+Both child objects MUSNT contain rigibodies.
+
+
+The script will contain 2 fields,
+
+controller: the parent controller
+
+Col Tag Name: the tag name to respond to collisions with

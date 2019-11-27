@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: fe44897135fa8314a825ce16e8f0ddb1
+=======
+guid: 2810ff573f6a16a47b2f2804f5e2a0b6
+>>>>>>> Develop
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -155,7 +159,11 @@ ModelImporter:
     400148: Wrist_R_Jnt
     2100000: characterLowPoly_blinn1
     4300000: characterLowPoly:polySurface1
+<<<<<<< HEAD
     7400000: Take 001
+=======
+    7400000: samOffice
+>>>>>>> Develop
     9500000: //RootNode
     13700000: characterLowPoly:polySurface1
   externalObjects: {}
@@ -185,7 +193,39 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
+<<<<<<< HEAD
     clipAnimations: []
+=======
+    clipAnimations:
+    - serializedVersion: 16
+      name: samOffice
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 245
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+>>>>>>> Develop
     isReadable: 1
   meshes:
     lODScreenPercentages: []

@@ -1,0 +1,159 @@
+fileFormatVersion: 2
+guid: d2dab1ee4afc71c43a5e484bdaeadd3e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: SM_BossTable
+    100004: SM_DragonToy
+    100006: SM_ModernKeyBoard
+    100008: SM_ModernPCLeft
+    100010: SM_ModernPCRight
+    100012: SM_Mouse
+    100014: SM_MousePad
+    100016: SM_NewLamp
+    100018: SM_OldPhone
+    100020: SM_PenMug
+    100022: SM_SingleFileYellow
+    100024: SM_SingleFileYellow1
+    400000: //RootNode
+    400002: SM_BossTable
+    400004: SM_DragonToy
+    400006: SM_ModernKeyBoard
+    400008: SM_ModernPCLeft
+    400010: SM_ModernPCRight
+    400012: SM_Mouse
+    400014: SM_MousePad
+    400016: SM_NewLamp
+    400018: SM_OldPhone
+    400020: SM_PenMug
+    400022: SM_SingleFileYellow
+    400024: SM_SingleFileYellow1
+    2100000: lambert1
+    2100002: lambert5
+    2100004: lambert3
+    2100006: PlayerDragon_blinn1
+    2100008: PlayerDragon_blinn2
+    2100010: lambert4
+    2300000: SM_BossTable
+    2300002: SM_DragonToy
+    2300004: SM_ModernKeyBoard
+    2300006: SM_ModernPCLeft
+    2300008: SM_ModernPCRight
+    2300010: SM_Mouse
+    2300012: SM_MousePad
+    2300014: SM_NewLamp
+    2300016: SM_OldPhone
+    2300018: SM_PenMug
+    2300020: SM_SingleFileYellow
+    2300022: SM_SingleFileYellow1
+    3300000: SM_BossTable
+    3300002: SM_DragonToy
+    3300004: SM_ModernKeyBoard
+    3300006: SM_ModernPCLeft
+    3300008: SM_ModernPCRight
+    3300010: SM_Mouse
+    3300012: SM_MousePad
+    3300014: SM_NewLamp
+    3300016: SM_OldPhone
+    3300018: SM_PenMug
+    3300020: SM_SingleFileYellow
+    3300022: SM_SingleFileYellow1
+    4300000: SM_BossTable
+    4300002: SM_PenMug
+    4300004: SM_Mouse
+    4300006: SM_MousePad
+    4300008: SM_SingleFileYellow1
+    4300010: SM_ModernPCLeft
+    4300012: SM_SingleFileYellow
+    4300014: SM_NewLamp
+    4300016: SM_ModernKeyBoard
+    4300018: SM_ModernPCRight
+    4300020: SM_DragonToy
+    4300022: SM_OldPhone
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

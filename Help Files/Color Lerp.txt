@@ -1,0 +1,9 @@
+Color Lerp will require 4 things to work
+
+The speed at what the change happens at
+
+the starting color for the Object
+
+The ending color for the Object
+
+The Object name to detect collisions with

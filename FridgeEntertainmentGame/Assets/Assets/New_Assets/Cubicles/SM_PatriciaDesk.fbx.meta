@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: ae643564439b3114d8daffc17b85ab90
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: SM_Cubicle
+    100002: SM_Cubicle1
+    100004: SM_DeskFileTray1
+    100006: SM_Diploma
+    100008: SM_Helmet
+    100010: SM_ModernKeyBoard
+    100012: SM_ModernPC
+    100014: SM_Mouse1
+    100016: SM_MousePad1
+    100018: SM_NewLamp
+    100020: SM_OfficeChair1
+    100022: SM_Patricia
+    100024: //RootNode
+    100026: SM_PatriciaFileBlue
+    100028: SM_PatriciaFileGreen
+    100030: SM_PatriciaFileRed
+    100032: SM_PatriciaFileWhite
+    100034: SM_PatriciaFileYellow
+    100036: SM_PatriciaOfTheMonth
+    100038: SM_PatriciaSingleFileBlue
+    100040: SM_PatriciaSingleFileGreen
+    100042: SM_PatriciaSingleFileRed
+    100044: SM_SingleFileYellow
+    400000: SM_Cubicle
+    400002: SM_Cubicle1
+    400004: SM_DeskFileTray1
+    400006: SM_Diploma
+    400008: SM_Helmet
+    400010: SM_ModernKeyBoard
+    400012: SM_ModernPC
+    400014: SM_Mouse1
+    400016: SM_MousePad1
+    400018: SM_NewLamp
+    400020: SM_OfficeChair1
+    400022: SM_Patricia
+    400024: //RootNode
+    400026: SM_PatriciaFileBlue
+    400028: SM_PatriciaFileGreen
+    400030: SM_PatriciaFileRed
+    400032: SM_PatriciaFileWhite
+    400034: SM_PatriciaFileYellow
+    400036: SM_PatriciaOfTheMonth
+    400038: SM_PatriciaSingleFileBlue
+    400040: SM_PatriciaSingleFileGreen
+    400042: SM_PatriciaSingleFileRed
+    400044: SM_SingleFileYellow
+    2100000: lambert1
+    2300000: SM_Cubicle1
+    2300002: SM_DeskFileTray1
+    2300004: SM_Diploma
+    2300006: SM_Helmet
+    2300008: SM_ModernKeyBoard
+    2300010: SM_ModernPC
+    2300012: SM_Mouse1
+    2300014: SM_MousePad1
+    2300016: SM_NewLamp
+    2300018: SM_OfficeChair1
+    2300020: SM_PatriciaFileBlue
+    2300022: SM_PatriciaFileGreen
+    2300024: SM_PatriciaFileRed
+    2300026: SM_PatriciaFileWhite
+    2300028: SM_PatriciaFileYellow
+    2300030: SM_PatriciaOfTheMonth
+    2300032: SM_PatriciaSingleFileBlue
+    2300034: SM_PatriciaSingleFileGreen
+    2300036: SM_PatriciaSingleFileRed
+    2300038: SM_SingleFileYellow
+    3300000: SM_Cubicle1
+    3300002: SM_DeskFileTray1
+    3300004: SM_Diploma
+    3300006: SM_Helmet
+    3300008: SM_ModernKeyBoard
+    3300010: SM_ModernPC
+    3300012: SM_Mouse1
+    3300014: SM_MousePad1
+    3300016: SM_NewLamp
+    3300018: SM_OfficeChair1
+    3300020: SM_PatriciaFileBlue
+    3300022: SM_PatriciaFileGreen
+    3300024: SM_PatriciaFileRed
+    3300026: SM_PatriciaFileWhite
+    3300028: SM_PatriciaFileYellow
+    3300030: SM_PatriciaOfTheMonth
+    3300032: SM_PatriciaSingleFileBlue
+    3300034: SM_PatriciaSingleFileGreen
+    3300036: SM_PatriciaSingleFileRed
+    3300038: SM_SingleFileYellow
+    4300000: SM_PatriciaFileRed
+    4300002: SM_Helmet
+    4300004: SM_PatriciaFileGreen
+    4300006: SM_PatriciaFileWhite
+    4300008: SM_PatriciaFileBlue
+    4300010: SM_PatriciaFileYellow
+    4300012: SM_PatriciaOfTheMonth
+    4300014: SM_Diploma
+    4300016: SM_PatriciaSingleFileBlue
+    4300018: SM_PatriciaSingleFileRed
+    4300020: SM_PatriciaSingleFileGreen
+    4300022: SM_SingleFileYellow
+    4300024: SM_NewLamp
+    4300026: SM_ModernKeyBoard
+    4300028: SM_Cubicle1
+    4300030: SM_DeskFileTray1
+    4300032: SM_OfficeChair1
+    4300034: SM_MousePad1
+    4300036: SM_Mouse1
+    4300038: SM_ModernPC
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
